@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "resume-be363": {
+      "hosting": {
+        "resume": [
+          "resume-be363"
+        ]
+      }
+    }
+  }
+}
