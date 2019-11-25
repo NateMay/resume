@@ -1,0 +1,37 @@
+:host {
+  margin: 32px;
+  display: block;
+}
+
+
+
+
+.logo{
+  max-width: 350px
+}
+.team{
+  max-width: 550px;
+  float: right;
+  margin-left: 32px;
+}
+
+.arrow{
+  position: absolute;
+  top: -27px;
+  right: 367px;
+  font-size: 14px;
+  color: #555;
+}
+.mat-card{
+  margin-right: 32px;
+}
+
+.mat-card-avatar{
+  border-radius: 0;
+}
+
+.example-header-image {
+  background-image: url('../../assets/citi.png');
+  background-size: cover;
+}
+

@@ -1,0 +1,135 @@
+
+
+// color contract checker: https://webaim.org/resources/contrastchecker/
+// color scaler:           http://paletton.com/#uid=13F0u0kcJsV48MN88-XhQnQmPiZ
+
+$font: /* Roman */ -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+
+// borders
+$spacer: 1px solid #ccc;
+
+$background: #fff;
+
+
+// Thunder Cloud - Color A
+$thunder-cloud: #505160;
+
+
+$thunder0: #8E8F9A91;
+$thunder1: #8E8F9A;
+$thunder2: #6B6C7B;
+$thunder3: $thunder-cloud;
+$thunder4: #343541;
+$thunder5: #1E1F30;
+
+
+
+
+
+//-------------------------//
+// ---- Vibrant Twist ---- //
+//-------------------------//
+
+// Sky - Color B
+$sky: #375e97;
+
+$sky0: #809ECA91;
+$sky1: #809ECA;
+$sky2: #5276AA;
+$sky3: $sky;
+$sky4: #1E4887;
+$sky5: #11356A;
+
+// Sunset - Color C
+$sunset: #fb6542;
+
+$sunset0: #FFA69091;
+$sunset1: #FFA690;
+$sunset2: #FF8366;
+$sunset3: $sunset;
+$sunset4: #EF3C11;
+$sunset5: #B52908;
+
+
+$grass: #3f681c;
+
+$grass0: #79A45591;
+$grass1: #79A455;
+$grass2: #578134;
+$grass3: $grass;
+$grass4: #264809;
+$grass5: #132A00;
+
+$sunflower: #ffbb00;
+
+
+
+//-------------------------//
+// --- Crisp & Dramatic --- //
+//-------------------------//
+
+// Waterfall - Color B
+$waterfall: #617898;
+
+$waterfall0: #BFC9D891;
+$waterfall1: #BFC9D8;
+$waterfall2: #8C9DB6;
+$waterfall3: $waterfall;
+$waterfall4: #3E577D;
+$waterfall5: #233D64;
+
+
+// Meadow - Color C
+$meadow: #548033;
+
+$meadow0: #9EC48191;
+$meadow1: #9EC481;
+$meadow2: #739F51;
+$meadow3: $meadow;
+$meadow4: #3C681B;
+$meadow5: #224607;
+
+
+// Moss - Color D
+// $moss: #aebd38;
+
+
+// ---- Selected Theme ----- //
+
+$theme-A-0: $thunder0;
+$theme-A-1: $thunder1;
+$theme-A-2: $thunder2;
+$theme-A-3: $thunder3;
+$theme-A-4: $thunder4;
+$theme-A-5: $thunder5;
+
+$theme-B-0: $sky0;
+$theme-B-1: $sky1;
+$theme-B-2: $sky2;
+$theme-B-3: $sky3;
+$theme-B-4: $sky4;
+$theme-B-5: $sky5;
+
+// 2D8640
+
+
+$theme-C-9: $grass0;
+$theme-C-1: $grass1;
+$theme-C-2: $grass2;
+$theme-C-3: $grass3;
+$theme-C-4: $grass4;
+$theme-C-5: $grass5;
+
+
+
+
+$today: #c3dbff;
+
+
+
+$sun: #FFCF96;
+$day-sky: #83D8FF;
+
+$moon: #FFE5B5;
+$crater: #E8CDA5;
+$night-sky: #749DD6;
