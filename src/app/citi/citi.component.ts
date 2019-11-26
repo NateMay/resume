@@ -61,7 +61,7 @@ import { Component, OnInit } from '@angular/core';
           </mat-list-item>
           <mat-list-item>
             <mat-icon>check</mat-icon>&nbsp;
-            Certified for <a href="https://www.w3.org/TR/WCAG20/"> WCAG 2.0 AA</a> &nbsp;accessibility complience 
+            Certified for <a href="https://www.w3.org/TR/WCAG20/">&nbsp; WCAG 2.0 AA</a> &nbsp;accessibility complience 
           </mat-list-item>
           <mat-list-item>
             <mat-icon>check</mat-icon>&nbsp;

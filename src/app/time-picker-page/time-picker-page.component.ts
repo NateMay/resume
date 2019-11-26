@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
   <hr>
 
   <section>
-    <p>
+    <p style="min-height: 200px">
       <img class="ng-material" src="../../assets/ng-material.png">
       <b>What is Angular Material?</b>
       <br><br>
@@ -42,10 +42,10 @@ import { Component, OnInit } from '@angular/core';
       not succeeded is because data entry is cumbersome. Becuase meals correspond to a time of day, I required
       a well designed time picker component, which is noticably missing from Angular Material.
       <br><br>
-      Taking inspiration from another novel attempt <a href="https://agranom.github.io/ngx-material-timepicker/">(ngx-material-timepicker)</a>,
+      Taking inspiration from  <a href="https://agranom.github.io/ngx-material-timepicker/">ngx-material-timepicker</a>,
       I have endevored to more closly align the UI with Material Design, and offer the quaility API expect from
       consumers of Angular Material. I still have progress to make, but ultimately, I plan to make this component open
-      source and wil seek to merge it into the Angular Material library.
+      source and will seek to merge it into the Angular Material library.
     </p>
 
     <br><br>
