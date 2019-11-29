@@ -23,11 +23,10 @@ import { Component, OnInit } from '@angular/core';
       to architect an ecosystem around this, now our primary, library.
     </p>
   </section>
-  <hr>
   <section fxLayout="column">
-    <h2>My Work</h2>
+    <h2>My Work</h2><br>
     <div fxLayout="row">
-      
+
       <mat-card class="example-card" fxFlex="400px">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
@@ -42,7 +41,7 @@ import { Component, OnInit } from '@angular/core';
         </video>
 
         <mat-card-content>
-          <p class="no-first-letter">
+          <p>
             Citi's intellectual property cannot leave its private network, so I'll give you a video tour.
           </p>
         </mat-card-content>
@@ -52,7 +51,7 @@ import { Component, OnInit } from '@angular/core';
         <p>
         To keep up with the rapidly evolving <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
         ecosytem, achieve complience, and facilitate Citi's development tempo, our team has been able to implement the 
-        following features, while I have been technical lead.
+        following features at my direction.
         </p>
         <mat-list>
           <mat-list-item>
@@ -82,24 +81,60 @@ import { Component, OnInit } from '@angular/core';
 
   </section>
 
-  <section fxLayout="row">
-    <div fxFlex="50%" style="padding-right: 32px">
-      <h3>More Points of Interest Regarding Common UI</h3>
-      <p>We've measured, and adoption of our components has accelerated while defect rates have dropped by 60% in the last year.</p>
-      <p>In that time we created automated tests for 80% of our components and an automated our build pipeline for rapid iteration.</p>
-      <p>Having the repuation of frontend subject matter experts, I often embed my devlopers on other teams and oversee feature implementations. </p>
+  <mat-tab-group>
+
+    <mat-tab label="Digital Design Language">
+      Documentation / API
+    </mat-tab>
+
+    <mat-tab label="Higher-Order Design">
+      Documentation / API
+    </mat-tab>
+
+    <mat-tab label="Processes">
+      Quarterly Merge
+      Support
+      NPM
+    </mat-tab>
+
+    <mat-tab label="Adoption">
       <p>
-      I would make the argument that I am Citi Digital's foremost expert on accessibility, and so would the compience team who oversees those standards
-      in Citi. Because of this, I consult in the weekly CBOL deisgn reviews for new features.
+        We've measured, and adoption of our components has accelerated while defect rates have dropped by
+        60% in the last year.
       </p>
-    </div>
-    <div fxFlex="50%">
-      <h3>Application Architecture Projects</h3>
+    </mat-tab>
+
+    <mat-tab label="Features">
+      Customizable
+
+    </mat-tab>
+
+    <mat-tab label="Accessibility">
       <p>
-        <img class="process" src="../../assets/process.png">
-        Design is most effective as an interative process that applies the scientific method. Unfortunately,
-        this iteration is time consuimng and costly. If the cost of an iteration out
+        I would make the argument that I am Citi Digital's foremost expert on accessibility, and so would the
+        compience team who oversees those standards in Citi. Because of this, I consult in the weekly CBOL
+        deisgn reviews for new features.
       </p>
+    </mat-tab>
+
+  </mat-tab-group>
+
+  <section>
+    <h3>Application Architecture Projects</h3>
+    <p>The process of optimizing a deisgn requires </p>
+    <div fxLayout="row">
+      <div fxFlex="50%">
+        <p>
+          Design is most effective as an interative process that applies the scientific method. Unfortunately,
+          this iteration is time consuimng and costly. If the cost of an iteration out
+        </p>
+      </div>
+      <div fxFlex="50%">
+        <p>
+          Design is most effective as an interative process that applies the scientific method. Unfortunately,
+          this iteration is time consuimng and costly. If the cost of an iteration out
+        </p>
+      </div>
     </div>
   </section>
   `,

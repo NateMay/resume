@@ -16,7 +16,12 @@ import { Component } from '@angular/core';
       <h1>Nate May - Design Portfolio</h1>
       <span class="spacer"></span>
 
-      <button mat-button routerLink="/about-me">About Me</button>
+      <button mat-icon-button
+        color="primary"
+        aria-label="menu"
+        routerLink="/home">
+        <mat-icon>home</mat-icon>
+      </button>
     </mat-toolbar>
 
     <mat-drawer-container>

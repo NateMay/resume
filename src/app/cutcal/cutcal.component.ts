@@ -7,21 +7,28 @@ import { Component, OnInit } from '@angular/core';
   <section fxLayout="column">
     <h2>Inspiration for CutCal</h2>
     <p>
-      Unhealthy diet contributes to approximately <b><a href="https://cspinet.org/eating-healthy/why-good-nutrition-important" target="_blank">678,000 deaths</a></b>
-      each year in the U.S. Everyone aknowledges this, but it's not clear what we can do about it. Diets like Keto, Atkins, & Paleo came
-      and went; so did the food pyramid. Each of these, though based on good principals, is an oversimplification.
+      As a society, we recognize the health benefits of a good diet, but we don't have a sound understanding
+      of what comprises a quality diet. We iterate through diets like Paleo, Atkins, and Keto that
+      characterize foods as eithergood or bad. This does not align with the contemporary paradigm from
+      the nutrition sciences which emphasises the insufficiencies and excess of individual nutrients in
+      one’s diet.
       <br><br>
-      Instead, nutritionist offer upper limits and daily minimums. There is no such thing as a good food or bad food, only insufficient intake of nutrients and excess.
-      The trouble is, granular nutrition information is difficult to collect, aggregate, and comprehend. Novel attempts (see below) to make a tool for this have been made, but come up
-      short because data entry remains cumbersome and don't yield valuable insights.
+      Why do we turn to these fad diets? Because they are “solutions” simple enough for us
+      to interface with. We have no current means of aggregating the granular data underlying our diets,
+      so we simplify.
       <br><br>
-      CutCal seeks to simplify data entry through a drag and drop calendar interface.
-      273 nutrition data points from the <a href="https://fdc.nal.usda.gov/" target="_blank">USDA</a> are aggregated at multiple levels: food, recipe, meal, and day.
-      Data Visualizations allow users to understand an investigate their food choices, enabling them leverage quality data as they pursue a healthy diet.
+      The mission of CutCal is to simplify the process of entering consumption data, organize it usefully,
+      provide comprehensible insights, facilitate discovery, and all in all, empower people to better
+      <span class="tip" matTooltip="Design is the process of optimizing the interface between a person and a solution or information">interface</span>
+      with the otherwise elusive solutions from the nutrition sciences.
+      <br><br>
+      To do so, CutCal leverages 273 nutrition data points from the USDA's <a href="https://fdc.nal.usda.gov/" target="_blank">Food Composition Database</a>
     </p>
   </section>
 
   <section fxLayout="row">
+
+
 
       <mat-card class="example-card" fxFlex="400px">
         <mat-card-header>
@@ -81,10 +88,85 @@ import { Component, OnInit } from '@angular/core';
 
   </section>
 
-  <section fxLayout="column">
-    <h2>CutCal and Design</h2>
-    <p>asdasdasd</p>
-  </section>
+  <mat-tab-group>
+
+    <mat-tab label="The Calendar">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls alt="CutCal's calendar interface">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          Inspired by Google Calendar
+          Drag and Drop
+          DrillDown: Year, month, day, meal, recipe, food
+        </p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Analytics">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls alt="CutCal's calendar interface">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+        Analyze page
+        Inspect nutrient
+        </p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Custom Recipes">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls alt="CutCal's calendar interface">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          minimize data entry
+        </p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Higher-Order Design">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls alt="CutCal's calendar interface">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          Admin tab
+          automated testing
+        </p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Planned Features">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls alt="CutCal's calendar interface">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          Advanced search
+          grocery list
+          pantry inventory
+          chat - virtual nutrition advisors
+          Gamification
+        </p>
+      </div>
+
+    </mat-tab>
+
+  </mat-tab-group>
+
+  <br><br>
 
   <h2>Existing Alternatives</h2>
 
@@ -126,22 +208,6 @@ import { Component, OnInit } from '@angular/core';
               <mat-icon style="color:red">close</mat-icon>&nbsp;
               Contemporary User Interface
             </mat-list-item>
-            <mat-list-item>
-              <mat-icon>check</mat-icon>&nbsp;
-              Certified for <a href="https://www.w3.org/TR/WCAG20/"> WCAG 2.0 AA</a> &nbsp;accessibility complience 
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon>check</mat-icon>&nbsp;
-              Compatible with &nbsp;<a href="https://www.youtube.com/watch?v=GQzn7XRdzxY" target="_blank">server-side rendering</a> 
-            </mat-list-item>
-            <mat-list-item>
-            <mat-icon>check</mat-icon>&nbsp;
-              Robust Documentation (see video)
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon>check</mat-icon>&nbsp;
-              Packaged as an &nbsp;<a href="https://www.w3schools.com/whatis/whatis_npm.asp" target="_blank">NPM Library</a>
-            </mat-list-item>
           </mat-list>
         </div>
 
@@ -149,9 +215,56 @@ import { Component, OnInit } from '@angular/core';
 
     </mat-expansion-panel>
 
-  </mat-accordion>
 
- 
+
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>MyFoodDiary</mat-panel-title>
+      <mat-panel-description>Nutrition Tracker</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div fxLayout="row">
+
+      <mat-card class="example-card" fxFlex="400px">
+        <mat-card-header>
+          <div mat-card-avatar class="under-armour"></div>
+          <mat-card-title>MyFoodDiary</mat-card-title>
+          <mat-card-subtitle>Nutrition Tracker</mat-card-subtitle>
+        </mat-card-header>
+
+        <iframe src="https://player.vimeo.com/video/198867954"
+          mat-card-image
+          width="640"
+          height="240"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+
+        <mat-card-content>
+          <p class="no-first-letter">
+            I've been building CutCal in my free time.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <div fxFlex="calc(100% - 400px)">
+        <p>
+          CutCal seeks to 
+        </p>
+        <mat-list>
+          <mat-list-item>
+            <mat-icon style="color:red">close</mat-icon>&nbsp;
+            Contemporary User Interface
+          </mat-list-item>
+        </mat-list>
+      </div>
+
+    </div>
+
+  </mat-expansion-panel>
+
+  </mat-accordion>
   `,
   styleUrls: ['./cutcal.component.scss']
 })

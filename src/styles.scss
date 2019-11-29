@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+$font: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 html, 
 body { 
   height: 100%; 
@@ -13,6 +13,7 @@ body {
   flex: 1 1 auto;
 }
 p{
+  color: #505160;
   font-size: 16px;
   line-height: 28px;
   position: relative;
@@ -28,7 +29,7 @@ img {
   height: auto;
 }
 
-section{
+section:not(:first-child){
   margin: 64px 0;
 }
 body
@@ -42,3 +43,30 @@ section a{
   text-decoration: none;
 }
 
+h2 {
+  font-family: $font;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #505160;
+  margin: 8px 0;
+}
+h3{
+  font-family: $font;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #505160;
+  clear: both;
+  margin-bottom: 0;
+}
+h4{
+  font-family: $font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #666;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0;
+}

@@ -76,7 +76,7 @@ import { Component, OnInit } from '@angular/core';
       [attr.tabindex]="(rla5.isActive ? -1: 0)">
       <mat-list-item>
         <img mat-list-icon src="../../assets/me.jpg">
-        <h3 mat-line>About Me</h3>
+        <h3 mat-line>About Nate</h3>
         <p mat-line> </p>
       </mat-list-item>
     </button>
