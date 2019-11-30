@@ -218,51 +218,51 @@ import { Component, OnInit } from '@angular/core';
 
 
     <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>MyFoodDiary</mat-panel-title>
-      <mat-panel-description>Nutrition Tracker</mat-panel-description>
-    </mat-expansion-panel-header>
+      <mat-expansion-panel-header>
+        <mat-panel-title>MyFoodDiary</mat-panel-title>
+        <mat-panel-description>Nutrition Tracker</mat-panel-description>
+      </mat-expansion-panel-header>
 
-    <div fxLayout="row">
+      <div fxLayout="row">
 
-      <mat-card class="example-card" fxFlex="400px">
-        <mat-card-header>
-          <div mat-card-avatar class="under-armour"></div>
-          <mat-card-title>MyFoodDiary</mat-card-title>
-          <mat-card-subtitle>Nutrition Tracker</mat-card-subtitle>
-        </mat-card-header>
+        <mat-card class="example-card" fxFlex="400px">
+          <mat-card-header>
+            <div mat-card-avatar class="under-armour"></div>
+            <mat-card-title>MyFoodDiary</mat-card-title>
+            <mat-card-subtitle>Nutrition Tracker</mat-card-subtitle>
+          </mat-card-header>
 
-        <iframe src="https://player.vimeo.com/video/198867954"
-          mat-card-image
-          width="640"
-          height="240"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
+          <iframe src="https://player.vimeo.com/video/198867954"
+            mat-card-image
+            width="640"
+            height="240"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
 
-        <mat-card-content>
-          <p class="no-first-letter">
-            I've been building CutCal in my free time.
+          <mat-card-content>
+            <p class="no-first-letter">
+              I've been building CutCal in my free time.
+            </p>
+          </mat-card-content>
+        </mat-card>
+
+        <div fxFlex="calc(100% - 400px)">
+          <p>
+            CutCal seeks to 
           </p>
-        </mat-card-content>
-      </mat-card>
+          <mat-list>
+            <mat-list-item>
+              <mat-icon style="color:red">close</mat-icon>&nbsp;
+              Contemporary User Interface
+            </mat-list-item>
+          </mat-list>
+        </div>
 
-      <div fxFlex="calc(100% - 400px)">
-        <p>
-          CutCal seeks to 
-        </p>
-        <mat-list>
-          <mat-list-item>
-            <mat-icon style="color:red">close</mat-icon>&nbsp;
-            Contemporary User Interface
-          </mat-list-item>
-        </mat-list>
       </div>
 
-    </div>
-
-  </mat-expansion-panel>
+    </mat-expansion-panel>
 
   </mat-accordion>
   `,

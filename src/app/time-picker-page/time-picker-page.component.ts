@@ -58,7 +58,7 @@ import { Component, OnInit } from '@angular/core';
           [(time)]="time"
           (timeChange)="timeChange($event)"
           width="205px"
-          placeholder="hh:mm pm"
+          [placeholder]="(format.checked ? 'hh:mm' : 'hh:mm pm')"
           idStr="my-timepicker"
           [format]="(format.checked ? 24 : 12)"
         ></cc-time-picker-input>

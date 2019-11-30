@@ -80,18 +80,6 @@ import { Component, OnInit } from '@angular/core';
         <p mat-line> </p>
       </mat-list-item>
     </button>
-
-    <button
-      routerLink="/documents"
-      routerLinkActive="active-link"
-      #rla6="routerLinkActive"
-      [attr.tabindex]="(rla6.isActive ? -1: 0)">
-      <mat-list-item>
-        <mat-icon mat-list-icon>folder</mat-icon>
-        <h3 mat-line>Documents</h3>
-        <p mat-line>Resume, Reports and Case Study </p>
-      </mat-list-item>
-    </button>
   `,
   styleUrls: ['./sidebar.component.scss']
 })

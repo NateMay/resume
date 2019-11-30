@@ -35,8 +35,7 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-header>
 
         <video width="400" controls mat-card-image alt="Citi's Common UI Component team tour">
-          <source src="mov_bbb.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
+          <source src="../../assets/intro.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
 
@@ -83,59 +82,127 @@ import { Component, OnInit } from '@angular/core';
 
   <mat-tab-group>
 
-    <mat-tab label="Digital Design Language">
-      Documentation / API
-    </mat-tab>
+    <mat-tab label="Documentation">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
 
-    <mat-tab label="Higher-Order Design">
-      Documentation / API
-    </mat-tab>
-
-    <mat-tab label="Processes">
-      Quarterly Merge
-      Support
-      NPM
+        <video width="400" controls alt="Citi's Common UI Component team tour">
+          <source src="../../assets/docs.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          The Common UI documentation is my response to the problem of higher-order design. Previously, we
+          only considered banking customers to be our users. With this documentation, we now service our higher-order
+          users: the developers at Citi.
+          <br><br>
+          This has faciliated better testing, reduced the need for simple support questions, and a improved confidence from
+          Citi devlopers and managers that they can rely on our quality while easily transfering the knowledge of our
+          library API as devlopers transer between teams.
+        </p>
+      </div>
     </mat-tab>
 
     <mat-tab label="Adoption">
+    <br>
+    <div fxLayout="row" fxLayoutGap="32px">
+      <video width="400" controls>
+        <source src="../../assets/adoption.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       <p>
-        We've measured, and adoption of our components has accelerated while defect rates have dropped by
-        60% in the last year.
+        Not long after we launched our documentation, we began measuing it effectiveness. Not only did the total number of defects
+        drop, but the time it took us to resolve them dropped. This allowed us and other feature teams to focus on value-adding activities.
+        <br><br>
+        As of Feburary 2019, there were 9,091 instances of our components used in citi.com, by June that increaed to 10,980;
+        an increase of 21%. By September, usage increased to 11,693. This increase in adoption not only means we are successfully
+        servicing our higher-order users, but that iteration speed has improved, and the user experience is more consitent across
+        the disparate features on citi.com.
       </p>
+    </div>
     </mat-tab>
 
-    <mat-tab label="Features">
-      Customizable
+    <mat-tab label="Processes">
+    <br>
+    <div fxLayout="row" fxLayoutGap="32px">
+      <video width="400" controls>
+        <source src="../../assets/process.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <p>
+        Beyond our documentation, I have been able to implement several successful processes. Most significantly,
+        our quarterly merge has allowed us to both continue enhanceing our components for new features, while
+        avoiding defects to unrelated features. Teams can plan their regression testing around these mereges, and
+        and still get the benefits of our enhancements.
+      </p>
+    </div>
+    </mat-tab>
+
+    <mat-tab label="Iteration">
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls>
+          <source src="../../assets/iteration.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          Automation has been a big key to our success. We have automated unit tests for our library to ensure that
+          we don't introduces defects as we make changes. These tests as well as formatting rules are applied before
+          every code checkin. Each checkin also links back to the underlying story. I also created automation script
+          to redeploy our documentation and new versions of our library, which I converted into the NPM format.
+          <br><br>
+          This has faciliated a more rapid development process that has directly impacted the design iteration, both for our
+          team and for feature teams.
+        </p>
+      </div>
 
     </mat-tab>
 
     <mat-tab label="Accessibility">
-      <p>
-        I would make the argument that I am Citi Digital's foremost expert on accessibility, and so would the
-        compience team who oversees those standards in Citi. Because of this, I consult in the weekly CBOL
-        deisgn reviews for new features.
-      </p>
+      <br>
+      <div fxLayout="row" fxLayoutGap="32px">
+        <video width="400" controls>
+          <source src="../../assets/accessibility.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>
+          The citi.com application is too large for a full accessibility (a11y) review. Instead, my library bears the burden of
+          a11y compliance. I work closly with <a href="https://www.deque.com/" taget="_blank">Deque</a> to review our library on a cadance,
+          I advise teams seeking compliance, and I consult on a11y matters in our weekly design approval sessions.
+          <br><br>
+          I think it is fair to say that I am the foremost authority on accessibility of the web within Citi Digital, and I would like to
+          pursue this passion further in grad school.
+        </p>
+      </div>
     </mat-tab>
 
   </mat-tab-group>
 
+  <br><br>
+  <hr>
+
   <section>
-    <h3>Application Architecture Projects</h3>
-    <p>The process of optimizing a deisgn requires </p>
-    <div fxLayout="row">
-      <div fxFlex="50%">
-        <p>
-          Design is most effective as an interative process that applies the scientific method. Unfortunately,
-          this iteration is time consuimng and costly. If the cost of an iteration out
-        </p>
-      </div>
-      <div fxFlex="50%">
-        <p>
-          Design is most effective as an interative process that applies the scientific method. Unfortunately,
-          this iteration is time consuimng and costly. If the cost of an iteration out
-        </p>
-      </div>
-    </div>
+    <h3>Server-Side Rendering</h3>
+    <p>
+      While I want to improve my understanding of the overall design process, I'm even more interested in
+      using that understanding to develop a design architecture. This should be as tightly integrated to the
+      application as the features themselves. For one to execute sucah a vision, one must have application
+      the architecture skills to implement it.
+    </p>
+    <p>
+      My team falls under the "enable" domain along with the container team which manages the application
+      shell through which the citi.com application is deployed. Because we share the same boss, every fulltime
+      employee on that team once once on my team, and because I am considered to be the foremost subject
+      matter expert for our frontend technology, I have been affored to create a brand new container to
+      support <a href="https://www.youtube.com/watch?v=GQzn7XRdzxY" target="_blank">server-side rendering (SSR)</a>.
+      To do so, I have been given about 10 developers to create the container, ensure the Common UI library is
+      fully SSR compatible, and faciliate the migration plan.
+    </p>
+    <p>
+       As I write this, I'm finding it difficult to concisly
+      convey the complexity and demonstrate my knowledge of application architecture, but the fact that I'm entrusted
+      to create a new container for the main consumer banking website for one of the four biggest banks in Amerrica
+      should convey that clearly enough.
+    </p>
   </section>
   `,
   styleUrls: ['./citi.component.scss']

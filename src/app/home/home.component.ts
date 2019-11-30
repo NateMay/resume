@@ -10,19 +10,7 @@ import { Component, OnInit } from '@angular/core';
     </p>
   </section>
 
-  <section>
-    <mat-card class="example-card" fxFlex="400px">
-      <mat-card-header>
-        <mat-card-title>Design Philosophy</mat-card-title>
-      </mat-card-header>
-
-      <mat-card-content>
-        <p>
-          In this section I discuss my perspective of Design. 
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </section>
+  Work in progress
   `,
   styleUrls: ['./home.component.scss']
 })

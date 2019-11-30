@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
       </button>
 
       <span class="spacer"></span>
-      <h1>Nate May - Design Portfolio</h1>
+      <img class="header-img" src="../assets/me.png">&nbsp;
+      <h1>Nate May</h1>
       <span class="spacer"></span>
 
       <button mat-icon-button
