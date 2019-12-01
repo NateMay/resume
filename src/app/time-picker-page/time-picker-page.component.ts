@@ -53,8 +53,8 @@ import { Component, OnInit } from '@angular/core';
 
     <br><br>
 
-    <div fxLayout="row">
-      <div fxFlex="50%" fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
+      <div fxFlex="50%"fxLayout="row" fxLayoutAlign="space-around center">
         <cc-time-picker-input
           #timePicker
           label="My Time Picker"
@@ -87,7 +87,7 @@ import { Component, OnInit } from '@angular/core';
     </ul>
     <br><br>
 
-    <div fxLayout="row">
+    <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
       <div fxFlex="50%" fxLayout="row" fxLayoutAlign="space-around center">
         <mat-form-field>
           <input matInput [matDatepicker]="picker" placeholder="Angular Material" autocomplete="off">
@@ -96,11 +96,11 @@ import { Component, OnInit } from '@angular/core';
         </mat-form-field>
       </div>
       <div fxFlex="50%" fxLayout="row" fxLayoutAlign="space-around center">
-      <div class="toggle-example">
-          <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly placeholder="ngx-material-timepicker">
-          <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
-          <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
-      </div>
+        <div class="toggle-example">
+            <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly placeholder="ngx-material-timepicker">
+            <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+            <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
+        </div>
       </div>
     </div>
 

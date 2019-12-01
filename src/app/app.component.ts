@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +30,7 @@ import { Component } from '@angular/core';
     <mat-drawer-container>
 
 
-      <mat-drawer #drawer mode="side" opened>
+      <mat-drawer #drawer mode="side" [opened]="opened">
 
         <app-sidebar></app-sidebar>
 
@@ -48,5 +50,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  opened = true;
+
+  @ViewChild(MatDrawer, { static: false }) drawer: MatDrawer;
+
+  constructor(private router: Router) {
+    this.opened = window.innerWidth > 600;
+
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd && window.innerWidth < 600) {
+        this.drawer.close();
+      }
+    });
+  }
 
 }

@@ -30,9 +30,9 @@ import { Component, OnInit } from '@angular/core';
     </p>
   </section>
 
-  <section fxLayout="row">
+  <section fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
 
-      <mat-card class="example-card" fxFlex="400px">
+      <mat-card class="example-card" fxFlex.gt-sm="400px">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>CutCal</mat-card-title>
@@ -54,12 +54,14 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-content>
       </mat-card>
 
-      <div fxFlex="calc(100% - 400px)">
+      <div fxFlex>
         <h3>Features of CutCal:</h3>
         <mat-list>
           <mat-list-item>
-            <mat-icon  style="color:green">check</mat-icon>&nbsp;
-            237 nutrition data points from the USDA &nbsp; <a href="https://fdc.nal.usda.gov/" target="_blank"> Food Composition Database</a>
+            <mat-icon  style="color:green">check</mat-icon>
+            <span>
+            237 nutrition data points from the USDA <a href="https://fdc.nal.usda.gov/" target="_blank"> Food Composition Database</a>
+            </span>
           </mat-list-item>
           <mat-list-item>
             <mat-icon  style="color:green">check</mat-icon>&nbsp;
@@ -94,7 +96,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="The Calendar">
       <br>
-      <div fxLayout="row" fxLayoutGap="32px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <video width="400" controls alt="CutCal's calendar interface">
           <source src="" type="video/mp4">
           Your browser does not support HTML5 video.
@@ -189,7 +191,7 @@ import { Component, OnInit } from '@angular/core';
         <mat-panel-description>Meal Diary</mat-panel-description>
       </mat-expansion-panel-header>
 
-      <div fxLayout="row">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
 
         <mat-card class="example-card" fxFlex="400px">
           <mat-card-header>

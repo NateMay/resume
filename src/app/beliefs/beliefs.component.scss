@@ -1,9 +1,18 @@
 :host {
-  margin: 32px;
+  margin: 16px;
   display: block;
 }
 .process{
-  max-width: 300px;
+  width: 100%;
   float: left;
-  margin: 0 32px 32px 0;
+}
+@media only screen and (min-width: 600px) {
+  
+  :host {
+    margin: 32px;
+  }
+  .process{
+    max-width: 300px;
+    margin: 0 32px 32px 0;
+  }
 }

@@ -29,7 +29,7 @@ import { Component, OnInit } from '@angular/core';
     </ul>
     <p>Thank you for your consideration.
     <br><br>
-    sincerly,
+    sincerely,
     <br><br>
     Nate May
     </p>

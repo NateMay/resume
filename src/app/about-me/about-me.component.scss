@@ -1,6 +1,11 @@
 :host {
-  margin: 32px;
+  margin: 16px;
   display: block;
+}
+@media only screen and (min-width: 600px) {
+  :host {
+    margin: 32px;
+  }
 }
 .hyphens{
   margin: 0;
@@ -14,3 +19,5 @@
   height: 40px;
   width: 40px;
 }
+
+

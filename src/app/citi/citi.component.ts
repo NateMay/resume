@@ -23,9 +23,10 @@ import { Component, OnInit } from '@angular/core';
       to architect an ecosystem around this, now our primary, UI library.
     </p>
   </section>
+
   <section fxLayout="column">
     <h2>My Work</h2><br>
-    <div fxLayout="row">
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
 
       <mat-card class="example-card" fxFlex="400px">
         <mat-card-header>
@@ -46,7 +47,7 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-content>
       </mat-card>
 
-      <div  fxFlex="calc(100% - 400px)">
+      <div>
         <p>
         To keep up with the rapidly evolving <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
         ecosytem, achieve complience, and facilitate Citi's development tempo, our team has been able to implement the 
@@ -84,7 +85,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="Documentation">
       <br>
-      <div fxLayout="row" fxLayoutGap="32px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
 
         <video width="400" controls alt="Citi's Common UI Component team tour">
           <source src="../../assets/docs.mp4" type="video/mp4">
@@ -104,7 +105,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="Adoption">
     <br>
-    <div fxLayout="row" fxLayoutGap="32px">
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
       <video width="400" controls>
         <source src="../../assets/adoption.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
@@ -123,7 +124,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="Processes">
     <br>
-    <div fxLayout="row" fxLayoutGap="32px">
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
       <video width="400" controls>
         <source src="../../assets/process.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
@@ -139,7 +140,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="Iteration">
       <br>
-      <div fxLayout="row" fxLayoutGap="32px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <video width="400" controls>
           <source src="../../assets/iteration.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
@@ -159,7 +160,7 @@ import { Component, OnInit } from '@angular/core';
 
     <mat-tab label="Accessibility">
       <br>
-      <div fxLayout="row" fxLayoutGap="32px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <video width="400" controls>
           <source src="../../assets/accessibility.mp4" type="video/mp4">
           Your browser does not support HTML5 video.

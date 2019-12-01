@@ -179,7 +179,6 @@ export class TimePickerInputComponent implements OnInit, AfterViewInit {
   }
 
   openPicker(): void {
-    debugger
     if (this.pickerOverlayRef.hasAttached()) return;
 
     this.pickerRef = this.pickerOverlayRef

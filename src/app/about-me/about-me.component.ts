@@ -4,8 +4,8 @@ import { IImage } from 'ng-simple-slideshow';
 @Component({
   selector: 'app-about-me',
   template: `
-    <div fxLayout="row" fxLayoutGap="32px">
-      <div fxFlex="45%">
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
+      <div fxFlex="100%" fxFlex.gt-sm="45%">
         <slideshow
           [minHeight]="'425px'"
           [autoPlayInterval]="5000"

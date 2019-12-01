@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <h3>Web Design is Evolving Rapidly</h3>
       <br>
-      <div fxLayout="row" fxLayoutGap="20px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <p fxFlex="50%">
           Admittedly, I'm most interested in the architecture of web design. We're exiting an era of web development
           where IT infrustructure is a barrier to entry and frontend frameworks make rapid iteration possible. Quality
@@ -50,7 +50,7 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <h3>Design Creates Value</h3>
       <br>
-      <div fxLayout="row" fxLayoutGap="20px">
+      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <p fxFlex="50%">
           The common perspective of design seems to be that it is a necessary task to compete for market share.
           However, from my perspective, by optimizing the interface between a person and a solution or information,
