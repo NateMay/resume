@@ -3,7 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-cutcal',
   template: `
-
+  <div fxLayout="row">
+    <img src="../../assets/cutcal.png" style="height: 50px; width: 50px">
+    &nbsp;&nbsp;&nbsp;
+    <h2> CutCal</h2>
+  </div>
+  
+  <p>Meal Calendar, Nutrition Aggregator</p>
   <section fxLayout="column">
     <h2>Inspiration for CutCal</h2>
     <p>
@@ -21,14 +27,10 @@ import { Component, OnInit } from '@angular/core';
       provide comprehensible insights, facilitate discovery, and all in all, empower people to better
       <span class="tip" matTooltip="Design is the process of optimizing the interface between a person and a solution or information">interface</span>
       with the otherwise elusive solutions from the nutrition sciences.
-      <br><br>
-      To do so, CutCal leverages 273 nutrition data points from the USDA's <a href="https://fdc.nal.usda.gov/" target="_blank">Food Composition Database</a>
     </p>
   </section>
 
   <section fxLayout="row">
-
-
 
       <mat-card class="example-card" fxFlex="400px">
         <mat-card-header>
@@ -43,7 +45,7 @@ import { Component, OnInit } from '@angular/core';
           Your browser does not support HTML5 video.
         </video>
         <mat-card-content>
-          <button mat-raised-button color="primary">Visit CutCal</button>
+          <a mat-raised-button color="primary" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank">Visit CutCal</a>
           <p class="no-first-letter">
             I created CutCal single-handedly but it is still a work in progress.
             I've nearly completed the foundation of the data architecture.
@@ -57,7 +59,7 @@ import { Component, OnInit } from '@angular/core';
         <mat-list>
           <mat-list-item>
             <mat-icon  style="color:green">check</mat-icon>&nbsp;
-            237 nutrition data points from the USDA Food Composition Database
+            237 nutrition data points from the USDA &nbsp; <a href="https://fdc.nal.usda.gov/" target="_blank"> Food Composition Database</a>
           </mat-list-item>
           <mat-list-item>
             <mat-icon  style="color:green">check</mat-icon>&nbsp;
@@ -166,9 +168,18 @@ import { Component, OnInit } from '@angular/core';
 
   </mat-tab-group>
 
-  <br><br>
+  <br><br><br><br>
 
-  <h2>Existing Alternatives</h2>
+  <h2>Other Attempts to Solve the Same Problem</h2>
+
+  <p>
+    Novel attempts have been made to interface people with granual dietary imformation, but these fall short because of design.
+    Data entry is cumbersome, insight discovery is poor, and in some cases, the UI is just plain bad. CutCal relies on the 
+    assumption that if such burdens are minimized and the benefits are optimized, then more people will be willing to interface
+    with such a tool to garner insights into their nutrition.
+  </p>
+
+  <br><br>
 
   <mat-accordion>
 
@@ -265,6 +276,7 @@ import { Component, OnInit } from '@angular/core';
     </mat-expansion-panel>
 
   </mat-accordion>
+  <br><br>
   `,
   styleUrls: ['./cutcal.component.scss']
 })

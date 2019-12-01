@@ -4,6 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-time-picker-page',
   template: `
   <h2>Material Design Time Picker</h2>
+  <p>
+    I am taking steps to contribute to one of the most widely used, open source design system in web development.
+  </p>
   <section>
     <p>
       <img class="material" src="../../assets/material.png">
@@ -13,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
       Its goal is to provide a high quality and customizable design system for orgnaizations which cannot develop their own.
       By doing so, Material Design unifies a user's expereince across plaforms. It considers all platforms such as
       native Android and iOS, desktop and mobile web, as well as Desktop applications.
-      I use Material Design as the design system for <a routerLink="/cutcal">CutCal</a>.
+      I use Material Design as the design system for <a routerLink="/cutcal">CutCal</a> and for this website.
     </p>
   </section>
 
@@ -27,8 +30,8 @@ import { Component, OnInit } from '@angular/core';
       <a href="https://material.angular.io/" target="_blank">Angular Material</a> is a component library which applies
       Material Design for the <a href="https://angular.io/" target="_blank">Angular</a> framework. Although, at Citi,
       <a href="https://getbootstrap.com/2.3.2/" target="_blank"> Bootstrap</a> serves as the foundation of the UI design
-      for our Digital Design Language, Angular Material has greatly inspired many of the design choices that I have made
-      with respect to the API, project architecture, and our "developers are a customer too" approach to development.
+      for our Digital Design Language, Angular Material has greatly inspired many of my decisions
+      with respect to the library API, project architecture, and our "developers as a customer" approach to development.
     </p>
   </section>
 

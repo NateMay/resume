@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
       <mat-list-item>
         <mat-icon mat-list-icon>emoji_objects</mat-icon>
         <h3 mat-line>Design Philosophy</h3>
-        <p mat-line>Architecture, Life Cycles & Ethics</p>
+        <p mat-line>Architecture, Evolution & Ethics</p>
       </mat-list-item>
     </button>
 
@@ -51,7 +51,7 @@ import { Component, OnInit } from '@angular/core';
       <mat-list-item>
         <img mat-list-icon src="../../assets/cutcal.png">
         <h3 mat-line>CutCal</h3>
-        <p mat-line> Meal/Nutrition Planner </p>
+        <p mat-line> Meal & Nutrition Calendar</p>
       </mat-list-item>
     </button>
 
@@ -75,7 +75,7 @@ import { Component, OnInit } from '@angular/core';
       #rla5="routerLinkActive"
       [attr.tabindex]="(rla5.isActive ? -1: 0)">
       <mat-list-item>
-        <img mat-list-icon src="../../assets/me.jpg">
+        <img mat-list-icon src="../../assets/me.png">
         <h3 mat-line>About Nate</h3>
         <p mat-line> </p>
       </mat-list-item>

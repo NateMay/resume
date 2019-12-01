@@ -5,7 +5,7 @@ import { IImage } from 'ng-simple-slideshow';
   selector: 'app-about-me',
   template: `
     <div fxLayout="row" fxLayoutGap="32px">
-      <div fxFlex="400px;">
+      <div fxFlex="45%">
         <slideshow
           [minHeight]="'425px'"
           [autoPlayInterval]="5000"
@@ -88,7 +88,7 @@ export class AboutMeComponent implements OnInit {
       caption: 'Photo op on patrol in Afganistan (2010)'
     }, {
       url: '../../assets/china.jpg',
-      caption: 'T&M trip to China (2013)'
+      caption: 'Technology & Managment (minor) trip to China (2013)'
     }, {
       url: '../../assets/grad.jpg',
       caption: 'University of Illinois graduation. Double major, double minor, Dean\'s Scroll, Senior Honorary 100 (2014)'
@@ -100,7 +100,7 @@ export class AboutMeComponent implements OnInit {
       caption: 'I love chess, but I\'m in a rough spot here (2018)'
     }, {
       url: '../../assets/hockey.jpg',
-      caption: 'Hockey in front of a small audience (2019)'
+      caption: 'Hockey for a small audience (2019)'
     }, {
       url: '../../assets/carousel.png',
       caption: 'Coding this carousel. I love coding (2019)'

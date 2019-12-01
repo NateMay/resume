@@ -19,8 +19,8 @@ import { Component, OnInit } from '@angular/core';
       <br><br>
       While I was a contractor, Citi transitioned to a new frontend framework called
       <a href="https://angular.io/" target="_blank">Angular</a> and I was able to personally implement many of our componets
-      that I showcase below. After being hired in as technical lead, I have had the opportunity
-      to architect an ecosystem around this, now our primary, library.
+      that I showcase below. After being hired in full time as technical lead, I have had the opportunity
+      to architect an ecosystem around this, now our primary, UI library.
     </p>
   </section>
   <section fxLayout="column">
@@ -199,8 +199,8 @@ import { Component, OnInit } from '@angular/core';
     </p>
     <p>
        As I write this, I'm finding it difficult to concisly
-      convey the complexity and demonstrate my knowledge of application architecture, but the fact that I'm entrusted
-      to create a new container for the main consumer banking website for one of the four biggest banks in Amerrica
+      convey the complexity of this undertaking and demonstrate my knowledge of application architecture, but the fact that I'm entrusted
+      to create a new application container for one of the four biggest banks' primary consumer banking website
       should convey that clearly enough.
     </p>
   </section>
