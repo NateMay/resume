@@ -40,8 +40,7 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-header>
 
         <video width="400" controls mat-card-image alt="CutCal - Meal Planner, Nnutrition Aggregator">
-          <source src="mov_bbb.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
+          <source src="../../assets/cc-intro.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <mat-card-content>
@@ -98,13 +97,17 @@ import { Component, OnInit } from '@angular/core';
       <br>
       <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
         <video width="400" controls alt="CutCal's calendar interface">
-          <source src="" type="video/mp4">
+          <source src="../../assets/cc-calendar.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <p>
-          Inspired by Google Calendar
-          Drag and Drop
-          DrillDown: Year, month, day, meal, recipe, food
+          I have a lot of friends who have, at one point or another, tried to find a utility like CutCall to
+          help them keep track of their diet. They all stopped be because it was too difficult and time consuming
+          to enter their meal information.
+          <br><br>
+          The primary value propotision of CutCal is the drag and drop interface into a calendar inspired by
+          google calendar. While there is a lot of room for improvement, I think this architecture serves well
+          to light the data entry load for users.
         </p>
       </div>
     </mat-tab>
@@ -112,40 +115,37 @@ import { Component, OnInit } from '@angular/core';
     <mat-tab label="Analytics">
       <br>
       <div fxLayout="row" fxLayoutGap="32px">
-        <video width="400" controls alt="CutCal's calendar interface">
-          <source src="" type="video/mp4">
+        <video width="400" controls alt="CutCal's analyitics">
+          <source src="../../assets/analytics.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <p>
-        Analyze page
-        Inspect nutrient
+          Entering data is only half of the solution. The other helf is to provide insights to help users
+          interpret and improve their diet.
+          <br><br>
+          My biggest challenge so far has been to create the data structures which enable nutrition aggregation at the
+          day, meal, recipe, and ingredient level. This also faciliates features which enable users to dig into their diet,
+          determine problematic patterns and make adjustments. The analytics aspect of CutCal may be my biggest design
+          challenge.
         </p>
       </div>
     </mat-tab>
 
-    <mat-tab label="Custom Recipes">
+    <mat-tab label="Foundations">
       <br>
       <div fxLayout="row" fxLayoutGap="32px">
-        <video width="400" controls alt="CutCal's calendar interface">
-          <source src="" type="video/mp4">
+        <video width="400" controls alt="CutCal's foundations">
+          <source src="../../assets/cc-architecture.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <p>
-          minimize data entry
-        </p>
-      </div>
-    </mat-tab>
-
-    <mat-tab label="Higher-Order Design">
-      <br>
-      <div fxLayout="row" fxLayoutGap="32px">
-        <video width="400" controls alt="CutCal's calendar interface">
-          <source src="" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <p>
-          Admin tab
-          automated testing
+          As a team lead and application architect at Citi, I have been able to observe what is required to create
+          and maintain an enterprise application. I have a huge amount of foundation beneath CutCal already including
+          automated testing, internal documentation, test environements, Server side rendering, Service workers, web sockets,
+          the whole nine yards.
+          <br><br>
+          One I round out the features themeselves and implement a design system and architecture, CutCal will be more than
+          a minimum viable product, it will be a minimum viable business.
         </p>
       </div>
     </mat-tab>
@@ -153,16 +153,15 @@ import { Component, OnInit } from '@angular/core';
     <mat-tab label="Planned Features">
       <br>
       <div fxLayout="row" fxLayoutGap="32px">
-        <video width="400" controls alt="CutCal's calendar interface">
-          <source src="" type="video/mp4">
+        <video width="400" controls alt="CutCal's planned features">
+          <source src="../../assets/cc-planned.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <p>
-          Advanced search
-          grocery list
-          pantry inventory
-          chat - virtual nutrition advisors
-          Gamification
+          I'll be the first to admit that my UI needs work. That is what made me first consider design school. Intuitively,
+          I'm confident of certain features like advanced searching, grocery lists, profile pages, etc. There are a lot of
+          features that I am holding off from creating until I can be confident that they are what users want, and I understand
+          how to design those features in a way that they can interact with efficiently.
         </p>
       </div>
 
