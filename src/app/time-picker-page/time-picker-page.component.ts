@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <h2>Material Design Time Picker</h2>
   <p>
-    I am taking steps to contribute to one of the most widely used, open source design system in web development.
+    I am taking steps to contribute to one of the most widely used, open source design systems in web development.
   </p>
   <section>
     <p>
@@ -13,8 +13,8 @@ import { Component, OnInit } from '@angular/core';
       <b>What is Material Design?</b>
       <br><br>
       <a href="https://material.io/" target="_blank">Material Design</a> is an open source design system, created and maintained by Google.
-      Its goal is to provide a high quality and customizable design system for orgnaizations which cannot develop their own.
-      By doing so, Material Design unifies a user's expereince across plaforms. It considers all platforms such as
+      Its goal is to provide a high quality and customizable design system for organizations which cannot develop their own.
+      By doing so, Material Design unifies a user's experience across platforms. It considers all platforms such as
       native Android and iOS, desktop and mobile web, as well as Desktop applications.
       I use Material Design as the design system for <a routerLink="/cutcal">CutCal</a> and for this website.
     </p>
@@ -42,11 +42,11 @@ import { Component, OnInit } from '@angular/core';
       <b>How I Hope to Contribute.</b>
       <br><br>
       As I mention in the <a routerLink="/cutcal">CutCal</a> page, the reason existing meal and planners have
-      not succeeded is because data entry is cumbersome. Becuase meals correspond to a time of day, I required
-      a well designed time picker component, which is noticably missing from Angular Material.
+      not succeeded is because data entry is cumbersome. Because meals correspond to a time of day, I required
+      a well designed time picker component, which is noticeably missing from Angular Material.
       <br><br>
       Taking inspiration from  <a href="https://agranom.github.io/ngx-material-timepicker/">ngx-material-timepicker</a>,
-      I have endevored to more closly align the UI with Material Design, and offer the quaility API expect from
+      I have endeavored to more closely align the UI with Material Design, and offer the quality API expect from
       consumers of Angular Material. I still have progress to make, but ultimately, I plan to make this component open
       source and will seek to merge it into the Angular Material library.
     </p>
@@ -76,7 +76,7 @@ import { Component, OnInit } from '@angular/core';
     <br><br>
 
     <p>
-      You will notice that my design more closely aligns with the look at feel of the Angular Material
+      You will notice that my design more closely aligns with the "look and feel" of the Angular Material
       date picker than does <a href="https://agranom.github.io/ngx-material-timepicker/">ngx-material-timepicker</a>.
     </p>
     <ul>

@@ -27,6 +27,9 @@ import { IImage } from 'ng-simple-slideshow';
         <a class="link" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank" matTooltip="CutCal">
           <img src="../../assets/cutcal.png">
         </a>
+        <a class="link" href="" target="_blank" matTooltip="YouTube Introduction">
+          <img src="../../assets/youtube.png">
+        </a>
         <a mat-icon-button color="primary" style="position: absolute" matTooltip="Resume" href="../../assets/nathan_may.doc">
           <mat-icon style="font-size:45px; margin-left: -30px;">insert_drive_file</mat-icon>
         </a>
@@ -53,18 +56,18 @@ import { IImage } from 'ng-simple-slideshow';
     <h3>Background</h3>
     <p>
       I joined the military after high school because I was promised glory. I didn't find any in Iraq
-      or Afganistan, but I did devlop a passion for learning. I started inviting my free cash, studied
+      or Afghanistan, but I did develop a passion for learning. I started inviting my free cash, studied
       up, and was accepted into the University of Illinois for Finance. I figured that with a Computer Science
       minor I could write an algorithm to make my investment decisions for me.
     </p>
     <p>
       My first job was in tech consulting at <a href="https://www.fticonsulting.com/" target="_blank">FTI consulting</a>.
       There, I discovered my passion for building web applications which take the power of computer information processing
-      and make it available to to you wherever you are.
+      and make it available to you wherever you are.
     </p>
     <p>
       As a contractor at Citi, I became dev lead for my team in five months and was hired in full time not long after.
-      Since then I have been able to take a crumby UI library and make it really good. With my development and application
+      Since then I have been able to take a crummy UI library and make it really good. With my development and application
       architecture skills, my next step is to learn how to design well. With that skill set, I know that I can create some
       amazing things.
     </p>

@@ -15,7 +15,6 @@ import { NavigationEnd, Router } from '@angular/router';
       </button>
 
       <span class="spacer"></span>
-      <img class="header-img" src="../assets/me.png">&nbsp;
       <h1>Nate May</h1>
       <span class="spacer"></span>
 

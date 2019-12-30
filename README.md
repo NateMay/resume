@@ -1,27 +1,44 @@
-# Resume
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+# Tomorrow
 
-## Development server
+- Call Casey
+- proof-read CMU SoP
+- finish the methods flow
+  - create a video for accessibility
+  - massage the transitions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# TODO
 
-## Code scaffolding
+## Writing
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### CMU
 
-## Build
+- proof-read CMU SoP
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Michigan
 
-## Running unit tests
+- 2nd draft Michigan SoP
+- proof-read SoP
+- write Michigan essay question
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### UW
 
-## Running end-to-end tests
+- 2nd draft UW PS
+- proof-read SoP
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### GT
 
-## Further help
+- 2nd draft Michigan SoP
+- proof-read SoP
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Other
+
+- Call Casey
+- write video script
+
+## Porfolio Website
+
+- add personal video youtube link to the profile page
+- finish the methods flow
+  - create a video for accessibility
+  - massage the transitions

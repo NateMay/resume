@@ -33,6 +33,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
+import { MethodComponent } from './method/method.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { TimePickerModule } from './time-picker-page/time-picker/time-picker.mod
     DocumentsComponent,
     AboutMeComponent,
     BeliefsComponent,
+    MethodComponent,
   ],
   imports: [
     BrowserModule,

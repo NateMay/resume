@@ -15,17 +15,17 @@ import { Component, OnInit } from '@angular/core';
       necessary to create and maintain a web product through it entire life cycle, but that won't mean much if I can't
       implement a quality design system.
       <br><br>
-      <b>I'm pursuing a graduate program where I can learn the design process an apply it to my passion project, CutCal.</b>
+      <b>I'm pursuing a graduate program where I can learn the design process and apply it to my passion project, CutCal.</b>
       <br><br>
-      The way I see it, design is a fundamental for CutCal's success and the most challenge aspect.
+      The way I see it, design is a fundamental for CutCal's success and the most challenging aspect.
       <br><br>
-      I hope to convice you of the following:
+      I hope to convince you of the following:
     </p>
     <ul>
       <li>My perspective of design is unique, valid, and gives me direction</li>
       <li>I possess the technical skills to implement a design architecture</li>
-      <li>I will bring a unique design experience with me</li>
-      <li>I have a useful, practical application for these skills in industry</li>
+      <li>I will bring unique design experience with me</li>
+      <li>I have a practical application for these skills in industry</li>
     </ul>
     <p>Thank you for your consideration.
     <br><br>
