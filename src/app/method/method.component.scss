@@ -64,11 +64,18 @@ section {
 .center-spacing{
   height: calc(50vh - 160px) !important;
 }
+.center-spacing-methods {
+  height: calc(50vh - 225px) !important;
+}
 
 #design {
   color: #1a1a1a;
   font-size: 36px;
   margin-bottom: 2px;
+}
+.step {
+  font-weight: 900;
+  color: #3f51b5;
 }
 .definition {
   display: list-item;

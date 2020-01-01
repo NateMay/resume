@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
       </div>
       <div class="noun">noun</div>
       <p class="definition">
-        The process of optimizing the interface between a person and a solution or information.
+        The process of optimizing the interface between a user and a solution or information.
       </p>
       <br>
       <hr class="blue-hr">
@@ -37,8 +37,8 @@ import { Component, OnInit } from '@angular/core';
       <div class="center-spacing"></div>
       <hr class="white-hr">
       <br>
-      <p style="color: #fff; font-size:20px">
-        The "optimal" design is subjective, so designers should apply the scientific method.
+      <p style="color: #fff; font-size:20px; text-align: center;">
+        The "optimal" design is subjective, so designers should apply the <b><u>scientific method</u></b>.
       </p>
       <br>
       <hr class="white-hr">
@@ -48,14 +48,82 @@ import { Component, OnInit } from '@angular/core';
 
     <section class="sticky-element">
       <mat-tab-group>
-        <mat-tab label="Question"> 
-          Needs Identification, before the solution
+
+        <mat-tab label="Question">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Question</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            It's hard to image creating a solution before you understand the problem.
+            Therefore, <b>needs identification</b> should begin each iteration of the engineering process.
+          </p>
+          <br>
+          <hr class="blue-hr">
         </mat-tab>
-        <mat-tab label="Hypothesis"> Ideation </mat-tab>
-        <mat-tab label="Experiment"> A/B testing </mat-tab>
-        <mat-tab label="Data"> Machine Learning </mat-tab>
-        <mat-tab label="Analyze"> Not as a aggregate, but for each person </mat-tab>
-        <mat-tab label="Conclusion"> Ongoing, personalized experience which maximizes utility for every user </mat-tab>
+
+        <mat-tab label="Hypothesis">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Hypothesis</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            I'm saddened to observe web design as a "one and done" process. The <b>ideation</b> step should
+            yield a variety of designs for ongoing trials.
+          </p>
+          <br>
+          <hr class="blue-hr">
+        </mat-tab>
+
+        <mat-tab label="Experiment">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Experiment</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            Design options should be tested in the real world via <b>A/B testing</b>.
+          </p>
+          <br>
+          <hr class="blue-hr">
+        </mat-tab>
+
+        <mat-tab label="Data">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Data</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            <b>Quantitiative metrics</b> should be gathered for both ends of the interface: the user and the feature.
+          </p>
+          <br>
+          <hr class="blue-hr">
+        </mat-tab>
+
+        <mat-tab label="Analyze">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Analyze</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            The goal should not be to select a single, optimal feature. Instead, <b>machine learning</b> should
+            be leveraged to find and deliver the optimal interface per user.
+          </p>
+          <br>
+          <hr class="blue-hr">
+        </mat-tab>
+
+        <mat-tab label="Conclusion">
+          <div class="center-spacing-methods"></div>
+          <span class="step">Conclusion</span>
+          <hr class="blue-hr">
+          <br>
+          <p style="font-size:20px; text-align: center;">
+            A/B testing can then faciliate <b>ongoing, individualization</b> to optimize the any user's interface to the solution.
+          </p>
+          <br>
+          <hr class="blue-hr">
+        </mat-tab>
+
       </mat-tab-group>
       <ng-container *ngTemplateOutlet="down; context: blue"></ng-container>
     </section>
@@ -70,7 +138,11 @@ import { Component, OnInit } from '@angular/core';
         revenue growth and shareholder returns over those of their industry counterparts.
       </q>
       <br><br>
-      <a style="float:right; color: #fff; text-decoration:underline" href="https://www.mckinsey.com/business-functions/mckinsey-design/our-insights/the-business-value-of-design" target="_blank"> - McKinsey & Company</a>
+      <a
+        style="float:right; color: #fff; text-decoration:underline"
+        href="https://www.mckinsey.com/business-functions/mckinsey-design/our-insights/the-business-value-of-design"
+        target="_blank"
+      > - McKinsey & Company</a>
       <br>
       <hr class="white-hr">
       <ng-container *ngTemplateOutlet="down; context: white"></ng-container>
@@ -78,16 +150,28 @@ import { Component, OnInit } from '@angular/core';
 
 
     <section class="sticky-element">
-      <div class="center-spacing"></div>
-      <hr class="blue-hr">
-      <br>
-      <p style="font-size:20px; text-align: center;">
-        Designing in this way not only makes, business sense, we have an ethical obligation to 
-      </p>
-      <br>
-      <hr class="blue-hr">
-      <ng-container *ngTemplateOutlet="down; context: blue"></ng-container>
+      <div class="center-spacing-methods"></div>
+      <div style="width: 100%" fxLayout="row" fxLayoutAlign="space-around center">
+          <iframe
+            fxFlex="100%"
+            fxFlex.gt-sm="50%"
+            height="320px"
+            src="https://www.youtube.com/embed/Fx_ifzzuBaQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+      </div>
+      <br><br><br>
+      <button mat-raised-button
+        color="primary"
+        class="next-section"
+        routerLink="/citi"
+        >
+        Citi<mat-icon>chevron_right</mat-icon>
+      </button>
     </section>
+
 
   </div>
 

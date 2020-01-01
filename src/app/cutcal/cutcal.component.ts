@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cutcal',
   template: `
-  <div fxLayout="row">
+  <div fxLayout="row" #first>
     <img src="../../assets/cutcal.png" style="height: 50px; width: 50px">
     &nbsp;&nbsp;&nbsp;
     <h2> CutCal</h2>
@@ -30,9 +30,9 @@ import { Component, OnInit } from '@angular/core';
     </p>
   </section>
 
-  <section fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
+  <section fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="32px">
 
-      <mat-card class="example-card" fxFlex.gt-sm="400px">
+      <mat-card class="example-card" fxFlex.gt-sm="550px">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>CutCal</mat-card-title>
@@ -414,15 +414,22 @@ import { Component, OnInit } from '@angular/core';
     </mat-expansion-panel>
 
   </mat-accordion>
-  <br><br>
+  <button mat-raised-button
+    color="primary"
+    class="next-section"
+    routerLink="/time-picker"
+    >
+    Time Picker<mat-icon>chevron_right</mat-icon>
+  </button>
   `,
   styleUrls: ['./cutcal.component.scss']
 })
 export class CutcalComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('first', { static: true }) first: ElementRef;
 
   ngOnInit() {
+    this.first.nativeElement.scrollIntoView();
   }
 
 }

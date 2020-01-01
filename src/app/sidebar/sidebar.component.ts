@@ -10,15 +10,15 @@ import { Component, OnInit } from '@angular/core';
     <h2>What I Believe</h2>
 
     <button
-      routerLink="/beliefs"
+      routerLink="/method"
       routerLinkActive="active-link"
       #rla1="routerLinkActive"
       [attr.tabindex]="(rla1.isActive ? -1: 0)">
 
       <mat-list-item>
         <mat-icon mat-list-icon>emoji_objects</mat-icon>
-        <h3 mat-line>Design Philosophy</h3>
-        <p mat-line>Architecture, Evolution & Ethics</p>
+        <h3 mat-line>My Design Perspective</h3>
+        <p mat-line>Definition, Method, & Ethics</p>
       </mat-list-item>
     </button>
 

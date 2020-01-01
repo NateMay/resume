@@ -34,6 +34,13 @@ import { Component, OnInit } from '@angular/core';
     Nate May
     </p>
   </div>
+  <button mat-raised-button
+    color="primary"
+    class="next-section"
+    routerLink="/method"
+    >
+    My Design Perspective<mat-icon>chevron_right</mat-icon>
+  </button>
   `,
   styleUrls: ['./home.component.scss']
 })

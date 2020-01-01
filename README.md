@@ -1,12 +1,4 @@
 
-# Tomorrow
-
-- Call Casey
-- proof-read CMU SoP
-- finish the methods flow
-  - create a video for accessibility
-  - massage the transitions
-
 # TODO
 
 ## Writing
@@ -30,15 +22,3 @@
 
 - 2nd draft Michigan SoP
 - proof-read SoP
-
-## Other
-
-- Call Casey
-- write video script
-
-## Porfolio Website
-
-- add personal video youtube link to the profile page
-- finish the methods flow
-  - create a video for accessibility
-  - massage the transitions

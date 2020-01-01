@@ -27,7 +27,7 @@ import { IImage } from 'ng-simple-slideshow';
         <a class="link" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank" matTooltip="CutCal">
           <img src="../../assets/cutcal.png">
         </a>
-        <a class="link" href="" target="_blank" matTooltip="YouTube Introduction">
+        <a class="link" href="https://youtu.be/tHYDZOiGXAk" target="_blank" matTooltip="YouTube Introduction">
           <img src="../../assets/youtube.png">
         </a>
         <a mat-icon-button color="primary" style="position: absolute" matTooltip="Resume" href="../../assets/nathan_may.doc">
@@ -72,6 +72,13 @@ import { IImage } from 'ng-simple-slideshow';
       amazing things.
     </p>
     </section>
+    <button mat-raised-button
+      color="primary"
+      class="next-section"
+      routerLink="/home"
+      >
+      Home<mat-icon>chevron_right</mat-icon>
+    </button>
   `,
   styleUrls: ['./about-me.component.scss']
 })
@@ -109,8 +116,6 @@ export class AboutMeComponent implements OnInit {
       caption: 'Coding this carousel. I love coding (2019)'
     }
   ];
-
-
 
   constructor() { }
 

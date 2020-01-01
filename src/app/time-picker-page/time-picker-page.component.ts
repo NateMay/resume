@@ -106,7 +106,13 @@ import { Component, OnInit } from '@angular/core';
 
   </section>
 
-  <br><br>
+  <button mat-raised-button
+    color="primary"
+    class="next-section"
+    routerLink="/about-me"
+    >
+    About Nate<mat-icon>chevron_right</mat-icon>
+  </button>
 
   `,
   styleUrls: ['./time-picker-page.component.scss']

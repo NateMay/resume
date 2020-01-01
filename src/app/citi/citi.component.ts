@@ -26,9 +26,9 @@ import { Component, OnInit } from '@angular/core';
 
   <section fxLayout="column">
     <h2>My Work</h2><br>
-    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="32px">
 
-      <mat-card class="example-card" fxFlex="400px">
+      <mat-card class="example-card" fxFlex.gt-sm="550px">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Tour of Common UI Components</mat-card-title>
@@ -51,7 +51,7 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-content>
       </mat-card>
 
-      <div>
+      <div fxFlex>
         <p>
         To keep up with the rapidly evolving <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
         ecosystem, achieve compliance, and facilitate Citi's development tempo, our team has been able to implement the 
@@ -229,6 +229,13 @@ import { Component, OnInit } from '@angular/core';
       should convey that clearly enough.
     </p>
   </section>
+  <button mat-raised-button
+    color="primary"
+    class="next-section"
+    routerLink="/cutcal"
+    >
+    CutCal<mat-icon>chevron_right</mat-icon>
+  </button>
   `,
   styleUrls: ['./citi.component.scss']
 })
