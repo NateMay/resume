@@ -27,10 +27,13 @@ import { IImage } from 'ng-simple-slideshow';
         <a class="link" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank" matTooltip="CutCal">
           <img src="../../assets/cutcal.png">
         </a>
-        <a class="link" href="https://youtu.be/tHYDZOiGXAk" target="_blank" matTooltip="YouTube Introduction">
+        <!-- <a class="link" href="https://youtu.be/tHYDZOiGXAk" target="_blank" matTooltip="YouTube Introduction">
           <img src="../../assets/youtube.png">
+        </a> -->
+        <a class="link" href="https://stackoverflow.com/users/10235442/nate-may?tab=profile" target="_blank" matTooltip="StackOverflow">
+          <img src="../../assets/stackoverflow.png">
         </a>
-        <a mat-icon-button color="primary" style="position: absolute" matTooltip="Resume" href="../../assets/nathan_may.doc">
+        <a mat-icon-button color="primary" style="position: absolute" matTooltip="Resume" target="_blank" href="../../assets/resume.pdf">
           <mat-icon style="font-size:45px; margin-left: -30px;">insert_drive_file</mat-icon>
         </a>
         <br><br>
@@ -51,7 +54,7 @@ import { IImage } from 'ng-simple-slideshow';
         </p>
       </div>
     </div>
-    
+
     <section>
     <h3>Background</h3>
     <p>
@@ -72,6 +75,18 @@ import { IImage } from 'ng-simple-slideshow';
       amazing things.
     </p>
     </section>
+    <section fxLayout="row" fxLayoutAlign="center center">
+
+      <iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tHYDZOiGXAk"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+    </section>
+
     <button mat-raised-button
       color="primary"
       class="next-section"
