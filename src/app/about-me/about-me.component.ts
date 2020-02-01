@@ -56,35 +56,65 @@ import { IImage } from 'ng-simple-slideshow';
     </div>
 
     <section>
-    <h3>Background</h3>
-    <p>
-      I joined the military after high school because I was promised glory. I didn't find any in Iraq
-      or Afghanistan, but I did develop a passion for learning. I started inviting my free cash, studied
-      up, and was accepted into the University of Illinois for Finance. I figured that with a Computer Science
-      minor I could write an algorithm to make my investment decisions for me.
-    </p>
-    <p>
-      My first job was in tech consulting at <a href="https://www.fticonsulting.com/" target="_blank">FTI consulting</a>.
-      There, I discovered my passion for building web applications which take the power of computer information processing
-      and make it available to you wherever you are.
-    </p>
-    <p>
-      As a contractor at Citi, I became dev lead for my team in five months and was hired in full time not long after.
-      Since then I have been able to take a crummy UI library and make it really good. With my development and application
-      architecture skills, my next step is to learn how to design well. With that skill set, I know that I can create some
-      amazing things.
-    </p>
+      <h3>Background</h3>
+      <p>
+        I joined the military after high school because I was promised glory. I didn't find any in Iraq
+        or Afghanistan, but I did develop a passion for learning. I started inviting my free cash, studied
+        up, and was accepted into the University of Illinois for Finance. I figured that with a Computer Science
+        minor I could write an algorithm to make my investment decisions for me.
+      </p>
+      <p>
+        My first job was in tech consulting at <a href="https://www.fticonsulting.com/" target="_blank">FTI consulting</a>.
+        There, I discovered my passion for building web applications which take the power of computer information processing
+        and make it available to you wherever you are.
+      </p>
+      <p>
+        As a contractor at <a href="https://www.citigroup.com/citi/" target="_blank">Citi</a>, I became dev lead for my team
+        in five months and was hired in full time not long after. Since then I have been able to take a crummy UI library and
+        make it really good. With my coding skill and experience with application architecture, my next step is to learn how
+        to design well. With design as my compass, I know that I can create some amazing things.
+      </p>
     </section>
-    <section fxLayout="row" fxLayoutAlign="center center">
+    <section fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="center center" fxLayoutGap="20px">
 
-      <iframe width="560"
-        height="315"
+      <iframe
+        fxFlex="50%"
+        height="300px"
         src="https://www.youtube.com/embed/tHYDZOiGXAk"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
 
+      <iframe
+        fxFlex="50%"
+        height="300px"
+        src="https://www.youtube.com/embed/1Fe5Rou9Ng4"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+    </section>
+
+    <section>
+      <h3>How I See Me</h3>
+      <p>
+        Although I consider myself a loner and an introvert, I'm not anti-social; I just enjoy my alone-time
+        and require it to recharge. My natural intensity, frankness, and confidence tends to command respect, but
+        can also be polarizing, but I've improved in this regard.
+      </p>
+      <p>
+        I think my strongest quality is my communication skills, but that has recently become a
+        double-edged sword. I consider myself a great communicator because I can identify communication traps,
+        so I tend to speak with precision. However, I find that have to ask others to repeat themselves more often
+        than others. It's not that I'm a bad listener, I think I just get distracted while resolving ambiguities.
+      </p>
+      <p>
+        Considering how much I have grown, I'm happy to consider this my biggest weakness. In the past, arrogance,
+        vulgar bluntness, and aggressiveness have been my personal weaknesses. I am happy to have conquered these
+        flaws and feel that I am the best version of myself to date.
+      </p>
     </section>
 
     <button mat-raised-button

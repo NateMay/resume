@@ -62,7 +62,7 @@ import { Component, OnInit } from '@angular/core';
       [attr.tabindex]="(rla4.isActive ? -1: 0)">
       <mat-list-item>
         <mat-icon mat-list-icon>schedule</mat-icon>
-        <h3 mat-line>TimePicker</h3>
+        <h3 mat-line>Time Picker</h3>
         <p mat-line> A Material Design Addon </p>
       </mat-list-item>
     </button>

@@ -54,7 +54,7 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Question</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
+          <p style="font-size:20px;">
             It's hard to image creating a solution before you understand the problem.
             Therefore, <b>needs identification</b> should begin each iteration of the engineering process.
           </p>
@@ -67,7 +67,7 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Hypothesis</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
+          <p style="font-size:20px;">
             I'm saddened to observe web design as a "one and done" process. The <b>ideation</b> step should
             yield a variety of designs for ongoing trials.
           </p>
@@ -80,7 +80,7 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Experiment</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
+          <p style="font-size:20px;">
             Design options should be tested in the real world via <b>A/B testing</b>.
           </p>
           <br>
@@ -92,8 +92,8 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Data</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
-            <b>Quantitiative metrics</b> should be gathered for both ends of the interface: the user and the feature.
+          <p style="font-size:20px;">
+            <b>Quantitative metrics</b> should be gathered for both ends of the interface: the user and the feature.
           </p>
           <br>
           <hr class="blue-hr">
@@ -104,7 +104,7 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Analyze</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
+          <p style="font-size:20px;">
             The goal should not be to select a single, optimal feature. Instead, <b>machine learning</b> should
             be leveraged to find and deliver the optimal interface per user.
           </p>
@@ -117,8 +117,8 @@ import { Component, OnInit } from '@angular/core';
           <span class="step">Conclusion</span>
           <hr class="blue-hr">
           <br>
-          <p style="font-size:20px; text-align: center;">
-            A/B testing can then faciliate <b>ongoing, individualization</b> to optimize the any user's interface to the solution.
+          <p style="font-size:20px;">
+            A/B testing can then facilitate <b>ongoing, individualization</b> to optimize any user's interface to the solution.
           </p>
           <br>
           <hr class="blue-hr">
@@ -133,7 +133,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="center-spacing"></div>
       <hr class="white-hr">
       <br>
-      <q style="font-size: 20px; text-align: center;">
+      <q style="font-size: 20px;">
         For companies that make it into the top quartile of [design], the prizes are as rich as doubling their
         revenue growth and shareholder returns over those of their industry counterparts.
       </q>
