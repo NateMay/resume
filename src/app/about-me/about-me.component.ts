@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { IImage } from 'ng-simple-slideshow';
+import { IImage } from '../slideshow/IImage';
 
 @Component({
   selector: 'app-about-me',
   template: `
     <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
       <div fxFlex="100%" fxFlex.gt-sm="45%">
-        <slideshow
+        <app-slideshow
           [minHeight]="'425px'"
           [autoPlayInterval]="5000"
           [autoPlay]="true"
           [showArrows]="true"
           [imageUrls]="images">
-        </slideshow>
+        </app-slideshow>
       </div>
       <div fxFlex>
         <h2>Nathaniel Adam May</h2>

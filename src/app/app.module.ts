@@ -20,7 +20,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SlideshowModule } from 'ng-simple-slideshow';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,10 +29,11 @@ import { CitiComponent } from './citi/citi.component';
 import { CutcalComponent } from './cutcal/cutcal.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HomeComponent } from './home/home.component';
+import { MethodComponent } from './method/method.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
-import { MethodComponent } from './method/method.component';
 
 @NgModule({
   declarations: [
