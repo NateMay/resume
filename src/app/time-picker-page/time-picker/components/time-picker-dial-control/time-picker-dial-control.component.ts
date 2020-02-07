@@ -36,7 +36,7 @@ export class TimepickerDialControlComponent implements AfterViewInit{
   @Output() timeUnitChanged = new EventEmitter<TimeUnit>();
   @Output() timeChanged = new EventEmitter<ClockFaceTime>();
 
-  @ViewChild('input', { static: false }) input: ElementRef;
+  @ViewChild('input') input: ElementRef;
 
   ngAfterViewInit() {
     if (this.isFirst && this.input) setTimeout(() => {

@@ -110,7 +110,7 @@ export class TimepickerDialogComponent implements OnDestroy {
     this._minutesGap = gap <= 59 ? gap : 1;
   }
 
-  @ViewChild('timepickerww', { static: false }) timepickerComponent: ElementRef;
+  @ViewChild('timepickerww') timepickerComponent: ElementRef;
 
   get minutesGap(): number {
     return this._minutesGap;

@@ -52,7 +52,7 @@ export class AppComponent {
 
   opened = true;
 
-  @ViewChild(MatDrawer, { static: false }) drawer: MatDrawer;
+  @ViewChild(MatDrawer) drawer: MatDrawer;
 
   constructor(private router: Router) {
     this.opened = window.innerWidth > 600;
