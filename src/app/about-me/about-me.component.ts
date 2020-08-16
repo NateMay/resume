@@ -18,24 +18,31 @@ import { IImage } from '../slideshow/IImage';
         <h2>Nathaniel Adam May</h2>
         <h6 class="hyphens">Software Developer - Application Architect </h6>
         <br>
-        <a class="link" href="https://www.linkedin.com/in/nathaniel-may-9b1b53b/" target="_blank" matTooltip="linkedIn">
-          <img src="../../assets/linkedin.png">
-        </a>
-        <a class="link" href="https://www.facebook.com/nate.may.773" target="_blank" matTooltip="facebook">
-          <img src="../../assets/facebook.png">
-        </a>
-        <a class="link" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank" matTooltip="CutCal">
-          <img src="../../assets/cutcal.png">
-        </a>
-        <!-- <a class="link" href="https://youtu.be/tHYDZOiGXAk" target="_blank" matTooltip="YouTube Introduction">
-          <img src="../../assets/youtube.png">
-        </a> -->
-        <a class="link" href="https://stackoverflow.com/users/10235442/nate-may?tab=profile" target="_blank" matTooltip="StackOverflow">
-          <img src="../../assets/stackoverflow.png">
-        </a>
-        <a mat-icon-button color="primary" style="position: absolute" matTooltip="Resume" target="_blank" href="../../assets/resume.pdf">
-          <mat-icon style="font-size:45px; margin-left: -30px;">insert_drive_file</mat-icon>
-        </a>
+        <div fxLayout="row">
+          <a class="link" href="https://www.linkedin.com/in/nathaniel-may-9b1b53b/" target="_blank" matTooltip="linkedIn">
+            <img src="../../assets/linkedin.png">
+          </a>
+          <a class="link" href="https://www.facebook.com/nate.may.773" target="_blank" matTooltip="facebook">
+            <img src="../../assets/facebook.png">
+          </a>
+          <a class="link" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank" matTooltip="CutCal">
+            <img src="../../assets/cutcal.png">
+          </a>
+          <a class="link" href="https://youtu.be/tHYDZOiGXAk" target="_blank" matTooltip="YouTube Introduction">
+            <img src="../../assets/youtube.jpg">
+          </a>
+          <a class="link" href="https://stackoverflow.com/users/10235442/nate-may?tab=profile" target="_blank" matTooltip="StackOverflow">
+            <img src="../../assets/stackoverflow.png">
+          </a>
+          <button mat-icon-button color="primary" aria-label="resume" [matMenuTriggerFor]="menu" matTooltip="Resume">
+            <mat-icon style="font-size:45px; margin-left: -30px;">insert_drive_file</mat-icon>
+          </button>
+        </div>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item target="_blank" href="https://docs.google.com/document/d/1ksTlh75EZ3lKbpjw9KRz0OKNzqjbpPiBxsjhso8XKZg/edit?usp=sharing">Digital (with links)</a>
+          <a mat-menu-item target="_blank" href="https://docs.google.com/document/d/1eIkMfPTi6QJIv-6DCcHHqHB_pM6nysvK6YpTTFW86Ak/edit?usp=sharing">Print only</a>
+        </mat-menu>
+
         <br><br>
         <h3>Hobbies</h3>
         <ul style="padding-left: 18px;">

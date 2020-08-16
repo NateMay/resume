@@ -30,6 +30,7 @@ import { CutcalComponent } from './cutcal/cutcal.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HomeComponent } from './home/home.component';
 import { MethodComponent } from './method/method.component';
+import { ResumeLayoutComponent } from './resume-layout/resume-layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
@@ -47,6 +48,7 @@ import { TimePickerModule } from './time-picker-page/time-picker/time-picker.mod
     AboutMeComponent,
     BeliefsComponent,
     MethodComponent,
+    ResumeLayoutComponent
   ],
   imports: [
     BrowserModule,

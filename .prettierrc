@@ -1,0 +1,21 @@
+{
+  "bracketSpacing": true,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "overrides": [
+      {
+          "files": "*.spec.ts",
+          "options": {
+              "semi": true
+          }
+      },
+      {
+          "files": ["*.html"],
+          "options": {
+              "tabWidth": 4
+          }
+      }
+  ]
+}
