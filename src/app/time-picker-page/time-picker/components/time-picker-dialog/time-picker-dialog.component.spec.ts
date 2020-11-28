@@ -1,5 +1,5 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { ClockFaceTime } from '../../models/clock-face-time.interface';
 import { TimePeriod } from '../../models/time-period.enum';
 import { TimeUnit } from '../../models/time-unit.enum';
@@ -70,7 +70,7 @@ describe('TimepickerComponent', () => {
     expect(component.minutesGap).toBeUndefined();
   });
 
-  it('should change timeUnit to MINUTE and emit selected hour', async(() => {
+  it('should change timeUnit to MINUTE and emit selected hour', waitForAsync(() => {
     const hour = 10;
 
     expect(component.activeTimeUnit).toBe(TimeUnit.HOUR);

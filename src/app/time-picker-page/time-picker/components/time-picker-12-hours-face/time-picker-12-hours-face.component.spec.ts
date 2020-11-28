@@ -1,5 +1,5 @@
 import { NO_ERRORS_SCHEMA, SimpleChanges } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { TimePeriod } from '../../models/time-period.enum';
 import * as TimepickerTime from '../../utils/timepicker-time.utils';
 import { Timepicker12HoursFaceComponent } from './time-picker-12-hours-face.component';
@@ -60,7 +60,7 @@ describe('Timepicker12HoursFaceComponent', () => {
     expect(component.hoursList.length).toBe(12);
   });
 
-  it('should emit selected hour (12hr format)', async(() => {
+  it('should emit selected hour (12hr format)', waitForAsync(() => {
     const time = 10;
 
     component.hourSelected.subscribe(hour => expect(hour).toBe(time));

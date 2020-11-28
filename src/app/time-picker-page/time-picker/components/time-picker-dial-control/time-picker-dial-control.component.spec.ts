@@ -1,5 +1,5 @@
 import { NO_ERRORS_SCHEMA, SimpleChanges } from '@angular/core';
-import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { TimeUnit } from '../../models/time-unit.enum';
 import { getHours } from '../../utils/timepicker-time.utils';
 import { TimepickerDialControlComponent } from './time-picker-dial-control.component';
@@ -18,7 +18,7 @@ describe('TimepickerDialControlComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('should set current time to previous time, change time unit', async(() => {
+  it('should set current time to previous time, change time unit', waitForAsync(() => {
     component.timeUnitChanged.subscribe(unit => expect(unit).toBe(TimeUnit.MINUTE));
 
     component._time = '10';
@@ -100,7 +100,7 @@ describe('TimepickerDialControlComponent', () => {
     // expect(component._time).toBe('4');
   });
 
-  it('should format time', async(() => {
+  it('should format time', waitForAsync(() => {
 
     component._time = '2';
     component.previousTime = 4;
