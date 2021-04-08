@@ -2,7 +2,9 @@
  styles adapted from https://www.w3schools.com/w3css/4/w3.css
  arrow styles adapted from https://codepen.io/minustalent/pen/Frhaw
  */
-
+:host {
+  display: block;
+}
 $border-color: darken(#FFF, 5%);
 
 .display-none {

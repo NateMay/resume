@@ -1,7 +1,7 @@
 export interface IImage {
     url: string | null;
     href?: string;
-    clickAction?: Function;
+    clickAction?: () => any;
     caption?: string;
     title?: string;
     backgroundSize?: string;

@@ -1,0 +1,40 @@
+
+@import '~@angular/material/theming';
+
+h1 {
+  color: #465a65;
+  text-shadow: 0 5px 5px  rgba(0,0,0,.2), 
+  0 8px 10px rgba(0,0,0,.14), 
+  0 3px 14px rgba(0,0,0,.12);
+}
+
+.world {
+  background-image: url('../../assets/camogen.png');
+  position: relative;
+  display: block;
+  height: 20vh;
+  margin-bottom: 70px;
+  div{
+    position: absolute;
+    top: 8vh;
+    width: min(90%, 400px);
+    background: linear-gradient(0deg, rgb(70 90 101) 11%, rgb(74 205 217) 80%);
+    border: 4px solid #465a65;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  img {
+    margin: -1px 0 -5px;
+  }
+}
+
+.app-slideshow {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px double #576a71;
+  @include mat-elevation(5);
+}
+

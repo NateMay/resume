@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { Action, AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument, DocumentChangeAction, DocumentSnapshotDoesNotExist, DocumentSnapshotExists, QueryFn } from '@angular/fire/firestore'
-import * as firebase from 'firebase/app'
+import firebase from 'firebase'
 import { Observable } from 'rxjs'
 import { first, map, tap } from 'rxjs/operators'
 

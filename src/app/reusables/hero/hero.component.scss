@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+:host {
+  position: relative;
+  display: block;
+  height: 20vh;
+  margin-bottom: 70px;
+  @include mat-elevation(5);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  background: #ddd;
+  div{
+    position: absolute;
+    top: 8vh;
+    width: min(90%, 400px);
+    background: linear-gradient(0deg, rgb(70 90 101) 11%, rgb(74 205 217) 80%);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include mat-elevation(10);
+    border-radius: 16px;
+  }
+  ::ng-deep img {
+    vertical-align: middle;
+    border-radius: 16px;
+  }
+}

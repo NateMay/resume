@@ -12,6 +12,7 @@ const FIRST_SLIDE_KEY = makeStateKey<any>('firstSlide');
 // tslint:disable:no-output-on-prefix
 @Component({
   selector: 'app-slideshow',
+  host: {'class': 'app-slideshow'},
   templateUrl: './slideshow.component.html',
   styleUrls: ['./slideshow.component.scss'],
   providers: [PointerService],

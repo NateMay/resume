@@ -3,10 +3,11 @@
   display: block;
 }
 
-@media only screen and (min-width: 600px) {
-  :host {
-    margin: 32px;
-  }
+h1 {
+  color: #465a65;
+  text-shadow: 0 5px 5px  rgba(0,0,0,.2), 
+  0 8px 10px rgba(0,0,0,.14), 
+  0 3px 14px rgba(0,0,0,.12);
 }
 
 

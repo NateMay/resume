@@ -1,6 +1,13 @@
+
+
 :host {
-  margin: 16px;
   display: block;
+  height: 100%;
+  background: #323639;
+}
+object {
+  width:100%;
+  height:100%;
 }
 
 @mixin linear-gradient($top, $bottom){
@@ -55,8 +62,8 @@
   resize: none;
 }
 
-@media only screen and (min-width: 600px) {
-  :host {
-    margin: 32px;
-  }
-}
+// @media only screen and (min-width: 600px) {
+//   :host {
+//     margin: 32px;
+//   }
+// }

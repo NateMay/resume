@@ -2,37 +2,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cutcal',
+  host: {class: 'container'},
   template: `
-  <div fxLayout="row" #first>
-    <img src="../../assets/cutcal.png" style="height: 50px; width: 50px">
-    &nbsp;&nbsp;&nbsp;
-    <h2> CutCal</h2>
-  </div>
-  <p>Meal Calendar, Nutrition Aggregator</p>
-  <a mat-raised-button color="primary" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank">Visit CutCal</a>
-  <section fxLayout="column">
-    <h2>Inspiration for CutCal</h2>
-    <p>
-      As a society, we recognize the health benefits of a good diet, but we don't have a sound understanding
-      of what comprises a quality diet. We iterate through diets like Paleo, Atkins, and Keto that
-      characterize foods as either good or bad. This does not align with the contemporary paradigm from
-      the nutrition sciences which emphasises the insufficiencies and excess of individual nutrients in
-      one’s diet.
-      <br><br>
-      Why do we turn to these fad diets? Because they are “solutions” simple enough for us
-      to interface with. We have no current means of aggregating the granular data underlying our diets,
-      so we simplify.
-      <br><br>
-      The mission of CutCal is to simplify the process of entering consumption data, organize it usefully,
-      provide comprehensible insights, facilitate discovery, and all in all, empower people to better
-      <span class="tip" matTooltip="Design is the process of optimizing the interface between a person and a solution or information">interface</span>
-      with the otherwise elusive solutions from the nutrition sciences.
-    </p>
-  </section>
-
+  <h1>CutCal</h1>
   <section fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="32px">
 
-      <mat-card class="example-card" fxFlex.gt-sm="550px">
+      <mat-card class="example-card" fxFlex.gt-sm="50">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>CutCal</mat-card-title>
@@ -49,7 +24,6 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
         ></iframe>
 
         <mat-card-content>
-          <a mat-raised-button color="primary" href="https://cutcal.com/calendar/month/(dmy:28-1-2020)" target="_blank">Visit CutCal</a>
           <p class="no-first-letter">
             I created CutCal single-handedly but it is still a work in progress.
             I've nearly completed the foundation of the data architecture.
@@ -192,244 +166,29 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
   </mat-tab-group>
 
-  <br><br><br><br>
+  <section fxLayout="column">
+    <h2>Inspiration for CutCal</h2>
+    <p>
+      As a society, we recognize the health benefits of a good diet, but we don't have a sound understanding
+      of what comprises a quality diet. We iterate through diets like Paleo, Atkins, and Keto that
+      characterize foods as either good or bad. This does not align with the contemporary paradigm from
+      the nutrition sciences which emphasises the insufficiencies and excess of individual nutrients in
+      one’s diet.
+      <br><br>
+      Why do we turn to these fad diets? Because they are “solutions” simple enough for us
+      to interface with. We have no current means of aggregating the granular data underlying our diets,
+      so we simplify.
+      <br><br>
+      The mission of CutCal is to simplify the process of entering consumption data, organize it usefully,
+      provide comprehensible insights, facilitate discovery, and all in all, empower people to better
+      <span class="tip" matTooltip="Design is the process of optimizing the interface between a person and a solution or information">interface</span>
+      with the otherwise elusive solutions from the nutrition sciences.
+    </p>
+  </section>
 
-  <h2>Other Attempts to Solve the Same Problem</h2>
-
-  <p>
-    Novel attempts have been made to interface people with granular dietary information, but these fall short because of design.
-    Data entry is cumbersome, insight discovery is poor, and in some cases, the UI is just plain bad. CutCal relies on the
-    assumption that if such burdens are minimized and the benefits are optimized, then more people will be willing to interface
-    with such a tool to garner insights into their nutrition.
-  </p>
-
-  <br><br>
-
-  <mat-accordion>
-
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>MyFitnessPal by Under Aromour</mat-panel-title>
-      </mat-expansion-panel-header>
-
-      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
-
-        <mat-card class="example-card" fxFlex="400px">
-          <mat-card-header>
-            <div mat-card-avatar class="under-armour"></div>
-            <mat-card-title>MyFitnessPal</mat-card-title>
-            <mat-card-subtitle>Meal Diary</mat-card-subtitle>
-          </mat-card-header>
-
-          <iframe
-            mat-card-image
-            width="400"
-            height="260"
-            src="https://www.youtube.com/embed/fu9RKqlmD1Q"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-
-          <mat-card-content>
-            <p class="no-first-letter">
-            MyFitnessPal is the most successful competitor in the space
-            </p>
-          </mat-card-content>
-        </mat-card>
-
-        <div fxFlex="calc(100% - 400px)">
-          <mat-list>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Only ~20 nutrition data points</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Drag and Drop Data Entry</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:green">check</mat-icon>
-              <span>Custom Recipe Creation for Reuse</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Calendar Interface like Google Calendar</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Multi-Level Nutrition Aggregation</span>
-            </mat-list-item>
-            <mat-list-item>
-            <mat-icon style="color:red">close</mat-icon>
-              <span>Robust Data Visualization and Inspection Tools</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Generates Grocery List & Compiles Home Inventory</span>
-            </mat-list-item>
-          </mat-list>
-        </div>
-
-      </div>
-
-    </mat-expansion-panel>
-
-
-
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>MyFoodDiary</mat-panel-title>
-      </mat-expansion-panel-header>
-
-      <div fxLayout="row">
-
-        <mat-card class="example-card" fxFlex="400px">
-          <mat-card-header>
-            <div mat-card-avatar class="under-armour"></div>
-            <mat-card-title>MyFoodDiary</mat-card-title>
-            <mat-card-subtitle>Nutrition Tracker</mat-card-subtitle>
-          </mat-card-header>
-
-          <iframe src="https://player.vimeo.com/video/198867954"
-            mat-card-image
-            width="640"
-            height="240"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-
-          <mat-card-content>
-            <p class="no-first-letter">
-              MyFoodDiary has the best UX and features in this space
-            </p>
-          </mat-card-content>
-        </mat-card>
-
-        <div fxFlex="calc(100% - 400px)">
-          <mat-list>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Only ~30 nutrition data points</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Drag and Drop Data Entry</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:green">check</mat-icon>
-              <span>Custom Recipe Creation for Reuse</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Calendar Interface like Google Calendar</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Multi-Level Nutrition Aggregation</span>
-            </mat-list-item>
-            <mat-list-item>
-            <mat-icon style="color:green">check</mat-icon>
-              <span>Robust Data Visualization and Inspection Tools</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Generates Grocery List & Compiles Home Inventory</span>
-            </mat-list-item>
-          </mat-list>
-        </div>
-
-      </div>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>Lifesum</mat-panel-title>
-      </mat-expansion-panel-header>
-
-      <div fxLayout="row">
-
-        <mat-card class="example-card" fxFlex="400px">
-          <mat-card-header>
-            <div mat-card-avatar class="under-armour"></div>
-            <mat-card-title>Lifesum</mat-card-title>
-            <mat-card-subtitle>Diet Planner</mat-card-subtitle>
-          </mat-card-header>
-
-          <iframe
-            mat-card-image
-            width="400"
-            height="260"
-            src="https://www.youtube.com/embed/QDZJjKWD5V8"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-
-          <mat-card-content>
-            <p class="no-first-letter">
-            Lifesum provides more receipes than alternatives, but is mobile only and provides
-            minimal data insights.
-            </p>
-          </mat-card-content>
-        </mat-card>
-
-        <div fxFlex="calc(100% - 400px)">
-          <mat-list>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Only ~15 nutrition data points</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Drag and Drop Data Entry</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Custom Recipe Creation for Reuse</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Calendar Interface like Google Calendar</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Multi-Level Nutrition Aggregation</span>
-            </mat-list-item>
-            <mat-list-item>
-            <mat-icon style="color:red">close</mat-icon>
-              <span>Robust Data Visualization and Inspection Tools</span>
-            </mat-list-item>
-            <mat-list-item>
-              <mat-icon style="color:red">close</mat-icon>
-              <span>Generates Grocery List & Compiles Home Inventory</span>
-            </mat-list-item>
-          </mat-list>
-        </div>
-
-      </div>
-
-    </mat-expansion-panel>
-
-  </mat-accordion>
-  <button mat-raised-button
-    color="primary"
-    class="next-section"
-    routerLink="/time-picker"
-    >
-    Time Picker<mat-icon>chevron_right</mat-icon>
-  </button>
   `,
   styleUrls: ['./cutcal.component.scss']
 })
-export class CutcalComponent implements OnInit {
-
-  @ViewChild('first', { static: true }) first: ElementRef;
-
-  ngOnInit() {
-    this.first.nativeElement.scrollIntoView();
-  }
+export class CutcalComponent  {
 
 }

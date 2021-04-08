@@ -1,18 +1,38 @@
+@import '~@angular/material/theming';
 
-.mat-toolbar .mat-icon {
-  color: #fff;
-}
-.mat-drawer-container{
-  height: calc(100% - 64px);
-}
 .mat-drawer{
-  width: 290px
+  width: 290px;
+  background: #465A65;
+  @include mat-elevation(10);
 }
-
+.mat-drawer-side{
+  border: none;
+}
+main{
+  height: calc(100vh - 56px);
+  overflow: scroll;
+  box-sizing: border-box;
+  &.example::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main{
+    height: 100vh;
+  }
+}
 .header-img{
   height: 45px;
   width: 45px;
 }
+.mat-toolbar {
+  background: #465A65;;
+  z-index: 100;
+}
 h1{
   font: 500 26px/32px Roboto,"Helvetica Neue",sans-serif;
+}
+.mat-icon {
+  color: #fff;
+  border-radius: 50%;
 }

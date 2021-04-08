@@ -162,17 +162,7 @@ import { Component, OnInit } from '@angular/core';
             allowfullscreen
           ></iframe>
       </div>
-      <br><br><br>
-      <button mat-raised-button
-        color="primary"
-        class="next-section"
-        routerLink="/citi"
-        >
-        Citi<mat-icon>chevron_right</mat-icon>
-      </button>
     </section>
-
-
   </div>
 
   <ng-template #down let-fill>

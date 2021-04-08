@@ -1,9 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-home',
   template: `
+    <object
+      data="../../assets/resume.pdf"
+      type="application/pdf"
+    >
+      <a href="../../assets/resume.pdf">test.pdf</a>
+    </object>
 
+    <!--
   <div class="notepad">
     <b>Hi! I'm Nate,</b>
     <p>
@@ -28,27 +35,18 @@ import { Component, OnInit } from '@angular/core';
       <li>I have a practical application for these skills in industry</li>
     </ul>
     <p>Thank you for your consideration.
-    <br><br>
-    sincerely,
-    <br><br>
-    Nate May
+      <br><br>
+      sincerely,
+      <br><br>
+      Nate May
     </p>
   </div>
-  <button mat-raised-button
-    color="primary"
-    class="next-section"
-    routerLink="/method"
-    >
-    My Design Perspective<mat-icon>chevron_right</mat-icon>
-  </button>
+  -->
   `,
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

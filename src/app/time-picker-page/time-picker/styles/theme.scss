@@ -3,7 +3,7 @@
 :host {
   /* Timepicker common */
   --body-background-color: #fff;
-  --primary-font-family: 'Roboto', sans-serif;
+  --primary-font-family: $font;
 
   /* Timepicker dial */
   --dial-background-color: #fff;

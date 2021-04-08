@@ -35,6 +35,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
+import { MilitaryComponent } from './military/military.component';
+import { EducationComponent } from './education/education.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { FcabComponent } from './fcab/fcab.component';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+import { ImageCircleComponent } from './reusables/image-circle/image-circle.component';
+import { ImageRowComponent } from './reusables/image-row/image-row.component';
+import { HeroComponent } from './reusables/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +56,14 @@ import { TimePickerModule } from './time-picker-page/time-picker/time-picker.mod
     AboutMeComponent,
     BeliefsComponent,
     MethodComponent,
-    ResumeLayoutComponent
+    ResumeLayoutComponent,
+    MilitaryComponent,
+    EducationComponent,
+    WorkExperienceComponent,
+    FcabComponent,
+    ImageCircleComponent,
+    ImageRowComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

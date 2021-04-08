@@ -229,13 +229,6 @@ import { Component, OnInit } from '@angular/core';
       should convey that clearly enough.
     </p>
   </section>
-  <button mat-raised-button
-    color="primary"
-    class="next-section"
-    routerLink="/cutcal"
-    >
-    CutCal<mat-icon>chevron_right</mat-icon>
-  </button>
   `,
   styleUrls: ['./citi.component.scss']
 })

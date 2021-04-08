@@ -1,65 +1,51 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
-import { NavigationEnd, Router } from '@angular/router';
+import { Component, ViewChild } from '@angular/core'
+import { MatDrawer } from '@angular/material/sidenav'
+import { NavigationEnd, Router } from '@angular/router'
 
 @Component({
   selector: 'app-resume-layout',
   template: `
-    <mat-toolbar color="primary">
+    <mat-drawer-container [hasBackdrop]="isMobile">
+      <mat-drawer #drawer mode="side" [opened]="opened">
+        <app-sidebar (close)="isMobile ? drawer.toggle() : null"></app-sidebar>
+      </mat-drawer>
 
-<button mat-icon-button
-  color="primary"
-  aria-label="menu"
-  (click)="drawer.toggle()">
-  <mat-icon>menu</mat-icon>
-</button>
+      <mat-drawer-content>
+        <mat-toolbar role="nav" *ngIf="isMobile">
+          <a mat-icon-button aria-label="menu" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </a>
 
-<span class="spacer"></span>
-<h1>Nate May</h1>
-<span class="spacer"></span>
+          <span class="spacer"></span>
 
-<button mat-icon-button
-  color="primary"
-  aria-label="menu"
-  routerLink="/home">
-  <mat-icon>home</mat-icon>
-</button>
-</mat-toolbar>
-
-<mat-drawer-container>
-
-
-<mat-drawer #drawer mode="side" [opened]="opened">
-
-  <app-sidebar></app-sidebar>
-
-</mat-drawer>
-
-
-<mat-drawer-content>
-
-  <router-outlet></router-outlet>
-
-</mat-drawer-content>
-
-
-</mat-drawer-container>
+          <a mat-icon-button aria-label="menu" routerLink="/home">
+            <mat-icon>home</mat-icon>
+          </a>
+        </mat-toolbar>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-drawer-content>
+    </mat-drawer-container>
   `,
   styleUrls: ['./resume-layout.component.scss']
 })
 export class ResumeLayoutComponent {
+  opened = true
 
-  opened = true;
+  @ViewChild(MatDrawer) drawer: MatDrawer
 
-  @ViewChild(MatDrawer) drawer: MatDrawer;
+  get isMobile() {
+    return window.innerWidth < 600
+  }
 
   constructor(private router: Router) {
-    this.opened = window.innerWidth > 600;
+    this.opened = window.innerWidth > 600
 
-    router.events.subscribe(event => {
+    router.events.subscribe((event) => {
       if (event instanceof NavigationEnd && window.innerWidth < 600) {
-        this.drawer.close();
+        this.drawer.close()
       }
-    });
+    })
   }
 }

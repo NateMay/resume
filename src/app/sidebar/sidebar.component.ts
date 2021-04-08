@@ -1,93 +1,110 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core'
 
 @Component({
   selector: 'app-sidebar',
   template: `
+    <div class="meta-nate-a">
+      <img class="glamour-shot" src="../../assets/glamour.jpeg" />
+      <span class="names">
+        <p class="p1">Nate</p>
+        <p class="p2">May</p>
+      </span>
+      <button
+        *ngIf="isMobile"
+        mat-icon-button
+        aria-label="toggle sidenav"
+        (click)="close.emit()"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+        <div class="links" fxLayout="row" fxLayoutAlign="space-between center">
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/nathaniel-may-9b1b53b/"
+        target="_blank"
+        matTooltip="LinkedIn"
+      >
+        <img src="../../assets/linkedin.png" />
+      </a>
+      <a
+        class="link"
+        href="https://www.facebook.com/nate.may.773"
+        target="_blank"
+        matTooltip="Facebook"
+      >
+        <img src="../../assets/facebook.png" />
+      </a>
+      <a
+        class="link"
+        href="https://github.com/NateMay"
+        target="_blank"
+        matTooltip="GitHub"
+      >
+        <img src="../../assets/github.png" />
+      </a>
+      <a
+        class="link"
+        href="https://youtu.be/tHYDZOiGXAk"
+        target="_blank"
+        matTooltip="YouTube"
+      >
+        <img src="../../assets/youtube.png" />
+      </a>
+      <a
+        class="link"
+        href="https://stackoverflow.com/users/10235442/nate-may?tab=profile"
+        target="_blank"
+        matTooltip="StackOverflow"
+      >
+        <img src="../../assets/stackoverflow.png" />
+      </a>
+    </div>
+    <button routerLink="home" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>Resume</h3>
+    </button>
+    <h2>Background</h2>
+    <button routerLink="/education" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>Education</h3>
+    </button>
+    <button routerLink="/work" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>Work Experience</h3>
+    </button>
+    <button routerLink="/military" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>Military Service</h3>
+    </button>
+    <!-- <button routerLink="/about-me" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>About Nate</h3>
+    </button> -->
 
+    <br /><br />
+    <h2>Programming Portfolio</h2>
 
-  <mat-list role="list">
-
-    <h2>What I Believe</h2>
-
-    <button
-      routerLink="/method"
-      routerLinkActive="active-link"
-      #rla1="routerLinkActive"
-      [attr.tabindex]="(rla1.isActive ? -1: 0)">
-
-      <mat-list-item>
-        <mat-icon mat-list-icon>emoji_objects</mat-icon>
-        <h3 mat-line>My Design Perspective</h3>
-        <p mat-line>Definition, Method, & Ethics</p>
-      </mat-list-item>
+    <button routerLink="/cutcal" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>CutCal</h3>
+    </button>
+    <button routerLink="/time-picker" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>Material Timepicker</h3>
     </button>
 
-    <mat-divider></mat-divider><br>
+    <br /><br />
+    <h2>Design Portfolio</h2>
 
-
-    <h2>What I Bring</h2>
-
-    <button
-      routerLink="/citi"
-      routerLinkActive="active-link"
-      #rla2="routerLinkActive"
-      [attr.tabindex]="(rla2.isActive ? -1: 0)">
-      <mat-list-item>
-        <img mat-list-icon src="../../assets/citi.png">
-        <h3 mat-line>Citi</h3>
-        <p mat-line> Digital Design language </p>
-      </mat-list-item>
+    <button routerLink="/cutcal" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>CutCal</h3>
     </button>
 
-    <mat-divider></mat-divider><br>
-
-    <h2>Where I'm Going</h2>
-
-    <button
-      routerLink="/cutcal"
-      routerLinkActive="active-link"
-      #rla3="routerLinkActive"
-      [attr.tabindex]="(rla3.isActive ? -1: 0)">
-      <mat-list-item>
-        <img mat-list-icon src="../../assets/cutcal.png">
-        <h3 mat-line>CutCal</h3>
-        <p mat-line> Meal & Nutrition Calendar</p>
-      </mat-list-item>
+    <button routerLink="/fcab" routerLinkActive="active-link" (click)="close.emit()">
+      <h3>FCAB</h3>
     </button>
 
-    <button
-      routerLink="/time-picker"
-      routerLinkActive="active-link"
-      #rla4="routerLinkActive"
-      [attr.tabindex]="(rla4.isActive ? -1: 0)">
-      <mat-list-item>
-        <mat-icon mat-list-icon>schedule</mat-icon>
-        <h3 mat-line>Time Picker</h3>
-        <p mat-line> A Material Design Addon </p>
-      </mat-list-item>
-    </button>
-
-    <mat-divider></mat-divider><br>
-
-    <button
-      routerLink="/about-me"
-      routerLinkActive="active-link"
-      #rla5="routerLinkActive"
-      [attr.tabindex]="(rla5.isActive ? -1: 0)">
-      <mat-list-item>
-        <img mat-list-icon src="../../assets/me.png">
-        <h3 mat-line>About Nate</h3>
-        <p mat-line> </p>
-      </mat-list-item>
-    </button>
+    <br />
   `,
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class SidebarComponent {
+  @Output() close = new EventEmitter<void>()
+  get isMobile() {
+    return window.innerWidth < 600;
   }
-
 }

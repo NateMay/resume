@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+:host{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+img {
+  width: 100px;
+  margin-right: 4rem;
+  background: transparent;
+  -webkit-filter: 
+  drop-shadow( 0 5px 5px rgba(0,0,0,.2) ) 
+  drop-shadow( 0 8px 10px rgba(0,0,0,.14) )
+  drop-shadow( 0 3px 14px rgba(0,0,0,.12) );
+  filter: 
+  drop-shadow( 0 5px 5px rgba(0,0,0,.2) ) 
+  drop-shadow( 0 8px 10px rgba(0,0,0,.14) )
+  drop-shadow( 0 3px 14px rgba(0,0,0,.12) );
+}
+p {
+  flex: 1 1 auto
+}

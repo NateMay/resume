@@ -2,11 +2,30 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-time-picker-page',
+  host: {class: 'container'},
   template: `
-  <h2>Material Design Time Picker</h2>
-  <p>
-    I am taking steps to contribute to one of the most widely used, open source design systems in web development.
-  </p>
+  <h1>Material Design Time Picker</h1>
+
+  <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
+    <div fxFlex="50%"fxLayout="row" fxLayoutAlign="space-around center">
+      <cc-time-picker-input
+        #timePicker
+        label="My Time Picker"
+        [(time)]="time"
+        (timeChange)="timeChange($event)"
+        width="205px"
+        [placeholder]="(format.checked ? 'hh:mm' : 'hh:mm pm')"
+        idStr="my-timepicker"
+        [format]="(format.checked ? 24 : 12)"
+      ></cc-time-picker-input>
+    </div>
+
+    <div fxFlex="50%" fxLayout="column" fxLayoutAlign="space-around center">
+      <mat-slide-toggle #format>Format {{ format.checked ? '24' : '12' }}</mat-slide-toggle>
+    </div>
+
+  </div>
+
   <section>
     <p>
       <img class="material" src="../../assets/material.png">
@@ -51,27 +70,6 @@ import { Component, OnInit } from '@angular/core';
       source and will seek to merge it into the Angular Material library.
     </p>
 
-    <br><br>
-
-    <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
-      <div fxFlex="50%"fxLayout="row" fxLayoutAlign="space-around center">
-        <cc-time-picker-input
-          #timePicker
-          label="My Time Picker"
-          [(time)]="time"
-          (timeChange)="timeChange($event)"
-          width="205px"
-          [placeholder]="(format.checked ? 'hh:mm' : 'hh:mm pm')"
-          idStr="my-timepicker"
-          [format]="(format.checked ? 24 : 12)"
-        ></cc-time-picker-input>
-      </div>
-
-      <div fxFlex="50%" fxLayout="column" fxLayoutAlign="space-around center">
-        <mat-slide-toggle #format>Format {{ format.checked ? '24' : '12' }}</mat-slide-toggle>
-      </div>
-
-    </div>
 
     <br><br>
 
@@ -105,15 +103,6 @@ import { Component, OnInit } from '@angular/core';
     </div>
 
   </section>
-
-  <button mat-raised-button
-    color="primary"
-    class="next-section"
-    routerLink="/about-me"
-    >
-    About Nate<mat-icon>chevron_right</mat-icon>
-  </button>
-
   `,
   styleUrls: ['./time-picker-page.component.scss']
 })
