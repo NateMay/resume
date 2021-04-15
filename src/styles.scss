@@ -97,3 +97,48 @@ h4{
   margin-top: 8px;
   margin-bottom: 0;
 }
+
+
+table.overview {
+  margin: 10px auto;
+  border-radius: 16px;
+
+  caption {
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  
+  thead th {
+    font-weight: 400;
+    background: #8a97a0;
+    color: #FFF;
+  }
+  
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background: #e8eeef;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+  }
+
+}
+.subtitle {
+  width: 100%;
+  text-align: center;
+  margin-top: -40px;
+  color: #576a71;
+}
+.github-link{
+  height: 30px;
+  width: 30px;
+}
