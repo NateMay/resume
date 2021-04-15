@@ -1,0 +1,35 @@
+:host {
+  margin: 16px;
+  display: block;
+}
+
+h1 {
+  color: #5a699c;
+  margin: 0;
+}
+
+.mat-card-header {
+  color: #5a699c;
+}
+
+.mat-card-avatar {
+  border-radius: 0;
+}
+
+.example-header-image {
+  background-image: url('../../assets/diet-stats.png');
+  background-size: cover;
+}
+.add-margin {
+  margin-left: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+  :host {
+    margin: 32px;
+  }
+}
+.goto {
+  color: #fff;
+  background: #5a699c;
+}

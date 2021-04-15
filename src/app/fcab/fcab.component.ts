@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-fcab',
+  host: {class: 'container'},
   template: `
   <!-- <n8-image-circle></n8-image-circle> -->
   <hero style="background-image: url('../../assets/fcab/desktop_slant_hero.png');"></hero>
@@ -13,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
     <br>
     <h3>Framing the Problem</h3>
     <br>
-    <table>
+    <table class="overview">
       <thead>
         <tr>
           <th>Who is affected?</th>

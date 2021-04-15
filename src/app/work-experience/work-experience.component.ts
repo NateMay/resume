@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-work-experience',
   template: `
-    <hero style="background-image: url('../../assets/camogen.png');">
-      <img src="../../assets/suit.jpg" />
+    <hero>
+      <img src="../../assets/work/all-work.png" />
     </hero>
     <div class="container">
       <h1>Work Experience</h1>
@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="employer" src="../../assets/work/citi.jpg" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Employer</td>
@@ -71,7 +71,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="employer" src="../../assets/work/fti.jpeg" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Employer</td>
@@ -112,7 +112,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="employer" src="../../assets/work/deloitte.jpg" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Employer</td>

@@ -3,9 +3,6 @@
 h1 {
   color: #465a65;
   margin: 0; 
-  text-shadow: 0 5px 5px  rgba(0,0,0,.2), 
-  0 8px 10px rgba(0,0,0,.14), 
-  0 3px 14px rgba(0,0,0,.12);
 }
 h2 {
   text-align: center;
@@ -15,32 +12,9 @@ p.first::first-letter {
   font-size: 3.15em;
   margin-right: 10px;
   line-height: 1;
-  text-shadow: 0 5px 5px  rgba(0,0,0,.2), 
-  0 8px 10px rgba(0,0,0,.14), 
-  0 3px 14px rgba(0,0,0,.12);
 }
-table {
-  color: #333;
-  background: #576a71;
-  border-collapse: collapse;
-  @include mat-elevation(5);
-  border-radius: 16px;
-}
-tr:nth-child(odd) {
-  background: #465a65;
-}
-td {
-  padding: 8px 16px;
-  color: #fff;
-  a {
-    color: #fff;
-    text-decoration: underline;
-  }
-}
-th{
-  font-weight: bold;
-  color: #4acdd9
-}
+
+
 img {
   @include mat-elevation(5);
 }

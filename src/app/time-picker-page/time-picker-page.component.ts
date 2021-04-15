@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-time-picker-page',
   host: {class: 'container'},
   template: `
-  <h1>Material Design Time Picker</h1>
+  <h1>Material Time Picker</h1>
+  <div role="doc-subtitle" class="subtitle">JavaScript / Angular</div>
+  <br><br>
 
   <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
     <div fxFlex="50%"fxLayout="row" fxLayoutAlign="space-around center">

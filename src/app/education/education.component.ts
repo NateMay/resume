@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="school" src="../../assets/schools/michigan.png" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Degree</td>
@@ -81,7 +81,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="school" src="../../assets/schools/illinois.jpg" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Degree</td>
@@ -135,7 +135,7 @@ import { Component, OnInit } from '@angular/core'
           fxLayoutGap="32px"
         >
           <img class="school" src="../../assets/schools/rochester.png" />
-          <table>
+          <table class="overview">
             <body>
               <tr>
                 <td class="td_label">Degree</td>

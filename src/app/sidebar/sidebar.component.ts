@@ -18,7 +18,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
         <mat-icon>close</mat-icon>
       </button>
     </div>
-        <div class="links" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="links" fxLayout="row" fxLayoutAlign="space-between center">
       <a
         class="link"
         href="https://www.linkedin.com/in/nathaniel-may-9b1b53b/"
@@ -27,14 +27,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
       >
         <img src="../../assets/linkedin.png" />
       </a>
-      <a
+      <!-- <a
         class="link"
         href="https://www.facebook.com/nate.may.773"
         target="_blank"
         matTooltip="Facebook"
       >
         <img src="../../assets/facebook.png" />
-      </a>
+      </a> -->
       <a
         class="link"
         href="https://github.com/NateMay"
@@ -45,7 +45,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
       </a>
       <a
         class="link"
-        href="https://youtu.be/tHYDZOiGXAk"
+        href="https://www.youtube.com/channel/UCqgyvVH5vXium-_twH2jlOA"
         target="_blank"
         matTooltip="YouTube"
       >
@@ -60,17 +60,45 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
         <img src="../../assets/stackoverflow.png" />
       </a>
     </div>
-    <button routerLink="home" routerLinkActive="active-link" (click)="close.emit()">
-      <h3>Resume</h3>
-    </button>
+    <div fxLayout="row">
+      <button
+        routerLink="home"
+        routerLinkActive="active-link"
+        (click)="close.emit()"
+      >
+        <h3>Resume</h3>
+      </button>
+
+      <button
+        routerLink="about-me"
+        routerLinkActive="active-link"
+        (click)="close.emit()"
+      >
+        <h3>About Me</h3>
+      </button>
+    </div>
+    <br>
+    
     <h2>Background</h2>
-    <button routerLink="/education" routerLinkActive="active-link" (click)="close.emit()">
+    <button
+      routerLink="/education"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
       <h3>Education</h3>
     </button>
-    <button routerLink="/work" routerLinkActive="active-link" (click)="close.emit()">
+    <button
+      routerLink="/work"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
       <h3>Work Experience</h3>
     </button>
-    <button routerLink="/military" routerLinkActive="active-link" (click)="close.emit()">
+    <button
+      routerLink="/military"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
       <h3>Military Service</h3>
     </button>
     <!-- <button routerLink="/about-me" routerLinkActive="active-link" (click)="close.emit()">
@@ -80,21 +108,45 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
     <br /><br />
     <h2>Programming Portfolio</h2>
 
-    <button routerLink="/cutcal" routerLinkActive="active-link" (click)="close.emit()">
-      <h3>CutCal</h3>
+    <button
+      routerLink="/cutcal"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>CutCal <small> JavaScript</small></h3>
     </button>
-    <button routerLink="/time-picker" routerLinkActive="active-link" (click)="close.emit()">
-      <h3>Material Timepicker</h3>
+    <button
+      routerLink="/time-picker"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>Timepicker <small>JavaScript</small></h3>
+    </button>
+
+    <button
+      routerLink="/food-review"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>Food Review <small>Python</small></h3>
     </button>
 
     <br /><br />
     <h2>Design Portfolio</h2>
 
-    <button routerLink="/cutcal" routerLinkActive="active-link" (click)="close.emit()">
-      <h3>CutCal</h3>
+    <button
+      routerLink="/diet-stats"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>DietStats</h3>
     </button>
 
-    <button routerLink="/fcab" routerLinkActive="active-link" (click)="close.emit()">
+    <button
+      routerLink="/fcab"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
       <h3>FCAB</h3>
     </button>
 
@@ -105,6 +157,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
 export class SidebarComponent {
   @Output() close = new EventEmitter<void>()
   get isMobile() {
-    return window.innerWidth < 600;
+    return window.innerWidth < 600
   }
 }

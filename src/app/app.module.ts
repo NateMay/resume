@@ -39,11 +39,13 @@ import { MilitaryComponent } from './military/military.component';
 import { EducationComponent } from './education/education.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { FcabComponent } from './fcab/fcab.component';
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { ImageCircleComponent } from './reusables/image-circle/image-circle.component';
 import { ImageRowComponent } from './reusables/image-row/image-row.component';
 import { HeroComponent } from './reusables/hero/hero.component';
-
+import { FoodReviewComponent } from './food-review/food-review.component';
+import { NgAisModule } from 'angular-instantsearch'
+import { AlgoliaComponent } from './algolia/algolia';
+import { DietStatsComponent } from './diet-stats/diet-stats.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +65,10 @@ import { HeroComponent } from './reusables/hero/hero.component';
     FcabComponent,
     ImageCircleComponent,
     ImageRowComponent,
-    HeroComponent
+    HeroComponent,
+    FoodReviewComponent,
+    AlgoliaComponent,
+    DietStatsComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +95,8 @@ import { HeroComponent } from './reusables/hero/hero.component';
     MatExpansionModule,
     MatTabsModule,
     MatTooltipModule,
-    SlideshowModule
+    SlideshowModule,
+    NgAisModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

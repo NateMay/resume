@@ -13,6 +13,9 @@ import { MilitaryComponent } from './military/military.component';
 import { FcabComponent } from './fcab/fcab.component';
 import { EducationComponent } from './education/education.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { FoodReviewComponent } from './food-review/food-review.component';
+import { AlgoliaComponent } from './algolia/algolia';
+import { DietStatsComponent } from './diet-stats/diet-stats.component';
 
 const routes: Routes = [
   {
@@ -75,6 +78,18 @@ const routes: Routes = [
       {
         path: 'work',
         component: WorkExperienceComponent
+      },
+      {
+        path: 'food-review',
+        component: FoodReviewComponent
+      },
+      {
+        path: 'algolia',
+        component: AlgoliaComponent
+      },
+      {
+        path: 'diet-stats',
+        component: DietStatsComponent
       }
     ]
   },

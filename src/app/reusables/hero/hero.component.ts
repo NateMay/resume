@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
       </div>
     </header>
   `,
+  host: {class: 'hero'},
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
