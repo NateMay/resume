@@ -1,19 +1,14 @@
 @import '~@angular/material/theming';
 
+hero {
+  background-size: cover;
+}
 h1 {
   color: #465a65;
-  margin: 0; 
 }
 h2 {
   text-align: center;
 }
-p.first::first-letter {
-  float: left;
-  font-size: 3.15em;
-  margin-right: 10px;
-  line-height: 1;
-}
-
 
 img {
   @include mat-elevation(5);

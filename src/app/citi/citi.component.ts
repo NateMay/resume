@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-citi',
   template: `
-  <img class="logo" src="../../assets/citibank.png">
+  <img class="logo" src="../../assets/work/citibank.png">
   <br><br><br>
 
   <section>

@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-education',
   template: `
-    <hero style="background-image: url('../../assets/camogen.png');">
-      <img src="../../assets/schools.jpeg" />
-    </hero>
+    <img class="hero" src="../../assets/university.jpg" />
     <div class="container">
       <h1>Education</h1>
 

@@ -14,7 +14,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
           target="_blank"
           matTooltip="GitHub"
         >
-          <img class="github-link" src="../../assets/github.png" />
+        <mat-icon svgIcon="github" style="color:#576a71"></mat-icon>
         </a>
       </button>
     </div>
@@ -38,7 +38,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
         ></iframe>
 
         <mat-card-content>
-          <p class="no-first-letter">
+          <p>
             I created CutCal single-handedly but it is still a work in progress.
             I've nearly completed the foundation of the data architecture.
             Implementing a design architecture is my next major hurdle.

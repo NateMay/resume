@@ -4,11 +4,8 @@ import { IImage } from '../slideshow/IImage'
 @Component({
   selector: 'app-military',
   template: `
-    <hero style="background-image: url('../../assets/camogen.png');">
-      <img src="../../assets/world2.png" />
-    </hero>
+    <img class="hero" src="../../assets/afghan.JPG" />
     <h1>Military Service</h1>
-
 
     <app-slideshow
       [minHeight]="'425px'"
@@ -51,6 +48,9 @@ export class MilitaryComponent {
     },
     {
       url: '../../assets/military-photos/Pirate9.jpg'
+    },
+    {
+      url: '../../assets/military-photos/army.jpg'
     }
   ]
 }

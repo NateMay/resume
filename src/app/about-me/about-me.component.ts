@@ -4,12 +4,12 @@ import { IImage } from '../slideshow/IImage';
 @Component({
   selector: 'app-about-me',
   template: `
-    <hero style="background-image: url('../../assets/camogen.png');">
-      <img src="../../assets/hockey-banner.jpg">
-    </hero>
+  
+    <img class="hero" src="../../assets/hockey-banner.jpg">
+
     <h1>About Nate</h1>
 
-    <section fxLayoutAlign="center center"> 
+    <section class="conatiner" fxLayoutAlign="center center"> 
       <iframe
         height="300px"
         width="500px"
@@ -21,7 +21,7 @@ import { IImage } from '../slideshow/IImage';
     </section>
     <h2 style="text-align:center">Nasty Nate Shuffle</h2>
 
-    <section fxLayoutAlign="center center"> 
+    <section fxLayoutAlign="center center" class="conatiner"> 
       <iframe
         height="300px"
         width="500px"

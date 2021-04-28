@@ -25,23 +25,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
         target="_blank"
         matTooltip="LinkedIn"
       >
-        <img src="../../assets/linkedin.png" />
+        <mat-icon svgIcon="linkedin" style="color:#fff"></mat-icon>
       </a>
-      <!-- <a
-        class="link"
-        href="https://www.facebook.com/nate.may.773"
-        target="_blank"
-        matTooltip="Facebook"
-      >
-        <img src="../../assets/facebook.png" />
-      </a> -->
       <a
         class="link"
         href="https://github.com/NateMay"
         target="_blank"
         matTooltip="GitHub"
       >
-        <img src="../../assets/github.png" />
+      <mat-icon svgIcon="github" style="color:#fff"></mat-icon>
       </a>
       <a
         class="link"
@@ -49,7 +41,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
         target="_blank"
         matTooltip="YouTube"
       >
-        <img src="../../assets/youtube.png" />
+      <mat-icon svgIcon="youtube" style="color:#fff"></mat-icon>
       </a>
       <a
         class="link"
@@ -57,7 +49,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
         target="_blank"
         matTooltip="StackOverflow"
       >
-        <img src="../../assets/stackoverflow.png" />
+        <mat-icon svgIcon="stackoverflow" style="color:#fff"></mat-icon>
       </a>
     </div>
     <div fxLayout="row">

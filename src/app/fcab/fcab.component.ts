@@ -2,10 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-fcab',
-  host: {class: 'container'},
   template: `
-  <!-- <n8-image-circle></n8-image-circle> -->
-  <hero style="background-image: url('../../assets/fcab/desktop_slant_hero.png');"></hero>
+  <img class="hero" src="../../assets/fcab/desktop_slant_hero.png" />
   <h1>FCAB</h1>
   <h2>Foundation for Charitable Giving in Bangladesh</h2>
   <br>

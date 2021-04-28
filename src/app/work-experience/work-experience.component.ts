@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core'
   selector: 'app-work-experience',
   template: `
     <hero>
-      <img src="../../assets/work/all-work.png" />
+      <!-- <img src="../../assets/work/all-work.png" /> -->
     </hero>
     <div class="container">
       <h1>Work Experience</h1>
@@ -51,6 +51,9 @@ import { Component, OnInit } from '@angular/core'
           Server-side rendering (SSR) to improve our initial load time, search
           engine optimization (SEO), and facilitate other initiatives.
         </p>
+        
+        <button mat-button color="primary" routerLink="/citi">More about my work at Citi...</button>
+        
       </section>
       <section fxLayoutAlign="center center">
         <iframe

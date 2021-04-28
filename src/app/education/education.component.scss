@@ -1,17 +1,14 @@
 @import '~@angular/material/theming';
-
+hero {
+  background-size: cover;
+}
 h1 {
   color: #465a65;
 }
 p {
   margin-top: 32px;
 }
-p::first-letter {
-  float: left;
-  font-size: 3.15em;
-  margin-right: 10px;
-  line-height: 1;
-}
+
 .school {
   height: 180px;
   width: 180px;

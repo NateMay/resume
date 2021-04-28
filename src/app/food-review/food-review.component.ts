@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
           target="_blank"
           matTooltip="GitHub"
         >
-          <img class="github-link" src="../../assets/github.png" />
+        <mat-icon svgIcon="github" style="color:#576a71"></mat-icon>
         </a>
       </button>
     </div>
