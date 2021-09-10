@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { AboutMeComponent } from './about-me/about-me.component'
+import { AlgoliaComponent } from './algolia/algolia'
 import { BeliefsComponent } from './beliefs/beliefs.component'
 import { CitiComponent } from './citi/citi.component'
 import { CutcalComponent } from './cutcal/cutcal.component'
+import { DietStatsComponent } from './diet-stats/diet-stats.component'
 import { DocumentsComponent } from './documents/documents.component'
+import { EducationComponent } from './education/education.component'
+import { FcabComponent } from './fcab/fcab.component'
+import { FoodReviewComponent } from './food-review/food-review.component'
 import { HomeComponent } from './home/home.component'
 import { MethodComponent } from './method/method.component'
+import { MilitaryComponent } from './military/military.component'
+import { ProjectOverviewComponent } from './project-overview/project-overview.component'
 import { ResumeLayoutComponent } from './resume-layout/resume-layout.component'
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component'
-import { MilitaryComponent } from './military/military.component';
-import { FcabComponent } from './fcab/fcab.component';
-import { EducationComponent } from './education/education.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { FoodReviewComponent } from './food-review/food-review.component';
-import { AlgoliaComponent } from './algolia/algolia';
-import { DietStatsComponent } from './diet-stats/diet-stats.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component'
 
 const routes: Routes = [
   {
@@ -90,6 +91,10 @@ const routes: Routes = [
       {
         path: 'diet-stats',
         component: DietStatsComponent
+      },
+      {
+        path: 'overview',
+        component: ProjectOverviewComponent
       }
     ]
   },

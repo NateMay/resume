@@ -39,6 +39,7 @@ img.mat-list-icon {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+a,
 button {
   outline: none;
   background: transparent;
@@ -47,6 +48,8 @@ button {
   box-sizing: border-box;
   width: 100%;
   border: none;
+  text-decoration: none;
+  display: block;
   &:focus,
   &:hover {
     background: rgba(0, 0, 0, 0.12);
@@ -119,3 +122,4 @@ h3 {
 small {
   color: #89a4b3;
 }
+

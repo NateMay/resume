@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core'
+import { Component, EventEmitter, Output } from '@angular/core'
 
 @Component({
   selector: 'app-sidebar',
@@ -97,22 +97,30 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
       <h3>About Nate</h3>
     </button> -->
 
-    <br /><br />
-    <h2>Programming Portfolio</h2>
+    <br />
+    <h2>Personal Project</h2>
+
+    <button
+      routerLink="/overview"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>Project Overview</h3>
+    </button>
 
     <button
       routerLink="/cutcal"
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
-      <h3>CutCal <small> JavaScript</small></h3>
+      <h3>CutCal (old) <small> Angular</small></h3>
     </button>
     <button
-      routerLink="/time-picker"
+      routerLink="/diet-stats"
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
-      <h3>Timepicker <small>JavaScript</small></h3>
+      <h3>Redesign <small> Figma</small></h3>
     </button>
 
     <button
@@ -120,18 +128,24 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
-      <h3>Food Review <small>Python</small></h3>
+      <h3>Food Review <small>Django</small></h3>
     </button>
+    <a
+      href="https://dietstats.web.app/calendar/month"
+      target="_blank"
+    >
+      <h3>DietStats (newest)<small> Angular</small></h3>
+    </a>
 
-    <br /><br />
-    <h2>Design Portfolio</h2>
-
+    <br />
+    <h2>Other Projects</h2>
+    
     <button
-      routerLink="/diet-stats"
+      routerLink="/time-picker"
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
-      <h3>DietStats</h3>
+      <h3>Timepicker</h3>
     </button>
 
     <button
@@ -142,6 +156,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core'
       <h3>FCAB</h3>
     </button>
 
+    <br />
     <br />
   `,
   styleUrls: ['./sidebar.component.scss']

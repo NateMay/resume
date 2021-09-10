@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cutcal',
@@ -14,12 +14,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
           target="_blank"
           matTooltip="GitHub"
         >
-        <mat-icon svgIcon="github" style="color:#576a71"></mat-icon>
+          <mat-icon svgIcon="github" style="color:#576a71"></mat-icon>
         </a>
       </button>
     </div>
     <section fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="32px">
-      <mat-card class="example-card" fxFlex.gt-sm="50">
+      <mat-card class="example-card" fxFlex.gt-sm="40">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>CutCal</mat-card-title>
@@ -39,9 +39,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
 
         <mat-card-content>
           <p>
-            I created CutCal single-handedly but it is still a work in progress.
-            I've nearly completed the foundation of the data architecture.
-            Implementing a design architecture is my next major hurdle.
+            I created CutCal single-handedly but prior to attending Design
+            School at the University of Michigan.
           </p>
         </mat-card-content>
       </mat-card>
@@ -50,10 +49,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
         <mat-list>
           <mat-list-item>
             <span>
-              237 nutrition data points from the USDA
-              <a href="https://fdc.nal.usda.gov/" target="_blank">
-                Food Composition Database</a
-              >
+              237 nutrition data points:
+              <a href="https://fdc.nal.usda.gov/" target="_blank"> USDA</a>
             </span>
           </mat-list-item>
           <mat-list-item>

@@ -20,32 +20,32 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgAisModule } from 'angular-instantsearch';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { AlgoliaComponent } from './algolia/algolia';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeliefsComponent } from './beliefs/beliefs.component';
 import { CitiComponent } from './citi/citi.component';
 import { CutcalComponent } from './cutcal/cutcal.component';
+import { DietStatsComponent } from './diet-stats/diet-stats.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { EducationComponent } from './education/education.component';
+import { FcabComponent } from './fcab/fcab.component';
+import { FoodReviewComponent } from './food-review/food-review.component';
 import { HomeComponent } from './home/home.component';
 import { MethodComponent } from './method/method.component';
+import { MilitaryComponent } from './military/military.component';
+import { ProjectOverviewComponent } from './project-overview/project-overview.component';
 import { ResumeLayoutComponent } from './resume-layout/resume-layout.component';
+import { HeroComponent } from './reusables/hero/hero.component';
+import { ImageRowComponent } from './reusables/image-row/image-row.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
-import { MilitaryComponent } from './military/military.component';
-import { EducationComponent } from './education/education.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { FcabComponent } from './fcab/fcab.component';
-import { ImageRowComponent } from './reusables/image-row/image-row.component';
-import { HeroComponent } from './reusables/hero/hero.component';
-import { FoodReviewComponent } from './food-review/food-review.component';
-import { NgAisModule } from 'angular-instantsearch'
-import { AlgoliaComponent } from './algolia/algolia';
-import { DietStatsComponent } from './diet-stats/diet-stats.component';
-import { MatIconRegistry } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +68,7 @@ import { MatIconRegistry } from '@angular/material/icon';
     FoodReviewComponent,
     AlgoliaComponent,
     DietStatsComponent,
+    ProjectOverviewComponent
   ],
   imports: [
     BrowserModule,
