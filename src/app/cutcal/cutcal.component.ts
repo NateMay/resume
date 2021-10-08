@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cutcal',
-  host: { class: 'container' },
   template: `
+    <img class="hero" src="../../assets/cutcual-ss.png" />
     <h1>CutCal</h1>
     <div role="doc-subtitle" class="subtitle">
       JavaScript / Angular
@@ -18,64 +18,56 @@ import { Component } from '@angular/core';
         </a>
       </button>
     </div>
-    <section fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="32px">
-      <mat-card class="example-card" fxFlex.gt-sm="40">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>CutCal</mat-card-title>
-          <mat-card-subtitle
-            >Meal Planner / Nutrition Aggregator</mat-card-subtitle
-          >
-        </mat-card-header>
+  
+    <mat-card class="overview">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>CutCal</mat-card-title>
+        <mat-card-subtitle
+          >Meal Planner / Nutrition Aggregator</mat-card-subtitle
+        >
+      </mat-card-header>
 
-        <iframe
-          mat-card-image
-          height="243px"
-          src="https://www.youtube.com/embed/C13G6m4U7ls"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <iframe
+        mat-card-image
+        height="243px"
+        src="https://www.youtube.com/embed/C13G6m4U7ls"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
 
-        <mat-card-content>
-          <p>
-            I created CutCal single-handedly but prior to attending Design
-            School at the University of Michigan.
-          </p>
-        </mat-card-content>
-      </mat-card>
+      <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <span>
+            237 nutrition data points:
+            <a href="https://fdc.nal.usda.gov/" target="_blank"> USDA</a>
+          </span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Drag and Drop Data Entry</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Custom Recipe Creation for Reuse</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Calendar Interface like Google Calendar</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Multi-Level Nutrition Aggregation</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Robust Data Visualization and Inspection Tools</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span>Generates Grocery List & Compiles Home Inventory</span>
+        </mat-list-item>
+      </mat-list>
+      </mat-card-content>
+    </mat-card>
 
-      <div fxFlex>
-        <mat-list>
-          <mat-list-item>
-            <span>
-              237 nutrition data points:
-              <a href="https://fdc.nal.usda.gov/" target="_blank"> USDA</a>
-            </span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Drag and Drop Data Entry</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Custom Recipe Creation for Reuse</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Calendar Interface like Google Calendar</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Multi-Level Nutrition Aggregation</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Robust Data Visualization and Inspection Tools</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span>Generates Grocery List & Compiles Home Inventory</span>
-          </mat-list-item>
-        </mat-list>
-      </div>
-    </section>
-
-    <mat-tab-group>
+    <mat-tab-group class="container">
       <mat-tab label="The Calendar">
         <br />
         <div
@@ -197,7 +189,7 @@ import { Component } from '@angular/core';
       </mat-tab>
     </mat-tab-group>
 
-    <section fxLayout="column">
+    <section fxLayout="column" class="container">
       <h2>Inspiration for CutCal</h2>
       <p>
         As a society, we recognize the health benefits of a good diet, but we
