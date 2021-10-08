@@ -35,6 +35,64 @@ import { IImage } from '../slideshow/IImage'
       <b>Illinois, Bartonville</b>: Although Nate was permitted to out-process the military quickly after his Afghanistan deployment, he was required to serve 1 year in the Illinois National Guard while attending the University of Illinois.
       </image-row>
     </section>
+    <section class="container">
+      <h2>Awards</h2>
+      <div fxLayout="row wrap" fxLayoutGap="1rem" class="awards">
+      <mat-card fxFlex.gt-sm="48">
+        <mat-card-header>
+          <mat-card-title>Purple Heart Medal</mat-card-title>
+          <mat-card-subtitle>combat wounded veteran</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/awards/Purple_Heart_Medal.png" alt="Purple Heart Medal">
+        <mat-card-content>
+          <p>
+          The Purple Heart is a United States military decoration awarded in the name of the President to those wounded or killed while serving
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card fxFlex.gt-sm="48">
+        <mat-card-header>
+          <mat-card-title>2× Army Commendation Medal</mat-card-title>
+          <mat-card-subtitle>1 with "V" device</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/awards/unnamed.gif" alt="Army Commendation Medal with V device">
+        <mat-card-content>
+          <p>
+          The Commendation Medal is a mid-level United States military decoration presented for sustained acts of heroism or meritorious service.
+          </p>
+          <p>A "V" device distinguishes an award for heroism or valor in combat instead of for meritorious service or achievement.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card fxFlex.gt-sm="48">
+        <mat-card-header>
+          <mat-card-title>4× Army Achievement Medal</mat-card-title>
+          <mat-card-subtitle>for merit</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/awards/achievement.png" alt="schuetzenschnur">
+        <mat-card-content>
+          <p>
+          The Army Achievement Medal is awarded for outstanding achievement or meritorious service.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card fxFlex.gt-sm="48">
+        <mat-card-header>
+          <mat-card-title>Geld Schuetzenschnur</mat-card-title>
+          <mat-card-subtitle>expert weapons proficiency</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/awards/schuetzenschnur.png" alt="schuetzenschnur">
+        <mat-card-content>
+          <p>
+          The Gold Schuetzenschnur is a decoration of Germany military awarded the highest grade of weapons proficiency.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      
+      </div>
+    </section>
   `,
   styleUrls: ['./military.component.scss']
 })

@@ -35,3 +35,21 @@ h1 {
   @include mat-elevation(5);
 }
 
+h2 {
+  text-align: center;
+  margin: 4rem 0 3rem;
+}
+
+.mat-card {
+  margin-bottom: 1rem;
+}
+
+.mat-card-image {
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+
