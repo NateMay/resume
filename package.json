@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng build --configuration production && firebase deploy --only hosting",
+    "deploy": "ng build && firebase deploy --only hosting",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
   "private": true,
