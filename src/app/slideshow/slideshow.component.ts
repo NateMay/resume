@@ -514,7 +514,7 @@ export class SlideshowComponent
             this.slides[i].loaded = true;
             this.cdRef.detectChanges();
             this.onImageLazyLoad.emit(this.slides[i]);
-            resolve();
+            resolve(null);
           });
           loadImage.src =
             typeof tmpImage === 'string' ? tmpImage : tmpImage.url;
