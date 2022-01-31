@@ -4,7 +4,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
   selector: 'app-sidebar',
   template: `
     <div class="meta-nate-a">
-      <img class="glamour-shot" src="../../assets/glamour.jpeg" />
+      <img class="glamour-shot" src="../../assets/headshot.jpg" />
       <span class="names">
         <p class="p1">Nate</p>
         <p class="p2">May</p>
@@ -154,6 +154,13 @@ import { Component, EventEmitter, Output } from '@angular/core'
       (click)="close.emit()"
     >
       <h3>FCAB</h3>
+    </button>
+    <button
+      routerLink="/chipotle"
+      routerLinkActive="active-link"
+      (click)="close.emit()"
+    >
+      <h3>Chipotle Nutrition</h3>
     </button>
 
     <br />

@@ -46,6 +46,7 @@ import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { ChipotleComponent } from './chipotle/chipotle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +69,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     FoodReviewComponent,
     AlgoliaComponent,
     DietStatsComponent,
-    ProjectOverviewComponent
+    ProjectOverviewComponent,
+    ChipotleComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { AboutMeComponent } from './about-me/about-me.component'
 import { AlgoliaComponent } from './algolia/algolia'
 import { BeliefsComponent } from './beliefs/beliefs.component'
+import { ChipotleComponent } from './chipotle/chipotle.component'
 import { CitiComponent } from './citi/citi.component'
 import { CutcalComponent } from './cutcal/cutcal.component'
 import { DietStatsComponent } from './diet-stats/diet-stats.component'
@@ -95,6 +96,10 @@ const routes: Routes = [
       {
         path: 'overview',
         component: ProjectOverviewComponent
+      },
+      {
+        path: 'chipotle',
+        component: ChipotleComponent
       }
     ]
   },
