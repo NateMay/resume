@@ -51,18 +51,15 @@ const MATERIAL = [
   A11yModule
 ]
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    // PipesModule,
-    MatButtonModule,
-    AmPmToggleModule,
-    ...MATERIAL
-  ],
-  exports: [...COMPONENTS],
-  declarations: [...COMPONENTS],
-  entryComponents: [
-    TimepickerDialogComponent
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        // PipesModule,
+        MatButtonModule,
+        AmPmToggleModule,
+        ...MATERIAL
+    ],
+    exports: [...COMPONENTS],
+    declarations: [...COMPONENTS]
 })
 export class TimePickerModule { }

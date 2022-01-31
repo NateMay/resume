@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core'
-import { InstantSearchConfig } from 'angular-instantsearch/instantsearch/instantsearch'
 
 @Component({
   selector: 'algolia',
@@ -7,7 +6,7 @@ import { InstantSearchConfig } from 'angular-instantsearch/instantsearch/instant
   styleUrls: ['./algolia.scss']
 })
 export class AlgoliaComponent implements OnInit {
-  config: InstantSearchConfig = {
+  config = {
     apiKey: 'a1cc78476d92b73185b46aa3121db228',
     appId: 'OB2L36C5AS',
     indexName: 'dev_dietstats',

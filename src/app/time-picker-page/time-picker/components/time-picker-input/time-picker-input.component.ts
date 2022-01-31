@@ -159,10 +159,8 @@ export class TimePickerInputComponent implements OnInit, AfterViewInit {
      */
     this.pickerOverlayRef = this.overlay.create(new OverlayConfig({
       scrollStrategy: this.overlay.scrollStrategies.reposition(),
-      positionStrategy: this.overlay.position().connectedTo(
-        this.pickerOrigin.elementRef,
-        { originX: 'start', originY: 'bottom' },
-        { overlayX: 'start', overlayY: 'top' }
+      positionStrategy: this.overlay.position().flexibleConnectedTo(
+        this.pickerOrigin.elementRef
       ),
       width: '250px',
       height: 'auto'
