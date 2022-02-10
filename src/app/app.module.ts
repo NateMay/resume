@@ -47,6 +47,7 @@ import { TimePickerPageComponent } from './time-picker-page/time-picker-page.com
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ChipotleComponent } from './chipotle/chipotle.component';
+import { RedLakesComponent } from './red-lakes/red-lakes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +71,8 @@ import { ChipotleComponent } from './chipotle/chipotle.component';
     AlgoliaComponent,
     DietStatsComponent,
     ProjectOverviewComponent,
-    ChipotleComponent
+    ChipotleComponent,
+    RedLakesComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component'
 import { MethodComponent } from './method/method.component'
 import { MilitaryComponent } from './military/military.component'
 import { ProjectOverviewComponent } from './project-overview/project-overview.component'
+import { RedLakesComponent } from './red-lakes/red-lakes.component'
 import { ResumeLayoutComponent } from './resume-layout/resume-layout.component'
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component'
 import { WorkExperienceComponent } from './work-experience/work-experience.component'
@@ -100,6 +101,10 @@ const routes: Routes = [
       {
         path: 'chipotle',
         component: ChipotleComponent
+      },
+      {
+        path: 'red-lakes',
+        component: RedLakesComponent
       }
     ]
   },
