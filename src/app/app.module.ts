@@ -27,6 +27,7 @@ import { AlgoliaComponent } from './algolia/algolia';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeliefsComponent } from './beliefs/beliefs.component';
+import { ChipotleComponent } from './chipotle/chipotle.component';
 import { CitiComponent } from './citi/citi.component';
 import { CutcalComponent } from './cutcal/cutcal.component';
 import { DietStatsComponent } from './diet-stats/diet-stats.component';
@@ -46,8 +47,6 @@ import { SlideshowModule } from './slideshow/slideshow.module';
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component';
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { ChipotleComponent } from './chipotle/chipotle.component';
-import { RedLakesComponent } from './red-lakes/red-lakes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,8 +70,7 @@ import { RedLakesComponent } from './red-lakes/red-lakes.component';
     AlgoliaComponent,
     DietStatsComponent,
     ProjectOverviewComponent,
-    ChipotleComponent,
-    RedLakesComponent
+    ChipotleComponent
   ],
   imports: [
     BrowserModule,

@@ -162,6 +162,12 @@ import { Component, EventEmitter, Output } from '@angular/core'
     >
       <h3>Chipotle Nutrition</h3>
     </button>
+    <a
+      href="https://natemay.github.io/red-lake/index.html"
+      target="_blank"
+    >
+      <h3>Red Lakes Visualizations</h3>
+    </a>
 
     <br />
     <br />
