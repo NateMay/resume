@@ -33,7 +33,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
         target="_blank"
         matTooltip="GitHub"
       >
-      <mat-icon svgIcon="github" style="color:#fff"></mat-icon>
+        <mat-icon svgIcon="github" style="color:#fff"></mat-icon>
       </a>
       <a
         class="link"
@@ -41,7 +41,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
         target="_blank"
         matTooltip="YouTube"
       >
-      <mat-icon svgIcon="youtube" style="color:#fff"></mat-icon>
+        <mat-icon svgIcon="youtube" style="color:#fff"></mat-icon>
       </a>
       <a
         class="link"
@@ -69,8 +69,8 @@ import { Component, EventEmitter, Output } from '@angular/core'
         <h3>About Me</h3>
       </button>
     </div>
-    <br>
-    
+    <br />
+
     <h2>Background</h2>
     <button
       routerLink="/education"
@@ -123,15 +123,21 @@ import { Component, EventEmitter, Output } from '@angular/core'
       <h3>Redesign <small> Figma</small></h3>
     </button>
 
-    <button
+    <!-- <button
       routerLink="/food-review"
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
       <h3>Food Review <small>Django</small></h3>
-    </button>
-    <a
+    </button> -->
+    <!-- <a
       href="https://dietstats.web.app/calendar/month"
+      target="_blank"
+    >
+      <h3>DietStats (newest)<small> Angular</small></h3>
+    </a> -->
+    <a
+      href="https://drive.google.com/file/d/1QiCToMjNkN54w4NrCn-gN6fT3W62i33W/view?usp=sharing"
       target="_blank"
     >
       <h3>DietStats (newest)<small> Angular</small></h3>
@@ -139,7 +145,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
 
     <br />
     <h2>Other Projects</h2>
-    
+
     <button
       routerLink="/time-picker"
       routerLinkActive="active-link"
@@ -155,17 +161,17 @@ import { Component, EventEmitter, Output } from '@angular/core'
     >
       <h3>FCAB</h3>
     </button>
-    <button
+    <!-- <button
       routerLink="/chipotle"
       routerLinkActive="active-link"
       (click)="close.emit()"
     >
       <h3>Chipotle Nutrition</h3>
-    </button>
-    <a
-      href="https://natemay.github.io/red-lake/index.html"
-      target="_blank"
-    >
+    </button> -->
+    <a href="https://chipotle-nutrition-analyzer.web.app/" target="_blank">
+      <h3>Chipotle Nutrition</h3>
+    </a>
+    <a href="https://natemay.github.io/red-lake/index.html" target="_blank">
       <h3>Red Lakes Visualizations</h3>
     </a>
 

@@ -116,7 +116,7 @@ import { Component, OnInit } from '@angular/core';
         </tr>
         <tr>
           <td>current</td>
-          <td>Angular 12</td>
+          <td>Angular 13</td>
           <td><a href="https://github.com/NateMay/dietstats">dietstats</a></td>
           <td>NX, husky, hammerjs, algolia, ngrx, firebase, highcharts, jest</td>
           <td><img src="assets/ds_ss.png" />Rebranded and redeisgn with mobile in mind.</td>
