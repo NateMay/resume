@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { AboutMeComponent } from './about-me/about-me.component'
-import { AlgoliaComponent } from './algolia/algolia'
 import { BeliefsComponent } from './beliefs/beliefs.component'
 import { ChipotleComponent } from './chipotle/chipotle.component'
 import { CitiComponent } from './citi/citi.component'
@@ -85,10 +84,10 @@ const routes: Routes = [
         path: 'food-review',
         component: FoodReviewComponent
       },
-      {
-        path: 'algolia',
-        component: AlgoliaComponent
-      },
+      // {
+      //   path: 'algolia',
+      //   component: AlgoliaComponent
+      // },
       {
         path: 'diet-stats',
         component: DietStatsComponent

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-experience',
@@ -8,6 +8,42 @@ import { Component, OnInit } from '@angular/core'
     </hero>
     <div class="container">
       <h1>Work Experience</h1>
+      <section>
+        <div
+          fxLayout="column"
+          fxLayout.gt-sm="row"
+          fxLayoutAlign="center center"
+          fxLayoutGap="32px"
+        >
+          <img class="employer" src="../../assets/work/fangravy.png" />
+          <table class="overview">
+            <body>
+              <tr>
+                <td class="td_label">Employer</td>
+                <td>Independent Contractor / FanGravy Inc.</td>
+              </tr>
+              <tr>
+                <td class="td_label">Job Title</td>
+                <td>Contractor / Application Architect / Web Developer</td>
+              </tr>
+              <tr>
+                <td class="td_label">Location</td>
+                <td>Remote</td>
+              </tr>
+              <tr>
+                <td class="td_label">Dates</td>
+                <td>May 202 - Present</td>
+              </tr>
+            </body>
+          </table>
+        </div>
+        <p>
+          Nate was hired as a contractor to help build out the FanGravy, an e-commerce through which college 
+          athletes can license and sell digital playing cards. Nate is responsible for the architecture and
+          development of the application, including the front-end, back-end, and database design.
+        </p>
+        
+      </section>
 
       <section>
         <div

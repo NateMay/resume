@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-education',
@@ -26,11 +26,19 @@ import { Component, OnInit } from '@angular/core'
                 <td>University of Michigan</td>
               </tr>
               <tr>
-                <td class="td_label">Field</td>
+                <td class="td_label">Primary Field</td>
                 <td>
                   <a
                     href="https://www.si.umich.edu/programs/master-science-information"
-                    >Science in Information</a
+                    >Master of Science in Information (MSI)</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="td_label">Secondary Field</td>
+                <td>
+                  <a href="https://cfe.umich.edu/certificate/"
+                    >Graduate Certificate in Innovation & Entrepreneurship</a
                   >
                 </td>
               </tr>
@@ -40,37 +48,39 @@ import { Component, OnInit } from '@angular/core'
               </tr>
               <tr>
                 <td class="td_label">Dates</td>
-                <td>August 2020 - May 2022 (expected)</td>
+                <td>August 2020 - May 2022</td>
               </tr>
             </body>
           </table>
         </div>
         <p>
-          Nate is currently completing the curriculum for 3 tracks within the
-          MSI program: 
+          Nate completed the curriculum for 2 tracks within the MSI program:
           <a
             href="https://www.si.umich.edu/programs/master-science-information/curriculum/ux-research-and-design"
             target="_blank"
             >UX Research and Design</a
-          >, 
+          >
+          and
           <a
             href="https://www.si.umich.edu/programs/master-science-information/curriculum/user-centered-agile-development"
             target="_blank"
-            >User-Centered Agile Development</a
-          >, and
-          <a
-            href="https://www.si.umich.edu/programs/master-science-information/curriculum/big-data-analytics"
-            target="_blank"
-            >Big Data Analytics</a
-          >. A web developer by trade, Nate expects the UX curriculum to
-          complement his existing technical skills. The Big Data Analytics track
-          will expand his capabilities as a full stack developer and enable him
-          with statistical modeling, machine learning, and the python language
-          more broadly. Currently, he plans to choose User-Centered Agile
-          Development as his area of focus to reflect his deeper skillset.
+            >User-Centered Agile Development (UCAD)</a
+          >
+          completing his capstone mastery course in UX Research and Design,
+          while earning a what is effectively a graduate-level minor in
+          Entrepreneurship out of the engineering school.
+        </p>
+        <p>
+          Through his Entrepreneurship courses, Nate has developed his ability
+          to understand <em>WHY</em> and <em>FOR WHOM</em> solution are needed,
+          as well as <em>WHICH</em> solutions are worth pursuing. Through his
+          Design courses he learned the process for discoving <em>WHAT</em> can
+          be created to solve such problems. Finally, the UCAD courses he took helped 
+          him round out his development skills to address <em>HOW</em> to create such
+          solutions.
         </p>
       </section>
-      <br>
+      <br />
       <section>
         <div
           fxLayout="column"
@@ -124,7 +134,7 @@ import { Component, OnInit } from '@angular/core'
           interdisciplinary courses.
         </p>
       </section>
-      <br>
+      <br />
       <section>
         <div
           fxLayout="column"
@@ -150,9 +160,7 @@ import { Component, OnInit } from '@angular/core'
             </body>
           </table>
         </div>
-        <p>
-        Nate wrestled and played baseball in high school. 
-        </p>
+        <p>Nate wrestled and played baseball in high school.</p>
       </section>
     </div>
   `,

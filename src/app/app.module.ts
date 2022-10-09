@@ -20,10 +20,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgAisModule } from 'angular-instantsearch';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { AlgoliaComponent } from './algolia/algolia';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeliefsComponent } from './beliefs/beliefs.component';
@@ -67,7 +65,6 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     ImageRowComponent,
     HeroComponent,
     FoodReviewComponent,
-    AlgoliaComponent,
     DietStatsComponent,
     ProjectOverviewComponent,
     ChipotleComponent
@@ -99,7 +96,6 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     MatTooltipModule,
     SlideshowModule,
     // MatIconRegistry,
-    NgAisModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

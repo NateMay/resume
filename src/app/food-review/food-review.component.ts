@@ -36,7 +36,6 @@ import { Component, OnInit } from '@angular/core';
     </section>
 
     <section fxLayout="row" fxLayoutGap="32px">
-      <algolia></algolia>
       <p>
         This demo is primarily a mock up intended to look like my lastest
         <a routerLink="/diet-stats">DietStats</a>
