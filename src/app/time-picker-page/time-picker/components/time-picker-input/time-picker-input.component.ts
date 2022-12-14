@@ -153,7 +153,6 @@ export class TimePickerInputComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-
     /**
      * @reference [Overlay-Stackblitz] {@link https://stackblitz.com/edit/overlay-demo?file=app%2Fapp.module.ts}
      */
@@ -161,7 +160,14 @@ export class TimePickerInputComponent implements OnInit, AfterViewInit {
       scrollStrategy: this.overlay.scrollStrategies.reposition(),
       positionStrategy: this.overlay.position().flexibleConnectedTo(
         this.pickerOrigin.elementRef
-      ),
+      ).withPositions([
+        {
+          originX: 'start',
+          originY: 'bottom',
+          overlayX: 'start',
+          overlayY: 'top'
+        }
+      ]),
       width: '250px',
       height: 'auto'
     }));

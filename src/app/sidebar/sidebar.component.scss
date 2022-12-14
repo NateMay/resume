@@ -103,6 +103,11 @@ h3 {
 
 .links {
   margin: 1.5rem;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
 }
 .link {
   cursor: pointer;

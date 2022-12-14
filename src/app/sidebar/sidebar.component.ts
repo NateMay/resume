@@ -18,7 +18,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
         <mat-icon>close</mat-icon>
       </button>
     </div>
-    <div class="links" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="links">
       <a
         class="link"
         href="https://www.linkedin.com/in/nathaniel-may-9b1b53b/"
@@ -52,7 +52,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
         <mat-icon svgIcon="stackoverflow" style="color:#fff"></mat-icon>
       </a>
     </div>
-    <div fxLayout="row">
+    <div>
       <button
         routerLink="home"
         routerLinkActive="active-link"

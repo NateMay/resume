@@ -3,21 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-work-experience',
   template: `
-    <hero>
-      <!-- <img src="../../assets/work/all-work.png" /> -->
-    </hero>
+    <hero> </hero>
     <div class="container">
       <h1>Work Experience</h1>
       <section>
-        <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
-        >
+        <div class="flexible-section">
           <img class="employer" src="../../assets/work/fangravy.png" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Employer</td>
                 <td>Independent Contractor / FanGravy Inc.</td>
@@ -34,27 +27,24 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>May 202 - Present</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>
-          Nate was hired as a contractor to help build out the FanGravy, an e-commerce through which college 
-          athletes can license and sell digital playing cards. Nate is responsible for the architecture and
-          development of the application, including the front-end, back-end, and database design.
+          Nate was hired as a contractor to help build out the FanGravy, an
+          e-commerce through which college athletes can license and sell digital
+          playing cards. Nate is responsible for the architecture and
+          development of the application, including the front-end, back-end, and
+          database design.
         </p>
-        
       </section>
 
       <section>
-        <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
-        >
+        <div class="flexible-section">
           <img class="employer" src="../../assets/work/citi.jpg" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Employer</td>
                 <td>Citi / Tata Consulting</td>
@@ -71,8 +61,9 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>July 2017 - July 2020</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>
           Nate was hired by Tata Consulting as a web developer contracted to
@@ -87,11 +78,12 @@ import { Component, OnInit } from '@angular/core';
           Server-side rendering (SSR) to improve our initial load time, search
           engine optimization (SEO), and facilitate other initiatives.
         </p>
-        
-        <button mat-button color="primary" routerLink="/citi">More about my work at Citi...</button>
-        
+
+        <button mat-button color="primary" routerLink="/citi">
+          More about my work at Citi...
+        </button>
       </section>
-      <section fxLayoutAlign="center center">
+      <section>
         <iframe
           height="300px"
           width="500px"
@@ -101,17 +93,12 @@ import { Component, OnInit } from '@angular/core';
           allowfullscreen
         ></iframe>
       </section>
-      <br>
+      <br />
       <section>
-        <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
-        >
+        <div class="flexible-section">
           <img class="employer" src="../../assets/work/fti.jpeg" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Employer</td>
                 <td>FTI Consulting</td>
@@ -128,7 +115,7 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>July 2014 - November 2016</td>
               </tr>
-            </body>
+            </tbody>
           </table>
         </div>
         <p>
@@ -142,17 +129,12 @@ import { Component, OnInit } from '@angular/core';
           database and web-based UI for data entry using Oracle/APEX.
         </p>
       </section>
-      <br>
+      <br />
       <section>
-        <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
-        >
+        <div class="flexible-section">
           <img class="employer" src="../../assets/work/deloitte.jpg" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Employer</td>
                 <td>Deloitte Consulting</td>
@@ -169,11 +151,15 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>Summer 2013</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>
-        Nate spent the summer in St. Louis participating in a Hyperion/Essbase implementation for a massive food manufacturer. He was primarily tasked with maintaining the project management workflow and translating business requirements into technical requirements.  
+          Nate spent the summer in St. Louis participating in a Hyperion/Essbase
+          implementation for a massive food manufacturer. He was primarily
+          tasked with maintaining the project management workflow and
+          translating business requirements into technical requirements.
         </p>
       </section>
     </div>

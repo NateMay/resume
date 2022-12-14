@@ -1,5 +1,5 @@
 :host {
-  margin: 16px;
+  padding: 16px;
   display: block;
 }
 
@@ -46,3 +46,29 @@ li {
   line-height: 34px;
 }
 
+.controls {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.control-container {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-around;
+  align-items: center;
+  flex: 1 1 100%;
+  margin-right: 0px;
+  max-width: 50%;
+  padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .controls {
+    flex-direction: row;
+  }
+
+}

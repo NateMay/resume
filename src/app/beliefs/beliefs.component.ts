@@ -31,17 +31,17 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <h3>Web Design is Evolving Rapidly</h3>
       <br>
-      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
-        <p fxFlex="50%">
+      <div>
+        <p>
           Admittedly, I'm most interested in the architecture of web design. We're exiting an era of web development
           where IT infrustructure is a barrier to entry and frontend frameworks make rapid iteration possible. Quality
           design is already a differentiator, but I don't think the industry has even scratched the surface. Soon, design
           architecture will be as important of a differentiator as the underlying web features themselves.
         </p>
-        <p fxFlex="50%">
+        <p>
           Leveraging the constructs used for A/B testing and machine learning, we can begin to offer truely indivdualized experiences.
           This can be used to better accomodate for the full spectum of users. Features can be released to account for the learning curve,
-          one's cognative ability, or to cater to one's disablility such as unique palletes for the color blind. The variations are 
+          one's cognative ability, or to cater to one's disablility such as unique palletes for the color blind. The variations are
           limitless and can selected to better serve each customer individually.
         </p>
       </div>
@@ -50,8 +50,8 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <h3>Design Creates Value</h3>
       <br>
-      <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
-        <p fxFlex="50%">
+      <div>
+        <p>
           The common perspective of design seems to be that it is a necessary task to compete for market share.
           However, from my perspective, by optimizing the interface between a person and a solution or information,
           design make a solution attainable, thereby creating utility and expanding markets.
@@ -63,8 +63,8 @@ import { Component, OnInit } from '@angular/core';
           experience. One for my father with a cognitive disability, one for my mother with limited subject
           matter knowledge, and a feature-rich, though more complex, experience for myself.
         </p>
-        <div fxFlex="50%">
-          
+        <div>
+
           <div style="padding: 0 32px">
           <br>
             <q style="font-size: 24px">

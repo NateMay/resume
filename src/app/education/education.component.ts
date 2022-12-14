@@ -9,14 +9,11 @@ import { Component, OnInit } from '@angular/core';
 
       <section>
         <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
+          class="flexible-section"
         >
           <img class="school" src="../../assets/schools/michigan.png" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Degree</td>
                 <td>Masters</td>
@@ -50,8 +47,9 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>August 2020 - May 2022</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>
           Nate completed the curriculum for 2 tracks within the MSI program:
@@ -75,7 +73,7 @@ import { Component, OnInit } from '@angular/core';
           to understand <em>WHY</em> and <em>FOR WHOM</em> solution are needed,
           as well as <em>WHICH</em> solutions are worth pursuing. Through his
           Design courses he learned the process for discoving <em>WHAT</em> can
-          be created to solve such problems. Finally, the UCAD courses he took helped 
+          be created to solve such problems. Finally, the UCAD courses he took helped
           him round out his development skills to address <em>HOW</em> to create such
           solutions.
         </p>
@@ -83,14 +81,11 @@ import { Component, OnInit } from '@angular/core';
       <br />
       <section>
         <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
+          class="flexible-section"
         >
           <img class="school" src="../../assets/schools/illinois.jpg" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Degree</td>
                 <td>Undergraduate</td>
@@ -115,8 +110,9 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Dates</td>
                 <td>August 2010 - May 2014</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>
           Originally, Nate majored in Finance with a minor in Computer Science
@@ -137,14 +133,11 @@ import { Component, OnInit } from '@angular/core';
       <br />
       <section>
         <div
-          fxLayout="column"
-          fxLayout.gt-sm="row"
-          fxLayoutAlign="center center"
-          fxLayoutGap="32px"
+          class="flexible-section"
         >
           <img class="school" src="../../assets/schools/rochester.png" />
-          <table class="overview">
-            <body>
+          <table class="overview spacer">
+            <tbody>
               <tr>
                 <td class="td_label">Degree</td>
                 <td>High School</td>
@@ -157,8 +150,9 @@ import { Component, OnInit } from '@angular/core';
                 <td class="td_label">Graducated</td>
                 <td>2005</td>
               </tr>
-            </body>
+            </tbody>
           </table>
+
         </div>
         <p>Nate wrestled and played baseball in high school.</p>
       </section>

@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 $font: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
-html, 
-body { 
-  height: 100%; 
+html,
+body {
+  height: 100%;
 }
-body { 
-  margin: 0; 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -35,7 +35,7 @@ section:not(:first-child){
 
 @media only screen and (min-width: 600px) {
   section:not(:first-child){
-    margin: 64px 0;
+    margin: 32px 0;
   }
 }
 body
@@ -46,6 +46,7 @@ section .mat-icon{
   width: 100% !important;
   max-width: 800px !important;
   margin: 0 auto !important;
+  padding: 1rem
 }
 
 section a{
@@ -101,23 +102,23 @@ table.overview {
     font-weight: 400;
     padding: 10px 0;
   }
-  
+
   thead th {
     font-weight: 400;
     background: #8a97a0;
     color: #FFF;
   }
-  
+
   tr {
     background: #f4f7f8;
     border-bottom: 1px solid #FFF;
     margin-bottom: 5px;
   }
-  
+
   tr:nth-child(even) {
     background: #e8eeef;
   }
-  
+
   th, td {
     text-align: left;
     padding: 20px;

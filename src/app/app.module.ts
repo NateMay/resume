@@ -1,6 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -85,7 +84,6 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     MatFormFieldModule,
     MatInputModule,
     TimePickerModule,
-    FlexLayoutModule,
     MatDividerModule,
     MatCardModule,
     MatDatepickerModule,

@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   <div role="doc-subtitle" class="subtitle">JavaScript / Angular</div>
   <br><br>
 
-  <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
-    <div fxFlex="50%"fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="controls">
+    <div class="control-container">
       <cc-time-picker-input
         #timePicker
         label="My Time Picker"
@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
       ></cc-time-picker-input>
     </div>
 
-    <div fxFlex="50%" fxLayout="column" fxLayoutAlign="space-around center">
+    <div class="control-container">
       <mat-slide-toggle #format>Format {{ format.checked ? '24' : '12' }}</mat-slide-toggle>
     </div>
 
@@ -87,15 +87,15 @@ import { Component, OnInit } from '@angular/core';
     </ul>
     <br><br>
 
-    <div fxLayout="column" fxLayoutGap="32px" fxLayout.gt-sm="row" fxLayoutGap.gt-sm="0px">
-      <div fxFlex="50%" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="controls">
+      <div class="control-container">
         <mat-form-field>
           <input matInput [matDatepicker]="picker" placeholder="Angular Material" autocomplete="off">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
       </div>
-      <div fxFlex="50%" fxLayout="row" fxLayoutAlign="space-around center">
+      <div class="control-container">
         <div class="toggle-example">
             <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly placeholder="ngx-material-timepicker">
             <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>

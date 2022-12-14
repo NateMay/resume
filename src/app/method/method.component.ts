@@ -151,10 +151,8 @@ import { Component, OnInit } from '@angular/core';
 
     <section class="sticky-element">
       <div class="center-spacing-methods"></div>
-      <div style="width: 100%" fxLayout="row" fxLayoutAlign="space-around center">
+      <div style="width: 100%" >
           <iframe
-            fxFlex="100%"
-            fxFlex.gt-sm="50%"
             height="320px"
             src="https://www.youtube.com/embed/Fx_ifzzuBaQ"
             frameborder="0"

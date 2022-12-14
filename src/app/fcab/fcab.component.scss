@@ -13,3 +13,9 @@ h2 {
 img {
   @include mat-elevation(5);
 }
+
+.centered-image {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  display: block;
+}

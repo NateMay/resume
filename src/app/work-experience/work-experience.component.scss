@@ -1,5 +1,6 @@
 @import '@angular/material/theming';
 
+
 h1 {
   color: #465a65;
 }
@@ -10,6 +11,8 @@ h1 {
 
 iframe {
   @include mat-elevation(5);
+  margin: 0 auto;
+  display: block;
 }
 
 p {
@@ -21,4 +24,25 @@ p {
   width: 180px;
   border-radius: 16px;
   @include mat-elevation(5);
+}
+
+.flexible-section {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+
+  img {
+    margin: 2.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .flexible-section {
+    flex-direction: row;
+    img {
+      margin-left: 0
+    }
+  }
 }

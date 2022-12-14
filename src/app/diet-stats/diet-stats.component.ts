@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
     <h1>DietStats</h1>
 
     <section
-      fxLayout="column"
-      fxLayout.gt-md="row"
-      fxLayoutGap="32px"
-      class="container"
+      class="container column"
     >
-      <mat-card class="example-card" fxFlex="40">
+      <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Desktop Month View</mat-card-title>
@@ -32,11 +29,11 @@ import { Component, OnInit } from '@angular/core';
         </mat-card-actions>
 
         <!-- <mat-card-actions align="end">
-    
+
           </mat-card-actions> -->
       </mat-card>
 
-      <div fxFlex>
+      <div>
         <p>
           I have had the opportunity to leverage my masters
           <a routerLink="/education"
@@ -66,7 +63,7 @@ import { Component, OnInit } from '@angular/core';
       Interaction design project <small>(Nov '20)</small>
     </h2>
 
-    <section fxLayoutAlign="center center" class="container">
+    <section class="container">
       <iframe
         height="300px"
         width="500px"

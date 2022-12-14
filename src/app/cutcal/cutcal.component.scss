@@ -11,27 +11,17 @@
 h1 {
   color: #465a65;
 }
+.container {
+  padding: 1rem
+}
 
 .logo{
   max-width: 120px
 }
-.team{
-  max-width: 550px;
-  float: right;
-  margin-left: 32px;
-}
-
-.arrow{
-  position: absolute;
-  top: -27px;
-  right: 367px;
-  font-size: 14px;
-  color: #555;
-}
 
 .overview {
-  max-width: 500px;
   margin: 0 auto 4rem;
+  margin-top: 2rem;
 }
 
 
@@ -57,4 +47,26 @@ h1 {
 
 .mat-icon{
   margin-right: 8px;
+}
+
+
+.stack-mobile {
+  display: flex;
+  flex-direction: column;
+  min-height:256px
+}
+iframe {
+  display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+  .stack-mobile {
+    flex-direction: row;
+  }
+
+  .mat-card,
+  iframe {
+    min-width: 45%;
+    margin-right: 2rem;
+  }
 }
