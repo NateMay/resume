@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
               </tr>
               <tr>
                 <td class="td_label">Dates</td>
-                <td>May 202 - Present</td>
+                <td>May 2022 - Nov 2022</td>
               </tr>
             </tbody>
           </table>
