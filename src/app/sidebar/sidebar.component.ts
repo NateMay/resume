@@ -52,7 +52,7 @@ import { Component, EventEmitter, Output } from '@angular/core'
         <mat-icon svgIcon="stackoverflow" style="color:#fff"></mat-icon>
       </a>
     </div>
-    <div>
+    <div class="inline-row">
       <button
         routerLink="home"
         routerLinkActive="active-link"
