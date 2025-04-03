@@ -1,7 +1,7 @@
 // import { SwipeService } from './swipe.service';
 import { DOCUMENT, isPlatformServer } from '@angular/common';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, ElementRef, EventEmitter, Inject, Input, NgZone, OnChanges, OnDestroy, OnInit, Output, PLATFORM_ID, Renderer2, SimpleChanges, ViewChild } from '@angular/core';
-import { DomSanitizer, makeStateKey, SafeStyle, TransferState } from '@angular/platform-browser';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, ElementRef, EventEmitter, Inject, Input, NgZone, OnChanges, OnDestroy, OnInit, Output, PLATFORM_ID, Renderer2, SimpleChanges, ViewChild, makeStateKey, TransferState } from '@angular/core';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { IImage } from './IImage';
 import { ISlide } from './ISlide';
