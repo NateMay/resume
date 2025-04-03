@@ -95,13 +95,6 @@ import { Component, OnInit } from '@angular/core';
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
       </div>
-      <div class="control-container">
-        <div class="toggle-example">
-            <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly placeholder="ngx-material-timepicker">
-            <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
-            <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
-        </div>
-      </div>
     </div>
 
   </section>

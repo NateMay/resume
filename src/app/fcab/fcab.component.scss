@@ -1,4 +1,4 @@
-@import '@angular/material/theming';
+@use '@angular/material' as mat;
 
 .hero {
   background-size: cover;
@@ -11,7 +11,7 @@ h2 {
 }
 
 img {
-  @include mat-elevation(5);
+  @include mat.elevation(5);
 }
 
 .centered-image {

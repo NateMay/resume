@@ -19,7 +19,6 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatTooltipModule } from '@angular/material/tooltip'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker'
 import { AboutMeComponent } from './about-me/about-me.component'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -85,7 +84,6 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
         MatCardModule,
         MatDatepickerModule,
         MatNativeDateModule,
-        NgxMaterialTimepickerModule,
         MatExpansionModule,
         MatTabsModule,
         MatTooltipModule,

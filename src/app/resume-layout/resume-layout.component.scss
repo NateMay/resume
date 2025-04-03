@@ -1,9 +1,9 @@
-@import '@angular/material/theming';
+@use '@angular/material' as mat;
 
 .mat-drawer{
   width: 290px;
   background: #465A65;
-  @include mat-elevation(10);
+  @include mat.elevation(10);
 }
 .mat-drawer-side{
   border: none;
