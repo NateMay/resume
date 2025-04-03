@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http'
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { NgModule } from '@angular/core'
 import { MatButtonModule } from '@angular/material/button'
 import { MatCardModule } from '@angular/material/card'
@@ -44,56 +44,50 @@ import { SlideshowModule } from './slideshow/slideshow.module'
 import { TimePickerPageComponent } from './time-picker-page/time-picker-page.component'
 import { TimePickerModule } from './time-picker-page/time-picker/time-picker.module'
 import { WorkExperienceComponent } from './work-experience/work-experience.component'
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    CitiComponent,
-    CutcalComponent,
-    TimePickerPageComponent,
-    SidebarComponent,
-    DocumentsComponent,
-    AboutMeComponent,
-    BeliefsComponent,
-    MethodComponent,
-    ResumeLayoutComponent,
-    MilitaryComponent,
-    EducationComponent,
-    WorkExperienceComponent,
-    FcabComponent,
-    ImageRowComponent,
-    HeroComponent,
-    FoodReviewComponent,
-    DietStatsComponent,
-    ProjectOverviewComponent,
-    ChipotleComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    HttpClientModule,
-    MatSlideToggleModule,
-    MatSliderModule,
-    MatFormFieldModule,
-    MatInputModule,
-    TimePickerModule,
-    MatDividerModule,
-    MatCardModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    NgxMaterialTimepickerModule,
-    MatExpansionModule,
-    MatTabsModule,
-    MatTooltipModule,
-    SlideshowModule
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        CitiComponent,
+        CutcalComponent,
+        TimePickerPageComponent,
+        SidebarComponent,
+        DocumentsComponent,
+        AboutMeComponent,
+        BeliefsComponent,
+        MethodComponent,
+        ResumeLayoutComponent,
+        MilitaryComponent,
+        EducationComponent,
+        WorkExperienceComponent,
+        FcabComponent,
+        ImageRowComponent,
+        HeroComponent,
+        FoodReviewComponent,
+        DietStatsComponent,
+        ProjectOverviewComponent,
+        ChipotleComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatListModule,
+        MatSlideToggleModule,
+        MatSliderModule,
+        MatFormFieldModule,
+        MatInputModule,
+        TimePickerModule,
+        MatDividerModule,
+        MatCardModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        NgxMaterialTimepickerModule,
+        MatExpansionModule,
+        MatTabsModule,
+        MatTooltipModule,
+        SlideshowModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
