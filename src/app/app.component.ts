@@ -3,9 +3,10 @@ import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-root',
-  template: `<router-outlet></router-outlet>`,
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    template: `<router-outlet></router-outlet>`,
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
 

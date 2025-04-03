@@ -6,13 +6,14 @@ import { AmPmToggleComponent } from './am-pm-toggle.component';
 
 
 @Component({
-  template: `
+    template: `
   <cc-am-pm-toggle
     [idStr]="idStr"
     [(isPM)]="isPM"
     [disabled]="disabled"
   ></cc-am-pm-toggle>
-  `
+  `,
+    standalone: false
 })
 class TestApPmComponent {
   idStr

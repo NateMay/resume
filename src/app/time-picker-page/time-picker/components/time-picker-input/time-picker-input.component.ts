@@ -18,12 +18,12 @@ export const TIME_PICKER_CONTROL_VALUE_ACCESSOR: any = {
 // DEPENDS ON (time-picker) then TEST (time-picker) with reactive forms
 
 @Component({
-  selector: 'cc-time-picker-input',
-  host: { class: 'cc-time-picker-input' },
-  styleUrls: ['./time-picker-input.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ TIME_PICKER_CONTROL_VALUE_ACCESSOR ],
-  template: `
+    selector: 'cc-time-picker-input',
+    host: { class: 'cc-time-picker-input' },
+    styleUrls: ['./time-picker-input.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TIME_PICKER_CONTROL_VALUE_ACCESSOR],
+    template: `
     <mat-form-field [ngStyle]="{'width': width}">
       <mat-label *ngIf="label">{{ label }}</mat-label>
       <input type="text"
@@ -50,7 +50,8 @@ export const TIME_PICKER_CONTROL_VALUE_ACCESSOR: any = {
         </button>
 
     </mat-form-field>
-  `
+  `,
+    standalone: false
 })
 export class TimePickerInputComponent implements OnInit, AfterViewInit {
 

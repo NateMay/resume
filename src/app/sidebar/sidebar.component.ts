@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core'
 
 @Component({
-  selector: 'app-sidebar',
-  template: `
+    selector: 'app-sidebar',
+    template: `
     <div class="meta-nate-a">
       <img class="glamour-shot" src="../../assets/headshot.jpg" />
       <span class="names">
@@ -178,7 +178,8 @@ import { Component, EventEmitter, Output } from '@angular/core'
     <br />
     <br />
   `,
-  styleUrls: ['./sidebar.component.scss']
+    styleUrls: ['./sidebar.component.scss'],
+    standalone: false
 })
 export class SidebarComponent {
   @Output() close = new EventEmitter<void>()

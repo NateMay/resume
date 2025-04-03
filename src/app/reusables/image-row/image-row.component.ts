@@ -1,14 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'image-row',
-  template: `
+    selector: 'image-row',
+    template: `
     <img [attr.src]="src">
     <p>
       <ng-content></ng-content>
     </p>
   `,
-  styleUrls: ['./image-row.component.scss']
+    styleUrls: ['./image-row.component.scss'],
+    standalone: false
 })
 export class ImageRowComponent implements OnInit {
   @Input() src: string = ''

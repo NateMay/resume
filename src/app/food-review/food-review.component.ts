@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-food-review',
-  host: { class: 'container' },
-  template: `
+    selector: 'app-food-review',
+    host: { class: 'container' },
+    template: `
     <h1>Food Review</h1>
     <div role="doc-subtitle" class="subtitle">
       JavaScript / Angular
@@ -45,7 +45,8 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </section>
   `,
-  styleUrls: ['./food-review.component.scss']
+    styleUrls: ['./food-review.component.scss'],
+    standalone: false
 })
 export class FoodReviewComponent implements OnInit {
   constructor() {}

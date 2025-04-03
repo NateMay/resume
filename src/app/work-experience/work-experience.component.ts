@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-work-experience',
-  template: `
+    selector: 'app-work-experience',
+    template: `
     <hero> </hero>
     <div class="container">
       <h1>Work Experience</h1>
@@ -164,7 +164,8 @@ import { Component, OnInit } from '@angular/core';
       </section>
     </div>
   `,
-  styleUrls: ['./work-experience.component.scss']
+    styleUrls: ['./work-experience.component.scss'],
+    standalone: false
 })
 export class WorkExperienceComponent implements OnInit {
   constructor() {}

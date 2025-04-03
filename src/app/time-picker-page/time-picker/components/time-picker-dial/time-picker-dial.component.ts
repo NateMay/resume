@@ -5,10 +5,10 @@ import { TimeUnit } from '../../models/time-unit.enum';
 import { disableHours, disableMinutes, getHours, getMinutes } from '../../utils/timepicker-time.utils';
 
 @Component({
-  selector: 'cc-timepicker-dial',
-  styleUrls: ['time-picker-dial.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'cc-timepicker-dial',
+    styleUrls: ['time-picker-dial.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <div class="timepicker-dial">
       <div class="timepicker-dial__container">
         <div class="timepicker-dial__time">
@@ -54,7 +54,8 @@ import { disableHours, disableMinutes, getHours, getMinutes } from '../../utils/
       <!--
       <small class="timepicker-dial__hint"> * use arrows (<span>&#8645;</span>) to change the time</small>
       -->
-    </div>`
+    </div>`,
+    standalone: false
 })
 export class TimepickerDialComponent implements OnChanges {
 

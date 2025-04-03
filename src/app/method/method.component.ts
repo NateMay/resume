@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-method',
-  template: `
+    selector: 'app-method',
+    template: `
   <div class="sticky-elements">
 
     <section class="sticky-element">
@@ -217,7 +217,8 @@ import { Component, OnInit } from '@angular/core';
 
   </ng-template>
   `,
-  styleUrls: ['./method.component.scss']
+    styleUrls: ['./method.component.scss'],
+    standalone: false
 })
 export class MethodComponent implements OnInit {
 

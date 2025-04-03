@@ -4,9 +4,9 @@ import { ClockFaceTime } from '../../models/clock-face-time.interface';
 import { TimeUnit } from '../../models/time-unit.enum';
 
 @Component({
-  selector: 'cc-timepicker-dial-control',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'cc-timepicker-dial-control',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <input class="timepicker-dial__control timepicker-dial__item"
         #input
         [ngClass]="{'timepicker-dial__item_active': isActive }"
@@ -16,7 +16,8 @@ import { TimeUnit } from '../../models/time-unit.enum';
         (blur)="formatTime()"
         (keydown)="onKeyDown($event)">
     `,
-  styleUrls: ['time-picker-dial-control.component.scss']
+    styleUrls: ['time-picker-dial-control.component.scss'],
+    standalone: false
 })
 export class TimepickerDialControlComponent implements AfterViewInit{
 

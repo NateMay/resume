@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-beliefs',
-  template: `
+    selector: 'app-beliefs',
+    template: `
     <section>
       <h2>Design <small style="color: #999">noun</small></h2>
       <p>
@@ -111,7 +111,8 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </section>
   `,
-  styleUrls: ['./beliefs.component.scss']
+    styleUrls: ['./beliefs.component.scss'],
+    standalone: false
 })
 export class BeliefsComponent implements OnInit {
 

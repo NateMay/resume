@@ -10,13 +10,14 @@ import { TimePickerInputComponent } from './time-picker-input.component';
 
 
 @Component({
-  template: `
+    template: `
     <cc-time-picker-input
       [label]="label"
       [placeholder]="placeholder"
       [(time)]="time"
       (timeChange)="timeChange($event)"
-    ></cc-time-picker-input>`
+    ></cc-time-picker-input>`,
+    standalone: false
 })
 class TestTimePickerComponent {
 

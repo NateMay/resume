@@ -10,7 +10,8 @@ import { DomSanitizer } from '@angular/platform-browser';
  *   <img [style.background-image]="'url(' + photo + ')' | sanitize">
  */
 @Pipe({
-  name: 'sanitize'
+    name: 'sanitize',
+    standalone: false
 })
 export class StyleSanitizerPipe implements PipeTransform {
 

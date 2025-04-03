@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-citi',
-  template: `
+    selector: 'app-citi',
+    template: `
     <img class="logo" src="../../assets/work/citibank.png" />
     <br /><br /><br />
 
@@ -272,7 +272,8 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </section>
   `,
-  styleUrls: ['./citi.component.scss']
+    styleUrls: ['./citi.component.scss'],
+    standalone: false
 })
 export class CitiComponent implements OnInit {
   constructor() {}

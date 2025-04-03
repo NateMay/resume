@@ -3,16 +3,17 @@ import { ClockFaceTime } from '../../models/clock-face-time.interface';
 import { disableHours, getHours } from '../../utils/timepicker-time.utils';
 
 @Component({
-  selector: 'cc-timepicker-24-hours-face',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'cc-timepicker-24-hours-face',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <cc-timepicker-face
       [selectedTime]="selectedHour"
       [faceTime]="hoursList"
       [format]="format"
       (timeChange)="hourChange.next($event)"
       (timeSelected)="onTimeSelected($event)"
-    ></cc-timepicker-face>`
+    ></cc-timepicker-face>`,
+    standalone: false
 })
 export class Timepicker24HoursFaceComponent implements AfterContentInit {
 

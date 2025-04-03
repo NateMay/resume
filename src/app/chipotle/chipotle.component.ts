@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-chipotle',
-  template: `
+    selector: 'app-chipotle',
+    template: `
     <img class="hero" src="../../assets/chipotle.png" />
     <h1>Chipotle Nutrition Analyzer</h1>
     <br>
@@ -14,7 +14,8 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </section>
   `,
-  styleUrls: ['./chipotle.component.scss']
+    styleUrls: ['./chipotle.component.scss'],
+    standalone: false
 })
 export class ChipotleComponent implements OnInit {
 

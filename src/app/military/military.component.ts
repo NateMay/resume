@@ -2,8 +2,8 @@ import { Component } from '@angular/core'
 import { IImage } from '../slideshow/IImage'
 
 @Component({
-  selector: 'app-military',
-  template: `
+    selector: 'app-military',
+    template: `
     <img class="hero" src="../../assets/afghan.JPG" />
     <h1>Military Service</h1>
 
@@ -143,7 +143,8 @@ import { IImage } from '../slideshow/IImage'
       </div>
     </section>
   `,
-  styleUrls: ['./military.component.scss']
+    styleUrls: ['./military.component.scss'],
+    standalone: false
 })
 export class MilitaryComponent {
   images: IImage[] = [

@@ -27,10 +27,10 @@ const DEFAULT_MINUTE: ClockFaceTime = {
 }
 
 @Component({
-  selector: 'cc-timepicker-dialog',
-  styleUrls: ['./time-picker-dialog.component.scss'],
-  host: { class: 'cc-time-picker-dialog mat-elevation-z2' },
-  template: `
+    selector: 'cc-timepicker-dialog',
+    styleUrls: ['./time-picker-dialog.component.scss'],
+    host: { class: 'cc-time-picker-dialog mat-elevation-z2' },
+    template: `
     <span cdkTrapFocus>
       <header>
         <cc-timepicker-dial
@@ -93,7 +93,8 @@ const DEFAULT_MINUTE: ClockFaceTime = {
         </div>
       </div>
     </span>
-  `
+  `,
+    standalone: false
 })
 export class TimepickerDialogComponent implements OnDestroy {
   private unsub$: Subject<void> = new Subject()

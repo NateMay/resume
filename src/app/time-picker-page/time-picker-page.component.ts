@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-time-picker-page',
-  host: {class: 'container'},
-  template: `
+    selector: 'app-time-picker-page',
+    host: { class: 'container' },
+    template: `
   <h1>Material Time Picker</h1>
   <div role="doc-subtitle" class="subtitle">JavaScript / Angular</div>
   <br><br>
@@ -106,7 +106,8 @@ import { Component, OnInit } from '@angular/core';
 
   </section>
   `,
-  styleUrls: ['./time-picker-page.component.scss']
+    styleUrls: ['./time-picker-page.component.scss'],
+    standalone: false
 })
 export class TimePickerPageComponent implements OnInit {
 

@@ -7,22 +7,22 @@ import { disableHours, disableMinutes } from '../../utils/timepicker-time.utils'
 
 
 @Component({
-  selector: 'cc-timepicker-period',
-  styleUrls: ['time-picker-period.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [
-    trigger('scaleInOut', [
-      transition(':enter', [
-        style({ transform: 'scale(0)' }),
-        animate('.2s', style({ transform: 'scale(1)' })),
-        sequence([
-          animate('3s', style({ opacity: 1 })),
-          animate('.3s', style({ opacity: 0 }))
+    selector: 'cc-timepicker-period',
+    styleUrls: ['time-picker-period.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    animations: [
+        trigger('scaleInOut', [
+            transition(':enter', [
+                style({ transform: 'scale(0)' }),
+                animate('.2s', style({ transform: 'scale(1)' })),
+                sequence([
+                    animate('3s', style({ opacity: 1 })),
+                    animate('.3s', style({ opacity: 0 }))
+                ])
+            ])
         ])
-      ])
-    ])
-  ],
-  template: `
+    ],
+    template: `
     <cc-am-pm-toggle
       [isPM]="selectedPeriod === timePeriod.PM"
       (isPMChange)="changePeriod()"
@@ -37,7 +37,8 @@ import { disableHours, disableMinutes } from '../../utils/timepicker-time.utils'
       <p>Current time would be invalid in this period.</p>
 
     </div>
-    `
+    `,
+    standalone: false
 })
 export class TimepickerPeriodComponent {
 

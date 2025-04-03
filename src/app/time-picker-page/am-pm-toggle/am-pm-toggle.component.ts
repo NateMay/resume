@@ -3,11 +3,11 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 let nextUniqueId = 0;
 
 @Component({
-  selector: 'cc-am-pm-toggle',
-  host: { class: 'cc-am-pm-toggle' },
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrls: ['./am-pm-toggle.component.scss'],
-  template: `
+    selector: 'cc-am-pm-toggle',
+    host: { class: 'cc-am-pm-toggle' },
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrls: ['./am-pm-toggle.component.scss'],
+    template: `
     <input type="checkbox"
       [attr.checked]="isPM"
       (change)="update()"
@@ -27,8 +27,8 @@ let nextUniqueId = 0;
       <span class="star star-5"></span>
       <span class="star star-6"></span>
     </label>
-  `
-
+  `,
+    standalone: false
 })
 export class AmPmToggleComponent {
 

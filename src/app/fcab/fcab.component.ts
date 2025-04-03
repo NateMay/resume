@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-fcab',
-  template: `
+    selector: 'app-fcab',
+    template: `
     <img class="hero" src="../../assets/fcab/desktop_slant_hero.png" />
     <h1>FCAB</h1>
     <h2>Foundation for Charitable Giving in Bangladesh</h2>
@@ -167,7 +167,8 @@ import { Component, OnInit } from '@angular/core';
       />
     </section>
   `,
-  styleUrls: ['./fcab.component.scss']
+    styleUrls: ['./fcab.component.scss'],
+    standalone: false
 })
 export class FcabComponent implements OnInit {
   constructor() {}

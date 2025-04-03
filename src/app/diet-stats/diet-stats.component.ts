@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-diet-stats',
-  template: `
+    selector: 'app-diet-stats',
+    template: `
     <img class="hero" src="../../assets/dietstats_design_overview.png" />
     <h1>DietStats</h1>
 
@@ -83,7 +83,8 @@ import { Component, OnInit } from '@angular/core';
       <a href="../../assets/resume.pdf">test.pdf</a>
     </object>
   `,
-  styleUrls: ['./diet-stats.component.scss']
+    styleUrls: ['./diet-stats.component.scss'],
+    standalone: false
 })
 export class DietStatsComponent implements OnInit {
   constructor() {}

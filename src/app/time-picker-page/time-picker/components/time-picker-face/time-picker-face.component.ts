@@ -14,10 +14,10 @@ const CLOCK_HAND_STYLES = {
 };
 
 @Component({
-  selector: 'cc-timepicker-face',
-  styleUrls: ['./time-picker-face.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'cc-timepicker-face',
+    styleUrls: ['./time-picker-face.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <div #clockFace class="clock-face">
 
       <div class="clock-face_container"
@@ -71,7 +71,8 @@ const CLOCK_HAND_STYLES = {
           </span>
         </div>
       </div>
-    </ng-template>`
+    </ng-template>`,
+    standalone: false
 })
 export class TimepickerFaceComponent implements AfterViewInit, OnChanges, OnDestroy {
 

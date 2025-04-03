@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cutcal',
-  template: `
+    selector: 'app-cutcal',
+    template: `
     <img class="hero" src="../../assets/cutcual-ss.png" />
 
     <div class="container">
@@ -191,6 +191,7 @@ import { Component } from '@angular/core';
       </section>
     </div>
   `,
-  styleUrls: ['./cutcal.component.scss']
+    styleUrls: ['./cutcal.component.scss'],
+    standalone: false
 })
 export class CutcalComponent {}

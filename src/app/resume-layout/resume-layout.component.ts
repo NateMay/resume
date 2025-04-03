@@ -3,8 +3,8 @@ import { MatDrawer } from '@angular/material/sidenav'
 import { NavigationEnd, Router } from '@angular/router'
 
 @Component({
-  selector: 'app-resume-layout',
-  template: `
+    selector: 'app-resume-layout',
+    template: `
     <mat-drawer-container [hasBackdrop]="isMobile">
       <mat-drawer #drawer mode="side" [opened]="opened">
         <app-sidebar (close)="isMobile ? drawer.toggle() : null"></app-sidebar>
@@ -28,7 +28,8 @@ import { NavigationEnd, Router } from '@angular/router'
       </mat-drawer-content>
     </mat-drawer-container>
   `,
-  styleUrls: ['./resume-layout.component.scss']
+    styleUrls: ['./resume-layout.component.scss'],
+    standalone: false
 })
 export class ResumeLayoutComponent {
   opened = true

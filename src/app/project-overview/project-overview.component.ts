@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-overview',
-  template: `
+    selector: 'app-project-overview',
+    template: `
     <img class="hero" src="assets/mash.png" />
     <h1>Project History</h1>
 
@@ -147,7 +147,8 @@ import { Component, OnInit } from '@angular/core';
       </tbody>
     </table>
   `,
-  styleUrls: ['./project-overview.component.scss']
+    styleUrls: ['./project-overview.component.scss'],
+    standalone: false
 })
 export class ProjectOverviewComponent implements OnInit {
   constructor() {}

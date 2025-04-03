@@ -6,16 +6,17 @@ import { disableMinutes, getMinutes } from '../../utils/timepicker-time.utils';
 
 
 @Component({
-  selector: 'cc-timepicker-minutes-face',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'cc-timepicker-minutes-face',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <cc-timepicker-face
         [faceTime]="minutesList"
         [selectedTime]="selectedMinute"
         [minutesGap]="minutesGap"
         (timeChange)="minuteChange.next($event)"
         [unit]="timeUnit.MINUTE"
-    ></cc-timepicker-face>`
+    ></cc-timepicker-face>`,
+    standalone: false
 })
 export class TimepickerMinutesFaceComponent implements OnChanges {
 

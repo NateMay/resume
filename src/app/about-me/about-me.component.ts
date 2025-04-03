@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-about-me',
-  template: `
+    selector: 'app-about-me',
+    template: `
 
     <img class="hero" src="../../assets/hockey-banner.jpg">
 
@@ -54,7 +54,8 @@ import { Component, OnInit } from '@angular/core';
     </section>
 
   `,
-  styleUrls: ['./about-me.component.scss']
+    styleUrls: ['./about-me.component.scss'],
+    standalone: false
 })
 export class AboutMeComponent implements OnInit {
 

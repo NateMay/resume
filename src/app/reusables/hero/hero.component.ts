@@ -1,16 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'hero',
-  template: `
+    selector: 'hero',
+    template: `
     <header class="header">
       <div>
         <ng-content></ng-content>
       </div>
     </header>
   `,
-  host: {class: 'hero'},
-  styleUrls: ['./hero.component.scss']
+    host: { class: 'hero' },
+    styleUrls: ['./hero.component.scss'],
+    standalone: false
 })
 export class HeroComponent implements OnInit {
 

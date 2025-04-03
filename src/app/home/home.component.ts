@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-home',
-  template: `
+    selector: 'app-home',
+    template: `
     <object
       data="../../assets/resume.pdf"
       type="application/pdf"
@@ -43,7 +43,8 @@ import { Component, OnInit } from '@angular/core'
   </div>
   -->
   `,
-  styleUrls: ['./home.component.scss']
+    styleUrls: ['./home.component.scss'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   constructor() {}
