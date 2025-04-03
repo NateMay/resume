@@ -157,10 +157,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/cdk@^16.2.14":
-  version "16.2.14"
-  resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-16.2.14.tgz#d26f8f1e7d2466b509e60489b6acf31bfe923acf"
-  integrity sha512-n6PrGdiVeSTEmM/HEiwIyg6YQUUymZrb5afaNLGFRM5YL0Y8OBqd+XhCjb0OfD/AfgCUtedVEPwNqrfW8KzgGw==
+"@angular/cdk@^17.3.10":
+  version "17.3.10"
+  resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-17.3.10.tgz#4a3bab529cd65bb19cb89c89b3548dcc534d1a44"
+  integrity sha512-b1qktT2c1TTTe5nTji/kFAVW92fULK0YhYAvJ+BjZTPKu2FniZNe8o4qqQ0pUuvtMu+ZQxp/QqFYoidIVCjScg==
   dependencies:
     tslib "^2.3.0"
   optionalDependencies:
@@ -270,7 +270,7 @@
   resolved "https://registry.npmjs.org/@angular/language-service/-/language-service-17.3.12.tgz#87a3d71e94ee7442eac046ca64be73a6a31a0027"
   integrity sha512-MVmEXonXwdhFtIpU4q8qbXHsrAsdTjZcPPuWCU0zXVQ+VaB/y6oF7BVpmBtfyBcBCums1guEncPP+AZVvulXmQ==
 
-"@angular/material@^16.2.14":
+"@angular/material@^16.2.0":
   version "16.2.14"
   resolved "https://registry.npmjs.org/@angular/material/-/material-16.2.14.tgz#4db0c7d14d3d6ac6c8dac83dced0fb8a030b3b49"
   integrity sha512-zQIxUb23elPfiIvddqkIDYqQhAHa9ZwMblfbv+ug8bxr4D0Dw360jIarxCgMjAcLj7Ccl3GBqZMUnVeM6cjthw==
@@ -3448,11 +3448,6 @@
   version "4.0.2"
   resolved "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
   integrity sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==
-
-"@types/luxon@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@types/luxon/-/luxon-1.11.1.tgz#819d730cf8ada52bec9c4a1d94347d1250f22c5d"
-  integrity sha512-XBHQ7rzpOHyJudEQcMyoT67Np61FTb6S2jWqWQER/U7H2NAS+dpC8wv5T+6ygV5g/yJQdaojQbsJQiweool0Aw==
 
 "@types/mime@*":
   version "3.0.1"
@@ -8109,11 +8104,6 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-luxon@1.24.0:
-  version "1.24.0"
-  resolved "https://registry.npmjs.org/luxon/-/luxon-1.24.0.tgz#6db04b79ec8f7159973d4dcf21871fd6acfb3d58"
-  integrity sha512-PNeB5cFbBtmuS137OuEdaJnCMTMPS2vz9hnM1Zl6tUIuYdtUgEhMqfVZ7yxX0jHEGx6rp757ECe7cdZxDgq2Tg==
-
 magic-string@0.26.2:
   version "0.26.2"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.26.2.tgz#5331700e4158cd6befda738bb6b0c7b93c0d4432"
@@ -8579,14 +8569,12 @@ next-tick@1, next-tick@^1.1.0:
   resolved "https://registry.npmjs.org/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
   integrity sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==
 
-ngx-material-timepicker@^5.5.3:
-  version "5.5.3"
-  resolved "https://registry.npmjs.org/ngx-material-timepicker/-/ngx-material-timepicker-5.5.3.tgz#9b65071e8f00477d37d1b0f825baf8fb5ea800db"
-  integrity sha512-Ua6eNNNneHS8S1/3Tn2dUOnLdZ4k6MhQqvLM/eFVoeF0WF+q/uK1DAH8eAki3HW1ogq2oDWnVRSeXvvZGJldhQ==
+ngx-material-timepicker@^13.1.1:
+  version "13.1.1"
+  resolved "https://registry.npmjs.org/ngx-material-timepicker/-/ngx-material-timepicker-13.1.1.tgz#1dade06660c6a7b9689840396b4ea5681ac0eb35"
+  integrity sha512-GST4IBFXrPSBB5VP5LVxoOk1yHbdSnaB293tjuyu+vusg+pQ/3+AtcxQEIadk6Nmsdt8zKsbXNgvLrI4nbYRKQ==
   dependencies:
-    "@types/luxon" "1.11.1"
-    luxon "1.24.0"
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
