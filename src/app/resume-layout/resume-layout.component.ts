@@ -9,25 +9,25 @@ import { NavigationEnd, Router } from '@angular/router'
       <mat-drawer #drawer mode="side" [opened]="opened">
         <app-sidebar (close)="isMobile ? drawer.toggle() : null"></app-sidebar>
       </mat-drawer>
-
+    
       <mat-drawer-content>
-        <mat-toolbar role="nav" *ngIf="isMobile">
-          <a mat-icon-button aria-label="menu" (click)="drawer.toggle()">
-            <mat-icon>menu</mat-icon>
-          </a>
-
-          <span class="spacer"></span>
-
-          <a mat-icon-button aria-label="menu" routerLink="/home">
-            <mat-icon>home</mat-icon>
-          </a>
-        </mat-toolbar>
+        @if (isMobile) {
+          <mat-toolbar role="nav">
+            <a mat-icon-button aria-label="menu" (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </a>
+            <span class="spacer"></span>
+            <a mat-icon-button aria-label="menu" routerLink="/home">
+              <mat-icon>home</mat-icon>
+            </a>
+          </mat-toolbar>
+        }
         <main>
           <router-outlet></router-outlet>
         </main>
       </mat-drawer-content>
     </mat-drawer-container>
-  `,
+    `,
     styleUrls: ['./resume-layout.component.scss'],
     standalone: false
 })

@@ -1,5 +1,5 @@
 import { CdkOverlayOrigin, Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
-import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
+import { ComponentPortal } from '@angular/cdk/portal';
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ComponentRef, ElementRef, EventEmitter, forwardRef, HostBinding, HostListener, Injector, Input, NgZone, OnInit, Output, ViewChild, ViewContainerRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
@@ -25,7 +25,9 @@ export const TIME_PICKER_CONTROL_VALUE_ACCESSOR: any = {
     providers: [TIME_PICKER_CONTROL_VALUE_ACCESSOR],
     template: `
     <mat-form-field [ngStyle]="{'width': width}">
-      <mat-label *ngIf="label">{{ label }}</mat-label>
+      @if (label) {
+        <mat-label>{{ label }}</mat-label>
+      }
       <input type="text"
         #inputEl
         matInput
@@ -41,16 +43,16 @@ export const TIME_PICKER_CONTROL_VALUE_ACCESSOR: any = {
         (keydown.shift.tab)="closePicker()"
         cdkOverlayOrigin
         #pickerOrigin="cdkOverlayOrigin">
-
-        <button mat-icon-button
-          (click)="openPicker()"
-          matSuffix [attr.id]="idStr + '-trigger'"
-          [disabled]="disabled">
-          <mat-icon>access_time</mat-icon>
-        </button>
-
+    
+      <button mat-icon-button
+        (click)="openPicker()"
+        matSuffix [attr.id]="idStr + '-trigger'"
+        [disabled]="disabled">
+        <mat-icon>access_time</mat-icon>
+      </button>
+    
     </mat-form-field>
-  `,
+    `,
     standalone: false
 })
 export class TimePickerInputComponent implements OnInit, AfterViewInit {
@@ -214,10 +216,11 @@ export class TimePickerInputComponent implements OnInit, AfterViewInit {
       executeOnStable(this.zone, () => document.getElementById(`${this.idStr}-trigger`).focus());
   }
 
-  private createInjector(data: TimePickerData): PortalInjector {
-    return new PortalInjector(
-      this.injector,
-      new WeakMap<any, any>([ [TIME_PICKER_DATA, data] ]));
+  private createInjector(data: TimePickerData): Injector {
+    return Injector.create({
+      providers: [{ provide: TIME_PICKER_DATA, useValue: data }],
+      parent: this.injector
+    });
   }
 
   parseTime(): void {

@@ -12,44 +12,45 @@ import { disableHours, disableMinutes, getHours, getMinutes } from '../../utils/
     <div class="timepicker-dial">
       <div class="timepicker-dial__container">
         <div class="timepicker-dial__time">
-
+    
           <cc-timepicker-dial-control
-              isFirst="true"
-              [timeList]="hours"
-              [time]="hour"
-              [timeUnit]="timeUnit.HOUR"
-              [isActive]="activeTimeUnit === timeUnit.HOUR"
-              (timeUnitChanged)="changeTimeUnit($event)"
-              (timeChanged)="changeHour($event)"
+            isFirst="true"
+            [timeList]="hours"
+            [time]="hour"
+            [timeUnit]="timeUnit.HOUR"
+            [isActive]="activeTimeUnit === timeUnit.HOUR"
+            (timeUnitChanged)="changeTimeUnit($event)"
+            (timeChanged)="changeHour($event)"
           ></cc-timepicker-dial-control>
-
+    
           <span>:</span>
-
+    
           <cc-timepicker-dial-control
-              [timeList]="minutes"
-              [time]="minute"
-              [timeUnit]="timeUnit.MINUTE"
-              [isActive]="activeTimeUnit === timeUnit.MINUTE"
-              [minutesGap]="minutesGap"
-              (timeUnitChanged)="changeTimeUnit($event)"
-              (timeChanged)="changeMinute($event)"
+            [timeList]="minutes"
+            [time]="minute"
+            [timeUnit]="timeUnit.MINUTE"
+            [isActive]="activeTimeUnit === timeUnit.MINUTE"
+            [minutesGap]="minutesGap"
+            (timeUnitChanged)="changeTimeUnit($event)"
+            (timeChanged)="changeMinute($event)"
           ></cc-timepicker-dial-control>
-
+    
         </div>
-
-        <cc-timepicker-period
-          *ngIf="format != 24"
-          [selectedPeriod]="period"
-          [activeTimeUnit]="activeTimeUnit"
-          [maxTime]="maxTime"
-          [minTime]="minTime"
-          [format]="format"
-          [hours]="hours"
-          [minutes]="minutes"
-          [selectedHour]="hour"
-          (periodChanged)="changePeriod($event)"
-        ></cc-timepicker-period>
-
+    
+        @if (format != 24) {
+          <cc-timepicker-period
+            [selectedPeriod]="period"
+            [activeTimeUnit]="activeTimeUnit"
+            [maxTime]="maxTime"
+            [minTime]="minTime"
+            [format]="format"
+            [hours]="hours"
+            [minutes]="minutes"
+            [selectedHour]="hour"
+            (periodChanged)="changePeriod($event)"
+          ></cc-timepicker-period>
+        }
+    
       </div>
       <!--
       <small class="timepicker-dial__hint"> * use arrows (<span>&#8645;</span>) to change the time</small>

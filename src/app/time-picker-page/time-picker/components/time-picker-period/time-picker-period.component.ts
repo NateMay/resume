@@ -27,16 +27,15 @@ import { disableHours, disableMinutes } from '../../utils/timepicker-time.utils'
       [isPM]="selectedPeriod === timePeriod.PM"
       (isPMChange)="changePeriod()"
     ></cc-am-pm-toggle>
-
-
-    <div class="timepicker-period__warning"
-      *ngIf="!isPeriodAvailable"
-      [@scaleInOut]
-      (@scaleInOut.done)="animationDone()">
-
-      <p>Current time would be invalid in this period.</p>
-
-    </div>
+    
+    
+    @if (!isPeriodAvailable) {
+      <div class="timepicker-period__warning"
+        [@scaleInOut]
+        (@scaleInOut.done)="animationDone()">
+        <p>Current time would be invalid in this period.</p>
+      </div>
+    }
     `,
     standalone: false
 })
