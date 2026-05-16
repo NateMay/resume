@@ -49,43 +49,46 @@ const DEFAULT_MINUTE: ClockFaceTime = {
           (minuteChanged)="onMinuteChange($event)"
         ></cc-timepicker-dial>
       </header>
-
+    
       <div class="timepicker__main-content">
-        <div class="timepicker__body" [ngSwitch]="activeTimeUnit">
-          <div *ngSwitchCase="timeUnit.HOUR">
-            <cc-timepicker-24-hours-face
-              *ngIf="format === 24; else ampmHours"
-              (hourChange)="onHourChange($event)"
-              [selectedHour]="selectedHour"
-              [minTime]="minTime"
-              [maxTime]="maxTime"
-              [format]="format"
-              (hourSelected)="onHourSelected($event)"
-            ></cc-timepicker-24-hours-face>
-
-            <ng-template #ampmHours>
-              <cc-timepicker-12-hours-face
-                (hourChange)="onHourChange($event)"
-                [selectedHour]="selectedHour"
-                [period]="selectedPeriod"
+        <div class="timepicker__body">
+          @switch (activeTimeUnit) {
+            @case (timeUnit.HOUR) {
+              <div>
+                @if (format === 24) {
+                  <cc-timepicker-24-hours-face
+                    (hourChange)="onHourChange($event)"
+                    [selectedHour]="selectedHour"
+                    [minTime]="minTime"
+                    [maxTime]="maxTime"
+                    [format]="format"
+                    (hourSelected)="onHourSelected($event)"
+                  ></cc-timepicker-24-hours-face>
+                } @else {
+                  <cc-timepicker-12-hours-face
+                    (hourChange)="onHourChange($event)"
+                    [selectedHour]="selectedHour"
+                    [period]="selectedPeriod"
+                    [minTime]="minTime"
+                    [maxTime]="maxTime"
+                    (hourSelected)="onHourSelected($event)"
+                  ></cc-timepicker-12-hours-face>
+                }
+              </div>
+            }
+            @case (timeUnit.MINUTE) {
+              <cc-timepicker-minutes-face
+                [selectedMinute]="selectedMinute"
+                [selectedHour]="selectedHour?.time"
                 [minTime]="minTime"
                 [maxTime]="maxTime"
-                (hourSelected)="onHourSelected($event)"
-              ></cc-timepicker-12-hours-face>
-            </ng-template>
-          </div>
-
-          <cc-timepicker-minutes-face
-            *ngSwitchCase="timeUnit.MINUTE"
-            [selectedMinute]="selectedMinute"
-            [selectedHour]="selectedHour?.time"
-            [minTime]="minTime"
-            [maxTime]="maxTime"
-            [format]="format"
-            [period]="selectedPeriod"
-            [minutesGap]="minutesGap"
-            (minuteChange)="onMinuteChange($event)"
-          ></cc-timepicker-minutes-face>
+                [format]="format"
+                [period]="selectedPeriod"
+                [minutesGap]="minutesGap"
+                (minuteChange)="onMinuteChange($event)"
+              ></cc-timepicker-minutes-face>
+            }
+          }
         </div>
         <div class="actions">
           <button mat-button (click)="data.close()">Close</button>
@@ -93,7 +96,7 @@ const DEFAULT_MINUTE: ClockFaceTime = {
         </div>
       </div>
     </span>
-  `,
+    `,
     standalone: false
 })
 export class TimepickerDialogComponent implements OnDestroy {

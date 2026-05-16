@@ -19,59 +19,65 @@ const CLOCK_HAND_STYLES = {
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
     <div #clockFace class="clock-face">
-
-      <div class="clock-face_container"
-        *ngIf="unit !== timeUnit.MINUTE; else minutesFace">
-
-        <div class="clock-face_number clock-face_number--outer"
-          [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
-          *ngFor="let time of faceTime.slice(0, 12); trackBy: trackByTime">
-          <span
-            [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
-            [ngClass]="{'active': isHourSelected(time.time), 'disabled': time.disabled}"
-          >{{ time.time }}</span>
+    
+      @if (unit !== timeUnit.MINUTE) {
+        <div class="clock-face_container"
+          >
+          @for (time of faceTime.slice(0, 12); track trackByTime($index, time)) {
+            <div class="clock-face_number clock-face_number--outer"
+              [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
+              >
+              <span
+                [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
+                [ngClass]="{'active': isHourSelected(time.time), 'disabled': time.disabled}"
+              >{{ time.time }}</span>
+            </div>
+          }
+          @if (faceTime.length > 12) {
+            <div
+              class="clock-face_inner"
+              [style.top]="'calc(50% - ' + innerClockFaceSize + 'px)'">
+              @for (time of faceTime.slice(12, 24); track trackByTime($index, time)) {
+                <div
+                  class="clock-face_number clock-face_number--inner"
+                  [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
+                  [style.height.px]="innerClockFaceSize"
+                  >
+                  <span
+                    [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
+                    [ngClass]="{'active': isHourSelected(time.time), 'disabled': time.disabled}">
+                    {{ time.time === 0 ? '00' : time.time }}
+                  </span>
+                </div>
+              }
+            </div>
+          }
         </div>
-
-        <div
-          class="clock-face_inner"
-          *ngIf="faceTime.length > 12"
-          [style.top]="'calc(50% - ' + innerClockFaceSize + 'px)'">
-          <div
-            class="clock-face_number clock-face_number--inner"
-            [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
-            [style.height.px]="innerClockFaceSize"
-            *ngFor="let time of faceTime.slice(12, 24); trackBy: trackByTime">
-            <span
-              [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
-              [ngClass]="{'active': isHourSelected(time.time), 'disabled': time.disabled}">
-              {{ time.time === 0 ? '00' : time.time }}
-            </span>
-          </div>
+      } @else {
+        <div class="clock-face_container">
+          @for (time of faceTime; track trackByTime($index, time)) {
+            <div class="clock-face_number clock-face_number--outer"
+              [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
+              >
+              <span
+                [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
+                [ngClass]="{'active': isMinuteSelected(time.time), 'disabled': time.disabled}">
+                {{ time.time === 0 ? '00' : time.time | minutesFormatter: minutesGap }}
+              </span>
+            </div>
+          }
         </div>
-      </div>
-
+      }
+    
       <span
-          class="clock-face_clock-hand"
-          [ngClass]="{'clock-face_clock-hand_minute': unit === timeUnit.MINUTE}"
-          #clockHand
-          [hidden]="isClockFaceDisabled"
+        class="clock-face_clock-hand"
+        [ngClass]="{'clock-face_clock-hand_minute': unit === timeUnit.MINUTE}"
+        #clockHand
+        [hidden]="isClockFaceDisabled"
       ></span>
     </div>
-
-    <ng-template #minutesFace>
-      <div class="clock-face_container">
-        <div class="clock-face_number clock-face_number--outer"
-          [style.transform]="'rotateZ('+ time.angle +'deg) translateX(-50%)' | sanitize"
-          *ngFor="let time of faceTime; trackBy: trackByTime">
-
-          <span
-            [style.transform]="'rotateZ(-'+ time.angle +'deg)' | sanitize"
-            [ngClass]="{'active': isMinuteSelected(time.time), 'disabled': time.disabled}">
-            {{ time.time === 0 ? '00' : time.time | minutesFormatter: minutesGap }}
-          </span>
-        </div>
-      </div>
-    </ng-template>`,
+    
+    `,
     standalone: false
 })
 export class TimepickerFaceComponent implements AfterViewInit, OnChanges, OnDestroy {
